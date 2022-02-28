@@ -5,7 +5,7 @@ pythonの環境が必要です。
 方法は下記の
 pip install playsound==1.2.2
 のコマンドをコピー＆ペーストにてコマンド入力なさってください。
-コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python　kiguuhana.py か　python kiguuC.py　にて実行できます。
+コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py　にて実行できます。
 また、いろいろと頑張っていきますので、私星澤宜嗣が使わしていただいているyoutubeチャンネル(下記のURLにて)の登録よろしくお願い申し上げます。元気が出ます。
 いつも大変お世話になり、どうもありがとうございます。すみません
 https://www.youtube.com/channel/UC-Uzs-DBrJ8LoEhDZZXqC6A
