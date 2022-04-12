@@ -1,6 +1,6 @@
 # kiguu kiguu87の説明書を必ずお読みください。
 pythonの環境が必要です。
-sugoroku.pyを実行するには予め、
+sugoroku.pyを実行するには予め、robo63touroku.py一度だけ実行願います。すみません、宜しくお願い申し上げます。
 コマンドプロンプト上にて必ずpythonの環境をインストール後に
 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください
 方法は下記の
