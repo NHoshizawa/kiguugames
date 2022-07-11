@@ -139,14 +139,14 @@ def kiguu():
 				print("偶数であたり、2倍に!!")
 				print(str(p)+"point outputへ気持ちの器量に!!")
 				point = p
-				playsound("the song.wav")
+				playsound("mujic0.wav")
 				return point
 			else:
 				print("PointGet...そのままになります")
 				playsound("kisuuhazure.wav")
 				print(str(q)+"pointをoutputへ気持ちの器量に!!")
 				point = q
-				playsound("the song.wav")
+				playsound("music0.wav")
 				return point
 		elif p1 == 1 and n == '0' or p1== 1 and n == '1':
 			if n == '1':
@@ -156,14 +156,14 @@ def kiguu():
 				print("奇数であたり、2倍に!!")
 				print(str(p)+"pointをinputへ気持ちの器量に!!")
 				point = p
-				playsound("the song.wav")
+				playsound("music0.wav")
 				return point
 			else:
 				print("PointGet...そのままになります")
 				playsound("guuhazure.wav")
 				print(str(q)+"pointをinputへ気持ちの器量に!!")
 				point = q 
-				playsound("the song.wav")
+				playsound("music0.wav")
 				return point
 		else:
 			print("kiguu終了")
