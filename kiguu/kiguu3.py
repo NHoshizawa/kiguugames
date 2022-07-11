@@ -238,7 +238,7 @@ def kiguu(file5):
 		else:
 			print("kiguu終了")
 			point = 0
-			playsound("the song.wav")
+			playsound("music0.wav")
 			with open(str(file5) + 'kiguu.pickle', 'rb') as f:
 				hozon1 = pickle.load(f)
 			point = point + hozon1

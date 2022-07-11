@@ -168,7 +168,7 @@ def kiguu():
 		else:
 			print("kiguu終了")
 			point = 0
-			playsound("the song.wav")
+			playsound("music0.wav")
 			return point
 			
 

@@ -238,6 +238,7 @@ def kiguu(file5):
                 return 'p'
         else:
             print("kiguu終了")
+            playsound("music0.wav")
             point = 0
             with open(str(file5) + 'kiguu.pickle', 'rb') as f:
                 hozon1 = pickle.load(f)
