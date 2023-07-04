@@ -11,7 +11,7 @@ pip install playsound==1.2.2
 いつも大変お世話になり、どうもありがとうございます。すみません。sugoroku.py のゲームが追加になりました。どうかよろしくお願い申し上げます。
 https://www.youtube.com/channel/UC-Uzs-DBrJ8LoEhDZZXqC6A
 随時更新しております2023．7.4(火曜日更新)．sugoroku.pyとrace.py等を初めて遊ぶ際にはsetup.pyを起動後に遊べます。15:33japan現在
-DX.wav race2.py sugoroku.py race.py　kiguunori.py音楽ファイル更新いたしましたrace.pyとraceotonashi.pyを新たに追加いたしました。sugoroku.pyも以前に更新いたしました。
+DX.wav race2.py sugoroku.py race.py　kiguunori.py sadmusic.wav remain.wav kiguu1.py race.py 音楽ファイル更新いたしましたrace.pyとraceotonashi.pyを新たに追加いたしました。sugoroku.pyも以前に更新いたしました。
 更新年日時　随時バグ直し更新いたしますので　これ以前のダウンロードフォルダ内はすべて消去してください、どうか申し訳ありませんがよろしくお願い申し上げます。
 copyright by 星澤宜嗣ほしざわのりつぐより　ご自由に個人のゲームプログラム学習のためにダウンロードなさってください。
 、いつも大変お世話になり、いつもどうもありがとうございます。すみません。感謝
