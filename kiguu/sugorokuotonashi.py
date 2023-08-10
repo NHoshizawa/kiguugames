@@ -45,7 +45,7 @@ def awase2(ra):
 		num2.remove(r2)
 		num2 = num2
 		if ra == str(r2):
-		#playsound("icchi.wav")
+			#playsound("icchi.wav")
 			print("ふっ、一致したぜ‼")
 			with open(str(ts1)+ '.pickle', 'rb') as f:
 				num3 = pickle.load(f)
