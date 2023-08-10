@@ -10,7 +10,8 @@ pip install playsound==1.2.2
 また、いろいろと頑張っていきますので、私,星澤宜嗣(ほしざわのりつぐ)が使わしていただいている YouTubeチャンネル(下記のURLにて)の登録どうか申し訳ございませんが、ご登録の程よろしくお願い申し上げます。元気が出ます。
 いつも大変お世話になり、どうもありがとうございます。すみません。sugoroku.py のゲームが追加になりました。どうかよろしくお願い申し上げます。
 https://www.youtube.com/channel/UC-Uzs-DBrJ8LoEhDZZXqC6A
-随時更新しております2023．8.10(木曜日更新)．kiguurobo63.py kiguurobo63otonashi.py2項目作品を追加しました。sugoroku.pyとrace.py等を初めて遊ぶ際にはsetup.pyを起動後に遊べます。15:00japan現在
+随時更新しております2023．8.10(木曜日更新)．kiguurobo63.py kiguurobo63otonashi.py2項目作品(pointが反映されずだったことをお詫びいたします。修正しました)
+)を追加しました。sugoroku.pyとrace.py等を初めて遊ぶ際にはsetup.pyを起動後に遊べます。17:52japan現在
 DX.wav race2.py sugoroku.py race.py　kiguunori.py sadmusic.wav remain.wav kiguu1.py race.py 音楽ファイル更新いたしましたrace.pyとraceotonashi.py raceotonashi.py race2otonashi.py sugorokuotonashi.pyを新たに追加いたしました。sugoroku.pyも以前に更新いたしました。
 更新年日時　随時バグ直し更新いたしますので　これ以前のダウンロードフォルダ内はすべて消去してください、どうか申し訳ありませんがよろしくお願い申し上げます。
 copyright by 星澤宜嗣ほしざわのりつぐより　ご自由に個人のゲームプログラム学習のためにダウンロードなさってください。
