@@ -273,6 +273,8 @@ def doubleup(point7,hoyuu):
 				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(pointrobo63, f)
 				print(str(robo63nokimochi)+"ポイントを分けてあげるよ。慈善レースに...。")
+				point7 = int(robo63nokimochi) + int(point7)
+				point7 = int(point7)
 				with open(str(file) +'.pickle', mode='wb') as f:
 					pickle.dump(point7, f)
 				return 'e'
@@ -382,6 +384,10 @@ def doubleup2(point7,hoyuu = 0):
 				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(pointrobo63, f)
 				print(str(robo63nokimochi)+"ポイントを分けてあげるよ。慈善レースにでも...。")
+				point7 = int(robo63nokimochi) + int(point7)
+				point7 = int(point7)
+				with open(str(file) +'.pickle', mode='wb') as f:
+					pickle.dump(point7, f)
 				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(point7, f)
 				return 'e'
