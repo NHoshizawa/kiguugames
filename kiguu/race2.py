@@ -211,7 +211,7 @@ def starts(file1):
 def bonus(file2,nokori):
 	with open(str(file2) + '.pickle', 'rb') as f:
 		hoyuup2 = pickle.load(f)
-	r = nokori
+	r = nokori #robo63のみになっている
 	r = int(r)
 	hoyuup = hoyuup2/r
 	hoyuup = int(hoyuup)
@@ -232,6 +232,26 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 	with open(str(filerX) +'kanri.pickle', mode='wb') as f:
 		pickle.dump(hoyuup, f)
 	print(file9+"さんには、マイナス"+str(hoyuup)+"ポイントがkiguuのポイントの"+str(hoyuup2)+"ポイントに付加されます。")
+	with open(str(filerX) + 'kanri.pickle', 'rb') as f:
+				hoyuup63 = pickle.load(f)
+				hoyuup63 = int(hoyuup63)
+				NoritsuguH_hoyuu = int(hoyuup63*2/5)
+	with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
+		pickle.dump(NoritsuguH_hoyuu, f)
+	with open(str(NoritsuguH) + '.pickle', 'rb') as f: #初期化はsetupにて0(Point)代入済み
+		ShuuekiP_NH = pickle.load(f)
+	NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
+	hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
+	with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
+		pickle.dump(NoritsuguHoshizawa, f)
+	hoyuupcharge = int(hoyuu63)
+	with open(str(filerX) +'charge.pickle', mode='wb') as f:
+		pickle.dump(hoyuupcharge, f)
+	with open(str(filerX) + '.pickle', 'rb') as f:
+		roboenergy = pickle.load(f)
+	roboenergy = roboenergy + hoyuupcharge
+	with open(str(filerX) +'.pickle', mode='wb') as f:
+		pickle.dump(roboenergy, f)
 def banmen(player1,ichiABCD):
 	print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(15-own_ichi)+"Goal!!")
 	print("OYMGSet...Don!!"+"□"*(Robo63_ichi-1) + "Robo63"+"□"*(15-Robo63_ichi)+"Goal!!") #後攻の格差是正
@@ -255,6 +275,10 @@ def kimari(player2):
 	return a1
 def game(player3):
 	while True:
+		global ichiA
+		global ichiB
+		global ichiC
+		global ichiD
 		input("Enterを押すと"+player3+"さんサイコロを振れますよ")
 		playsound("sai1.mp3")
 		global own_ichi
@@ -274,6 +298,18 @@ def game(player3):
 		if own_ichi == 15:
 			print(player3+"一着ボーナス獲得！")
 			bonus(player3,nokori2)
+			nokoriA = str(15-ichiA)
+			nokoriA=int(nokoriA)
+			bonus(player3,nokoriA)
+			nokoriB = str(15-ichiB)
+			nokoriB=int(nokoriB)
+			bonus(player3,nokoriB)
+			nokoriC = str(15-ichiC)
+			nokoriC=int(nokoriC)
+			bonus(player3,nokoriC)
+			nokoriD = str(15-ichiD)
+			nokoriD=int(nokoriD)
+			bonus(player3,nokoriD)
 			playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
 			playsound("race2.wav")
@@ -299,39 +335,15 @@ def game(player3):
 		if Robo63_ichi ==15:
 			print("コンピュータ,一着ボーナス獲得")
 			hunobonus(player3,nokori,filerobo63)
-			with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
-				hoyuup63 = pickle.load(f)
-				hoyuup63 = int(hoyuup63)
-				NoritsuguH_hoyuu = int(hoyuup63*1/5)
-			with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
-				pickle.dump(NoritsuguH_hoyuu, f)
-			with open(str(NoritsuguH) + '.pickle', 'rb') as f:
-				ShuuekiP_NH = pickle.load(f)
-			NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
-			hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
-			with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
-				pickle.dump(NoritsuguHoshizawa, f)
-			hoyuupcharge = int(hoyuu63)
-			with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
-				pickle.dump(hoyuupcharge, f)
-			with open(str(filerobo63) + '.pickle', 'rb') as f:
-				roboenergy = pickle.load(f)
-			roboenergy = roboenergy + hoyuupcharge
-			with open(str(filerobo63) +'.pickle', mode='wb') as f:
-				pickle.dump(roboenergy, f) 
 			playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
 			playsound("race2.wav")
 			playsound("shuuryoushimasu.mp3")
 			print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 			break
-		global ichiA
 		ichiA=player3456(player3,nokori,hoyuuA,hoyuupA,filePlayerA,Aenergy,playerA,num5,ichiA,ichiA0,tsnum3,numPLA,numPLA1)
-		global ichiB
 		ichiB=player3456(player3,nokori,hoyuuB,hoyuupB,filePlayerB,Benergy,playerB,num7,ichiB,ichiB0,tsnum4,numPLB,numPLB1)
-		global ichiC
 		ichiC=player3456(player3,nokori,hoyuuC,hoyuupC,filePlayerC,Cenergy,playerC,num9,ichiC,ichiC0,tsnum5,numPLC,numPLC1)
-		global ichiD
 		ichiD=player3456(player3,nokori,hoyuuD,hoyuupD,filePlayerD,Denergy,playerD,num11,ichiD,ichiD0,tsnum6,numPLD,numPLD1)
 		if ichiA==0 or ichiB==0 or ichiC==0 or ichiD==0:
 			break
