@@ -1,5 +1,6 @@
 # kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
-race.py raceotonashi.py更新しました（2023.9.30(土)に更新）
+リニューアル速報　
+race.py raceotonashi.py race2.py race2otonashi.pyを改善し更新しました（2023.9.30(土)に更新）
 。
 pythonの環境が必要です。
 コマンドプロンプト上にて必ずpythonの環境をインストール後に
