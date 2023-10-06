@@ -263,31 +263,49 @@ def doubleup(point7,hoyuu):
 		elif yn in n:
 			#playsound("ending.wav")
 			print("pointは保存されます。")
-			if os.path.exists("./robo63.pickle"):
-				print("robo63だよ。よく我慢できたな、きみをおうえんするよ！！")
+			if os.path.exists("./robo63kashitsuke.pickle"):
+					print("robo63だよ。よく我慢できたな、きみをおうえんするよ！！")
+					with open('robo63.pickle', 'rb') as f:
+						pointrobo63 = pickle.load(f)
+					robo63nokimochi = int(pointrobo63) * (1/10)
+					pointrobo63= int(pointrobo63) * (9/10)
+					with open('robo63.pickle', mode='wb') as f:
+						pickle.dump(pointrobo63, f)
+					print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(出高払い(増えていったときに)で利子は2%です)。慈善レースにでも...。")
+					with open('robo63kashitsuke' + '.pickle', 'rb') as f:
+						robo63kashitsuke = pickle.load(f)
+					robo63nokimochi=(int(robo63kashitsuke) + int(robo63nokimochi))*int(102/100)
+					with open('robo63kashitsuke.pickle', mode='wb') as f:
+						pickle.dump(robo63nokimochi, f)
+					point7 = int(robo63nokimochi) + int(point7)
+					point7 = int(point7)
+					with open(str(file) +'.pickle', mode='wb') as f:
+						pickle.dump(point7, f)
+					with open('robo63.pickle', mode='wb') as f:
+						pickle.dump(point7, f)
+					return 'e'
+			else:
+				print("robo63だよ。よく我慢できたな、きみの勝利におうえんするよ！！")
 				with open('robo63.pickle', 'rb') as f:
 					pointrobo63 = pickle.load(f)
 				robo63nokimochi = int(pointrobo63) * (1/10)
-				robo63nokimochi = int (robo63nokimochi)
 				pointrobo63= int(pointrobo63) * (9/10)
 				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(pointrobo63, f)
-				print(str(robo63nokimochi)+"ポイントを分けてあげるよ。慈善レースに...。")
+				print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(すごろくとレース場にて出世払い(増えていったときに)で利子は2%です)。慈善レースにでも...。")
+				with open('robo63kashitsuke.pickle', mode='wb') as f:
+					pickle.dump(robo63nokimochi, f)
 				point7 = int(robo63nokimochi) + int(point7)
 				point7 = int(point7)
 				with open(str(file) +'.pickle', mode='wb') as f:
 					pickle.dump(point7, f)
-				with open(str(file) +'.pickle', mode='wb') as f:
-					pickle.dump(point7, f)
-				return 'e'
-			else:
 				return 'e'
 		else:
-			print("選択は無効となりpointはそのままになります。")
+			print("選択は無効となりpointは保存されます。")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point7, f)
 			return 'p'
-def doubleup2(point7,hoyuu = 0):
+def doubleup2(point7,hoyuu):
 	if point7 == 0:
 		with open(str(file) +'.pickle', mode='wb') as f:
 			pickle.dump(point7, f)
@@ -374,32 +392,31 @@ def doubleup2(point7,hoyuu = 0):
 							pickle.dump(point7, f)
 						return 'p'
 		elif yn in n:
-			#playsound("ending.wav")
+			#playsound("downupSE.wav")
 			print("pointは保存されます。")
 			if os.path.exists("./robo63.pickle"):
 				print("robo63だよ。よく我慢できたな、きみをおうえんするよ！！")
-				with open(str(robo63) + '.pickle', 'rb') as f:
+				with open('robo63.pickle', 'rb') as f:
 					pointrobo63 = pickle.load(f)
 				robo63nokimochi = int(pointrobo63) * (1/10)
-				robo63nokimochi = int(robo63nokimochi)
+				robo63nokimochi = int (robo63nokimochi)
 				pointrobo63= int(pointrobo63) * (9/10)
 				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(pointrobo63, f)
-				print(str(robo63nokimochi)+"ポイントを分けてあげるよ。慈善レースにでも...。")
+				print(str(robo63nokimochi)+"ポイントを分けてあげるよ。慈善レースに...。")
 				point7 = int(robo63nokimochi) + int(point7)
 				point7 = int(point7)
 				with open(str(file) +'.pickle', mode='wb') as f:
-					pickle.dump(point7, f)
-				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(point7, f)
 				return 'e'
 			else:
 				return 'e'
 		else:
-			print("選択は無効となりpointは保存されます。")
+			print("選択は無効となりpointはそのままになります。")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point7, f)
-			return 'p'			
+			return 'p'
+					
 def kanriq(file1):
 	with open(str(file1) + '.pickle', 'rb') as f:
 		hozon1 = pickle.load(f)

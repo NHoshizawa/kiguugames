@@ -273,6 +273,47 @@ def kimari(player2):
 	print(player2+"さんでよろしいですね")
 	a1 = input("Y/N:")
 	return a1
+def robokashitsuke(name):
+	name=str(name)
+	robo63="robo63kashitsuke"
+	with open(str(robo63) + '.pickle', 'rb') as f:
+		robokashi = pickle.load(f)
+		robokashi = int(robokashi)
+	with open(str(name) + '.pickle', 'rb') as f:
+		points = pickle.load(f)
+		points = int(points)
+	print("素人お笑いです。現在の"+ name +"様の保有ポイントは"+ str(points) +"です")
+	print("現在robo63様よりの貸し付けは"+ str(robokashi) + "Pointとなります。")
+	print("できる限りの返せる範囲内のpoint(数字入力)を入力してください。")
+	if robokashi>0:
+		rpoint =input("数値:")
+		if rpoint.isdecimal():
+			rpoint = str(rpoint)		
+			rpoint = int(rpoint)
+			if rpoint < robokashi or rpoint == robokashi:
+				points = int(points)-int(rpoint)
+				points = int(points)
+				robokashi = int(robokashi)-int(rpoint)
+				robokashi = int(robokashi)
+				with open(str(name) +'.pickle', mode='wb') as f:
+					pickle.dump(points, f)
+				with open('robo63kashitsuke'+'.pickle', mode='wb') as f:
+					pickle.dump(robokashi, f)
+				print("ただ今のお貸し付けpoint残高は"+str(robokashi)+"pointです。")
+				print("お手持ちのpointは"+str(points)+"となります。")
+				print("robo63です。助かりました。どうもありがとうございます。")
+				if int(robokashi) == 0:
+					print("doumoarigatougozaimasu大感謝...。")
+					sys.exit()
+				else:
+					print("omuriwonasarazuni...。またもお願いいたします。ごめんなさいどうもありがとうございます")
+					sys.exit()
+			else:
+				print("数値の入力が正しくありません。")
+		else:
+			print("pointではありません。終了いたします。すみません。")
+	else:
+		print("robo63様よりお貸し付けはありません。どうもありがとうございます。")
 def game(player3):
 	while True:
 		global ichiA
@@ -385,4 +426,5 @@ else:
 	playsound("count48.wav")
 print("終了します。どうもありがとうございました。www")
 playsound("DX.wav")
-sys.exit()
+player = name()
+robokashitsuke(player)
