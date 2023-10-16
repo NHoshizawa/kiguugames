@@ -419,3 +419,4 @@ else:
 	playsound("shuuryoushimasu.mp3")
 print("終了します。どうもありがとうございました。")
 robokashitsuke(player)
+playsound("2023natsuba.mp3")
