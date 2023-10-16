@@ -1,6 +1,6 @@
 # kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
 リニューアル速報　
-race.py raceotonashi.py race2.py race2otonashi.py(15:05頃) を改善し更新しました（2023.⒑6(金)に更新）
+race.py sugoroku.py race2.py (12:18頃)を改善し更新しました（2023.⒑16(月)に更新）
 kiguuのotonashi version多数更新しました（2023.⒑２(月)に更新）
 kiguu1kai.py kiguu2.py kiguu3.py にSoundEfectを2bai.wavからDounUPSE.wav(本日追加のSE)へ変更いたしました。オリジナル作曲です。よろしくお願い申し上げます。2023．⒑2(月)15:42現在
 pythonの環境が必要です。
