@@ -1,6 +1,8 @@
 # kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
 リニューアル速報　
 2023natsuba.mp3 race.py sugoroku.py race2.py (12:18頃)を改善し更新しました（2023.⒑16(月)に更新）
+the song.wavを2023natsuba.mp3へ変更いたしまして更新しました。エラー訂正いたしました。修正いたしましたのは以下のファイルです。大変申し訳ありませんでした。ごめんなさい。安心して遊べます。the song.wavのファイルは依然作曲に失敗して削除しており存在がありませんでした。ご不便をおかけいたしまして。大変申し訳ありませんでした。修正いたしましたのでどうかお楽しみくださいませ。
+kiguu1.py kiguu2.py kiguuA.py kiguuB.py　kiguu1.py
 kiguuのotonashi version多数更新しました（2023.⒑２(月)に更新）
 kiguu1kai.py kiguu2.py kiguu3.py にSoundEfectを2bai.wavからDounUPSE.wav(本日追加のSE)へ変更いたしました。オリジナル作曲です。よろしくお願い申し上げます。2023．⒑2(月)15:42現在
 pythonの環境が必要です。
