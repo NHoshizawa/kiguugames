@@ -183,7 +183,7 @@ def kiguu(file5):
 					print("偶数であたり、2倍に!!")
 					print(str(p1)+"point outputへ気持ちの器量に!!")
 					point = p1
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) + '.pickle', 'rb') as f:
 						hozon1 = pickle.load(f)
 					point = point + hozon1
@@ -195,7 +195,7 @@ def kiguu(file5):
 					playsound("guuhazure.wav")
 					print(str(q)+"pointをoutputへ気持ちの器量に!!")
 					point = q
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) + '.pickle', 'rb') as f:
 						hozon1 = pickle.load(f)
 					point = point + hozon1
@@ -210,7 +210,7 @@ def kiguu(file5):
 					print("奇数であたり、2倍に!!")
 					print(str(p1)+"pointをinputへ気持ちの器量に!!")
 					point = p1
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) + '.pickle', 'rb') as f:
 						hozon1 = pickle.load(f)
 					point = point + hozon1
@@ -222,7 +222,7 @@ def kiguu(file5):
 					playsound("kisuuhazure.wav")
 					print(str(q)+"pointをinputへ気持ちの器量に!!")
 					point = q 
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) + '.pickle', 'rb') as f:
 						hozon1 = pickle.load(f)
 					point = point + hozon1
@@ -263,7 +263,7 @@ def kiguu(file5):
 					print("偶数であたり、2倍に!!")
 					print(str(p1)+"point outputへ気持ちの器量に!!")
 					point = p1
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) +'.pickle', mode='wb') as f:
 						pickle.dump(point, f)
 					return 'p'
@@ -272,7 +272,7 @@ def kiguu(file5):
 					playsound("guuhazure.wav")
 					print(str(q)+"pointをoutputへ気持ちの器量に!!")
 					point = q
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) +'.pickle', mode='wb') as f:
 						pickle.dump(point, f)
 					return 'p'
@@ -284,7 +284,7 @@ def kiguu(file5):
 					print("奇数であたり、2倍に!!")
 					print(str(p1)+"pointをinputへ気持ちの器量に!!")
 					point = p1
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) +'.pickle', mode='wb') as f:
 						pickle.dump(point, f)
 					return 'p'
@@ -293,14 +293,14 @@ def kiguu(file5):
 					playsound("kisuuhazure.wav")
 					print(str(q)+"pointをinputへ気持ちの器量に!!")
 					point = q 
-					#playsound("the song.wav")
+					#playsound("2023natsuba.mp3")
 					with open(str(file5) +'.pickle', mode='wb') as f:
 						pickle.dump(point, f)
 					return 'p'
 			else:
 				print("kiguu終了")
 				point = 0
-				playsound("the song.wav")
+				playsound("2023natsuba.mp3")
 				with open(str(file5) + '.pickle', 'rb') as f:
 					hozon1 = pickle.load(f)
 				point = point + hozon1
@@ -342,7 +342,7 @@ def ru(file6):
 						r = int(r)
 						print("今回は当たれば"+str(r)+"倍になります")
 						point8a = int(point8) * r
-						playsound("2bai.wav")
+						playsound("DownUpSE.wav")
 						print("値は"+str(points)+"でした。当たり!!"+str(point8)+"bet分が"+str(r)+"倍の"+str(point8)+"pointになりました")
 						print(str(point8a) +"pointになりました。持ちpointはbet分が差し引かれた保有point+(bet point×2)")
 						print("外れたら運用分は0ポイントになります。")
@@ -366,7 +366,7 @@ def ru(file6):
 						r = random.randint(1,5)
 						r = int(r)
 						point8a = int(point8) * r
-						playsound("2bai.wav")
+						playsound("DownUpSE.wav")
 						print("値は"+str(points)+"でした。当たり!!"+str(point8)+"bet分が"+str(r)+"倍になり、bet point控除後のpointに加算されます")
 						print(str(point8a) +"pointになります。現在持ちpointはbet分が差し引かれた保有point+(bet point×2)" )
 						print("外れたら運用分は0ポイントになります。")
@@ -455,7 +455,7 @@ def ru(file6):
 								r = int(r)
 								print("今回は当たれば"+str(r)+"倍になります")
 								point8 = int(bet) * r
-								playsound("2bai.wav")
+								playsound("DownUpSE.wav")
 								print("値は"+str(points)+"でした。当たり!!"+ str(bet)+"bet分が"+str(r)+"倍になり持ちポイントは" + str(point8) + "になりました")
 								print("外れたら運用分は0ポイントになります。")
 								with open(str(file6) +'.pickle', mode='wb') as f:
@@ -480,7 +480,7 @@ def ru(file6):
 								point8 = int(bet) * r
 								point8 = int(point8)
 								point1 = point1 - int(bet)
-								playsound("2bai.wav")
+								playsound("DownUpSE.wav")
 								print("値は"+str(points)+"でした。当たり!!"+ str(bet)+"bet分が"+str(r)+"倍になり持ちポイントは" + str(point8) + "になりました")
 								print("外れたら運用分は0ポイントになります。")
 								with open(str(file6) +'.pickle', mode='wb') as f:
