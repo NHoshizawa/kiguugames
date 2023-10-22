@@ -265,6 +265,7 @@ def doubleup(point7,hoyuu):
 			print("pointは保存されます。")
 			if os.path.exists("./robo63kashitsuke.pickle"):
 					print("robo63だよ。よく我慢できたな、きみをおうえんするよ！！")
+					playsound("2023fallenleaves.wav")
 					with open('robo63.pickle', 'rb') as f:
 						pointrobo63 = pickle.load(f)
 					robo63nokimochi = int(pointrobo63) * (1/10)
@@ -286,6 +287,7 @@ def doubleup(point7,hoyuu):
 					return 'e'
 			else:
 				print("robo63だよ。よく我慢できたな、きみの勝利におうえんするよ！！")
+				playsound("2023fallenleaves.wav")
 				with open('robo63.pickle', 'rb') as f:
 					pointrobo63 = pickle.load(f)
 				robo63nokimochi = int(pointrobo63) * (1/10)
@@ -396,6 +398,7 @@ def doubleup2(point7,hoyuu):
 			print("pointは保存されます。")
 			if os.path.exists("./robo63.pickle"):
 				print("robo63だよ。よく我慢できたな、きみをおうえんするよ！！")
+				playsound("2023fallenleaves.wav")
 				with open('robo63.pickle', 'rb') as f:
 					pointrobo63 = pickle.load(f)
 				robo63nokimochi = int(pointrobo63) * (1/10)
