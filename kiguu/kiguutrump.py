@@ -55,7 +55,7 @@ def picture(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,c1,s1,h1,d1):
 
 	while True:
 		clock.tick(30)#30fps
-		screen.fill((0, 20, 0))
+		screen.fill((0, 34, 0))
 		group.draw(screen)
 		pygame.display.update()
 		for event in pygame.event.get():
