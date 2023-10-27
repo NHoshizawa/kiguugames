@@ -6,7 +6,7 @@ trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモ�
 pip install --upgrade pip
 
 pip install pygame
-～以上～
+～以上導入方法～
 
 リニューアル速報　
 2023fallenleaves.wavを追加して、kiguurobo63.pyに組み込みました。(2023.10.22(日) .16:46)
