@@ -1,4 +1,10 @@
 # kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
+trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモジュールを導入いたしました。随時更新いたします。
+各自PCにてインストールの上、ご査収願います。
+～pygameインストール方法（コマンドプロンプト上にてpythonをインストール後）～
+pip install --upgrade pip
+pip install pygame
+～以上～
 リニューアル速報　
 2023fallenleaves.wavを追加して、kiguurobo63.pyに組み込みました。(2023.10.22(日) .16:46)
 2023natsuba.mp3 race.py sugoroku.py race2.py (12:18頃)を改善し更新しました（2023.⒑16(月)に更新）
