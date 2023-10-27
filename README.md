@@ -4,6 +4,7 @@ trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモ�
 
 ～pygameインストール方法（コマンドプロンプト上にてpythonをインストール後）～
 pip install --upgrade pip
+
 pip install pygame
 ～以上～
 
