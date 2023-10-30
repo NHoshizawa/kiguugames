@@ -271,10 +271,10 @@ def doubleup(point7,hoyuu):
 					pointrobo63= int(pointrobo63) * (9/10)
 					with open('robo63.pickle', mode='wb') as f:
 						pickle.dump(pointrobo63, f)
-					print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(出高払い(増えていったときに)で利子は2%です)。慈善レースにでも...。")
+					print(str(robo63nokimochi)+"ポイントを自動で貸し付けてあげるよ(出高払い(増えていったときに))。慈善レースにでも...。")
 					with open('robo63kashitsuke' + '.pickle', 'rb') as f:
 						robo63kashitsuke = pickle.load(f)
-					robo63nokimochi=(int(robo63kashitsuke) + int(robo63nokimochi))*int(102/100)
+					robo63nokimochi=(int(robo63kashitsuke) + int(robo63nokimochi))
 					with open('robo63kashitsuke.pickle', mode='wb') as f:
 						pickle.dump(robo63nokimochi, f)
 					point7 = int(robo63nokimochi) + int(point7)
@@ -292,7 +292,7 @@ def doubleup(point7,hoyuu):
 				pointrobo63= int(pointrobo63) * (9/10)
 				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(pointrobo63, f)
-				print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(すごろくとレース場にて出世払い(増えていったときに)で利子は2%です)。慈善レースにでも...。")
+				print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(すごろくとレース場にて出世払い(増えていったときに))。慈善レースにでも...。")
 				with open('robo63kashitsuke.pickle', mode='wb') as f:
 					pickle.dump(robo63nokimochi, f)
 				point7 = int(robo63nokimochi) + int(point7)
