@@ -1,4 +1,4 @@
-# Stand　Up　すたーと！！（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
+# 技術者支援スタートアップ！！（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
 2023.10．30(月)11:10 更新いたしました。　kiguurobo63.py kiguurobo63otonashi.py の自動貸し付け時のpointの利子をなくしました。だから安心して遊べます。
 race.py raceotonashi.py にて名前のご入力が繰り返される状態を修正いたしました。ごめんなさい。 kiguutrump.py kiguu2trump.py kiguu3trump.py kiguuAtrump.py kiguuBtrump.py kiguuCtrump.py  絵柄を新たに更新いたしました。
 2023．⒑27(金)(18:03)更新
