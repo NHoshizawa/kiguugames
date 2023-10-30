@@ -404,11 +404,9 @@ y = "y"
 n = "n"
 player = name()
 if answer in y:
-	player = name()
 	a2 = kimari(player)
 	j = sugoroku(a2,player)
 	while "n" == j:
-		player = name()
 		a2 = kimari(player)
 		j == sugoroku(a2,player)
 else:	
@@ -419,3 +417,4 @@ else:
 	#playsound("shuuryoushimasu.mp3")
 print("終了します。どうもありがとうございました。")
 robokashitsuke(player)
+#playsound("2023natsuba.mp3")

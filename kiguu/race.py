@@ -404,11 +404,9 @@ y = "y"
 n = "n"
 player = name()
 if answer in y:
-	player = name()
 	a2 = kimari(player)
 	j = sugoroku(a2,player)
 	while "n" == j:
-		player = name()
 		a2 = kimari(player)
 		j == sugoroku(a2,player)
 else:	
