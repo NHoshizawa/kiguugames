@@ -1,4 +1,5 @@
 # ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
+2023.11.09(木)17:53 raceA.py race2A.py raceAotonashi.py race2Aotonashi.py
 2023.11.09(木)16:54　race.py race2.py raceotonashi.py race2otonashi.py sugoroku.py sugorokuotonashi.py 各々は配当の割合を更新いたしました。
 kiguurobo63.py kiguurobo63otonashi.py point貸し付けの有無の選択を追加更新いたしました
 
