@@ -1,5 +1,6 @@
 # ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
-2023.11.09(木)15:46　kiguurobo63.py kiguurobo63otonashi.py point貸し付けの有無の選択を追加更新いたしました
+2023.11.09(木)16:54　race.py race2.py raceotonashi.py race2otonashi.py sugoroku.py sugorokuotonashi.py 各々は配当の割合を更新いたしました。
+kiguurobo63.py kiguurobo63otonashi.py point貸し付けの有無の選択を追加更新いたしました
 
 2023.10．30(月)11:10 更新いたしました。　kiguurobo63.py kiguurobo63otonashi.py の自動貸し付け時のpointの利子をなくしました。だから安心して遊べます。
 race.py raceotonashi.py にて名前のご入力が繰り返される状態を修正いたしました。ごめんなさい。 kiguutrump.py kiguu2trump.py kiguu3trump.py kiguuAtrump.py kiguuBtrump.py kiguuCtrump.py  絵柄を新たに更新いたしました。
