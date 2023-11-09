@@ -264,15 +264,19 @@ def doubleup(point7,hoyuu):
 			playsound("ending.wav")
 			print("pointは保存されます。")
 			if os.path.exists("./robo63kashitsuke.pickle"):
-					print("robo63だよ。よく我慢できたな、きみをおうえんするよ！！")
-					playsound("2023fallenleaves.wav")
-					with open('robo63.pickle', 'rb') as f:
-						pointrobo63 = pickle.load(f)
+				print("robo63だよ。よく我慢できたな、きみをおうえんするよ！！")
+				playsound("2023fallenleaves.wav")
+				with open('robo63.pickle', 'rb') as f:
+					pointrobo63 = pickle.load(f)
 					robo63nokimochi = int(pointrobo63) * (1/10)
+				print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(出高払い(増えていったとき）)。慈善レースにでも...。")
+				print("お貸し付けを希望いたしますか？")
+				answer = str(input("入力:y/n(その他のキー):"))
+				if answer=="y":
+					print("現在"+str(robo63nokimochi)+"pointsお借り入れいたしました。返済をお待ちしております。")
 					pointrobo63= int(pointrobo63) * (9/10)
 					with open('robo63.pickle', mode='wb') as f:
 						pickle.dump(pointrobo63, f)
-					print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(出高払い(増えていったとき）)。慈善レースにでも...。")
 					with open('robo63kashitsuke' + '.pickle', 'rb') as f:
 						robo63kashitsuke = pickle.load(f)
 					robo63nokimochi=(int(robo63kashitsuke) + int(robo63nokimochi))
@@ -285,28 +289,38 @@ def doubleup(point7,hoyuu):
 					with open('robo63.pickle', mode='wb') as f:
 						pickle.dump(point7, f)
 					return 'e'
+				else:
+					print("robo63様よりお貸し付けはありません。どうもありがとうございます。")
+					return 'e'
 			else:
 				print("robo63だよ。よく我慢できたな、きみの勝利におうえんするよ！！")
 				playsound("2023fallenleaves.wav")
 				with open('robo63.pickle', 'rb') as f:
 					pointrobo63 = pickle.load(f)
-				robo63nokimochi = int(pointrobo63) * (1/10)
-				pointrobo63= int(pointrobo63) * (9/10)
-				with open('robo63.pickle', mode='wb') as f:
-					pickle.dump(pointrobo63, f)
-				print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(すごろくとレース場にて出世払い(増えていったときに)で利子は2%です)。慈善レースにでも...。")
-				with open('robo63kashitsuke.pickle', mode='wb') as f:
-					pickle.dump(robo63nokimochi, f)
-				point7 = int(robo63nokimochi) + int(point7)
-				point7 = int(point7)
+					robo63nokimochi = int(pointrobo63) * (1/10)
+				print(str(robo63nokimochi)+"ポイントを貸し付けてあげるよ(すごろくとレース場にて出世払い(増えていったときに)で利子は0%です)。慈善レースにでも...。")
+				print("お貸し付けを希望いたしますか？")
+				answer = str(input("入力:y/n(その他のキー):"))
+				if answer=="y":
+					print("現在"+str(robo63nokimochi)+"pointsお借り入れいたしました。返済をお待ちしております。")
+					pointrobo63= int(pointrobo63) * (9/10)
+					with open('robo63.pickle', mode='wb') as f:
+						pickle.dump(pointrobo63, f)
+					with open('robo63kashitsuke.pickle', mode='wb') as f:
+						pickle.dump(robo63nokimochi, f)
+					point7 = int(robo63nokimochi) + int(point7)
+					point7 = int(point7)
+					with open(str(file) +'.pickle', mode='wb') as f:
+						pickle.dump(point7, f)
+					return 'e'
+				else:
+					print("yokeina,manewoshitegomennnasai!!shuuryouitashimasu.matanookikaini...。")
+					return 'e'
+		else:
+				print("選択は無効となりpointは保存されます。")
 				with open(str(file) +'.pickle', mode='wb') as f:
 					pickle.dump(point7, f)
-				return 'e'
-		else:
-			print("選択は無効となりpointは保存されます。")
-			with open(str(file) +'.pickle', mode='wb') as f:
-				pickle.dump(point7, f)
-			return 'p'
+				return 'p'			
 def doubleup2(point7,hoyuu):
 	if point7 == 0:
 		with open(str(file) +'.pickle', mode='wb') as f:
@@ -406,13 +420,11 @@ def doubleup2(point7,hoyuu):
 				pointrobo63= int(pointrobo63) * (9/10)
 				with open('robo63.pickle', mode='wb') as f:
 					pickle.dump(pointrobo63, f)
-				print(str(robo63nokimochi)+"ポイントを分けてあげるよ。慈善レースに...。")
+				print(str(robo63nokimochi)+"ポイントを一度だけだけど、分けてあげるよ。慈善レースに...。")
 				point7 = int(robo63nokimochi) + int(point7)
 				point7 = int(point7)
 				with open(str(file) +'.pickle', mode='wb') as f:
 					pickle.dump(point7, f)
-				return 'e'
-			else:
 				return 'e'
 		else:
 			print("選択は無効となりpointはそのままになります。")
