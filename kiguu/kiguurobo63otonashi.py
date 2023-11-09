@@ -290,7 +290,7 @@ def doubleup(point7,hoyuu):
 						pickle.dump(point7, f)
 					return 'e'
 				else:
-					print("robo63様よりお貸し付けはありません。どうもありがとうございます。")
+					print("yokeina,manewoshitegomennnasai!!shuuryouitashimasu.matanookikaini...。")
 					return 'e'
 			else:
 				print("robo63だよ。よく我慢できたな、きみの勝利におうえんするよ！！")
