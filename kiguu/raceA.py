@@ -206,7 +206,7 @@ def bonus(file2,nokori):
 	r = nokori #robo63のみになっている
 	r = int(r)
 	r2 = int(random.randint(1, r))
-	hoyuup = hoyuup2/(r2/4)
+	hoyuup = hoyuup2/(r2/2)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
