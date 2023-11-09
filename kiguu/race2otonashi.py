@@ -213,7 +213,7 @@ def bonus(file2,nokori):
 		hoyuup2 = pickle.load(f)
 	r = nokori #robo63のみになっている
 	r = int(r)
-	hoyuup = hoyuup2/r
+	hoyuup = hoyuup2/(r/4)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
@@ -224,7 +224,7 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	hoyuup = hoyuup2/r
+	hoyuup = hoyuup2/(r*2)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -428,3 +428,4 @@ print("終了します。どうもありがとうございました。www")
 #playsound("DX.wav")
 player = name()
 robokashitsuke(player)
+#playsound("2023natsuba.mp3")
