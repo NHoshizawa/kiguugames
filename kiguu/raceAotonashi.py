@@ -218,7 +218,7 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 	r = nokori9
 	r = int(r)
 	r2 = int(random.randint(1, 2*r))
-	hoyuup = hoyuup2/(r2*2)
+	hoyuup = hoyuup2/(r2)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
