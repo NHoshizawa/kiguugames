@@ -378,6 +378,7 @@ def game(player3):
 		ichiB=player3456(player3,nokori,hoyuuB,hoyuupB,filePlayerB,Benergy,playerB,num7,ichiB,ichiB0,tsnum4,numPLB,numPLB1)
 		ichiC=player3456(player3,nokori,hoyuuC,hoyuupC,filePlayerC,Cenergy,playerC,num9,ichiC,ichiC0,tsnum5,numPLC,numPLC1)
 		ichiD=player3456(player3,nokori,hoyuuD,hoyuupD,filePlayerD,Denergy,playerD,num11,ichiD,ichiD0,tsnum6,numPLD,numPLD1)
+		banmen(player3,ichiABCD)
 		if ichiA==0 or ichiB==0 or ichiC==0 or ichiD==0:
 			break
 def sugoroku(a3,player4):

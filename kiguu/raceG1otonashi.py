@@ -2,10 +2,17 @@ import os
 import random
 import sys
 import pickle
-playerA=str("playerA")
-playerB=str("playerB")
-playerC=str("playerC")
-playerD=str("playerD")
+import pygame
+import time
+from pygame.locals import *
+import sys
+G_SIZE = 75
+G2_SIZE = 90
+SCREEN = Rect(0, 0, 800, 600)   # 画面サイズ
+playerA=str("player1")
+playerB=str("player2")
+playerC=str("player3")
+playerD=str("player4")
 Aenergy=0
 Benergy=0
 Cenergy=0
@@ -22,14 +29,14 @@ ichiA0=0
 ichiB0=0
 ichiC0=0
 ichiD0=0
-filePlayerA=str("playerA")
-filePlayerB=str("playerB")
-filePlayerC=str("playerC")
-filePlayerD=str("playerD")
-playerA1=str("playerA")
-playerB1=str("playerB")
-playerC1=str("playerC")
-playerD1=str("playerD")
+filePlayerA=str("player1")
+filePlayerB=str("player2")
+filePlayerC=str("player3")
+filePlayerD=str("player4")
+playerA1=str("player1")
+playerB1=str("player2")
+playerC1=str("player3")
+playerD1=str("player4")
 numA=0
 numB=0
 ichiABCD=0
@@ -47,7 +54,7 @@ tsnum3 = str("trumpsai3")
 tsnum4 = str("trumpsai4")
 tsnum5 = str("trumpsai5")
 tsnum6 = str("trumpsai6")
-from playsound import playsound
+#from playsound import playsound
 num = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 num2 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 with open(str(tsnum1) +'.pickle', mode='wb') as f:
@@ -131,10 +138,10 @@ def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,pla
 		ABCDenergy = ABCDenergy + hoyuupcharge
 		with open(str(filePlayerABCD) +'.pickle', mode='wb') as f:
 			pickle.dump(ABCDenergy, f) 
-		playsound("owariniitashimasu.mp3")
+		#playsound("owariniitashimasu.mp3")
 		print("Owari Ni Itashi Masu")
-		playsound("race2.wav")
-		playsound("shuuryoushimasu.mp3")
+		#playsound("race2.wav")
+		#playsound("shuuryoushimasu.mp3")
 		print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 		return 0
 	komasuu=int(ichiABCD)
@@ -159,7 +166,7 @@ def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
-			playsound(runnerSE)
+			#playsound(runnerSE)
 			print(runner2)
 			with open(str(tsnumB)+ '.pickle', 'rb') as f:
 				numA1 = pickle.load(f)
@@ -216,7 +223,7 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	hoyuup = hoyuup2/(r*2)
+	hoyuup = hoyuup2/(r/3)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -244,13 +251,70 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 	roboenergy = roboenergy + hoyuupcharge
 	with open(str(filerX) +'.pickle', mode='wb') as f:
 		pickle.dump(roboenergy, f)
+
+class Sprite(pygame.sprite.Sprite):
+ 
+    def __init__(self, filename, xy, vxy, angle=0):
+        x, y = xy
+        vx, vy = vxy
+        pygame.sprite.Sprite.__init__(self)
+        self.image = pygame.image.load(filename).convert_alpha()
+        self.image = pygame.transform.scale(self.image, (G_SIZE, G2_SIZE))
+        if angle != 0: self.image = pygame.transform.rotate(self.image, angle)
+        w = self.image.get_width()
+        h = self.image.get_height()
+        self.rect = Rect(x, y, w, h)
+        self.vx = vx
+        self.vy = vy
+        self.angle = angle
 def banmen(player1,ichiABCD):
-	print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(Robo63_ichi-1) + "Robo63"+"□"*(30-Robo63_ichi)+"Goal!!") #後攻の格差是正
-	print("OYMGSet...Don!!"+"□"*(ichiA-1) + playerA1 +"□"*(30-ichiA)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(ichiB-1) + playerB1 +"□"*(30-ichiB)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(ichiC-1) + playerC1 +"□"*(30-ichiC)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(ichiD-1) + playerD1 +"□"*(30-ichiD)+"Goal!!") 
+	print("画像ウインドウを一度クリックしてエンターキーをゆっくりと一度ずつ押してください")
+	player= ("./"+"kiguu1/"+"I1"+".png")
+	playerA1= ("./"+"kiguu1/"+"R1"+".png")
+	playerB1= ("./"+"kiguu1/"+"p1"+".png")
+	playerC1= ("./"+"kiguu1/"+"p2"+".png")
+	playerD1= ("./"+"kiguu1/"+"p3"+".png")
+	playerE1= ("./"+"kiguu1/"+"p4"+".png")
+	pygame.init()
+	screen = pygame.display.set_mode(SCREEN.size)
+    # スプライトを作成(画像ファイル名, 位置(x, y), 速さ(vx, vy), 回転angle)
+	player1 = Sprite(player,((own_ichi)*20, 000), (0, 0), 0)
+	player2 = Sprite(playerA1,((Robo63_ichi)*20, 100), (0, 0), 0)
+	player3 = Sprite(playerB1,((ichiA)*20, 200), (0, 0), 0)
+	player4 = Sprite(playerC1,((ichiB)*20, 300), (0, 0), 0)
+	player5 = Sprite(playerD1,((ichiC)*20, 400), (0, 0), 0)
+	player6 = Sprite(playerE1,((ichiD)*20, 500), (0, 0), 0)
+    # スプライトグループの作成
+	group = pygame.sprite.RenderUpdates()
+    # スプライトの追加
+	group.add(player1)
+	group.add(player2)
+	group.add(player3)
+	group.add(player4)
+	group.add(player5)
+	group.add(player6)
+	clock = pygame.time.Clock()
+
+	while (1):
+		clock.tick(30)
+		screen.fill((0, 63, 0)) 
+		group.update()
+		group.draw(screen)
+		pygame.display.update()
+		for event in pygame.event.get():
+			if event.type == QUIT:
+				pygame.quit()
+				return 0
+			if event.type == KEYDOWN:
+				if event.key == K_RETURN:
+					pygame.quit()
+					return 0
+	#print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(Robo63_ichi-1) + "Robo63"+"□"*(30-Robo63_ichi)+"Goal!!") #後攻の格差是正
+	#print("OYMGSet...Don!!"+"□"*(ichiA-1) + playerA1 +"□"*(30-ichiA)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(ichiB-1) + playerB1 +"□"*(30-ichiB)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(ichiC-1) + playerC1 +"□"*(30-ichiC)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(ichiD-1) + playerD1 +"□"*(30-ichiD)+"Goal!!") 
 def name():
 	string = """kiguuシリーズで作成済みの名前を入れてください。
 	初めてのご起動の場合はsetup.pyをsugoroku.pyを実行する前に
@@ -311,7 +375,7 @@ def game(player3):
 		global ichiC
 		global ichiD
 		input("Enterを押すと"+player3+"さんサイコロを振れますよ")
-		playsound("sai1.mp3")
+		#playsound("sai1.mp3")
 		global own_ichi
 		r2 = awase(num)
 		detame = awase2(r2,playerSE,player,tsnum1,num2,numA)
@@ -341,14 +405,14 @@ def game(player3):
 			nokoriD = str(30-ichiD)
 			nokoriD=int(nokoriD)
 			bonus(player3,nokoriD)
-			playsound("owariniitashimasu.mp3")
+			#playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
-			playsound("race2.wav")
-			playsound("shuuryoushimasu.mp3")
+			#playsound("race2.wav")
+			#playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
 		input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
-		playsound("sai2.mp3")
+		#playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase(num3)
 		detame2 = awase2(r63,robo63SE,robo63,tsnum2,num4,numB)
@@ -366,10 +430,10 @@ def game(player3):
 		if Robo63_ichi ==30:
 			print("コンピュータ,一着ボーナス獲得")
 			hunobonus(player3,nokori,filerobo63)
-			playsound("owariniitashimasu.mp3")
+			#playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
-			playsound("race2.wav")
-			playsound("shuuryoushimasu.mp3")
+			#playsound("race2.wav")
+			#playsound("shuuryoushimasu.mp3")
 			print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 			break
 		ichiA=player3456(player3,nokori,hoyuuA,hoyuupA,filePlayerA,Aenergy,playerA,num5,ichiA,ichiA0,tsnum3,numPLA,numPLA1)
@@ -386,18 +450,18 @@ def sugoroku(a3,player4):
 		print("すごろく、OYMGSet...Don!!")
 		game(player4)
 	else:
-		playsound("owariniitashimasuka.mp3")
+		#playsound("owariniitashimasuka.mp3")
 		print("Owari Ni Itashi Masuka？")
 		ans = input("Y/N:")
 		if ans == "Y" or ans == "y":
-			playsound("race2.wav")
-			playsound("shuuryoushimasu.mp3")
+			#playsound("race2.wav")
+			#playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。")
 			sys.exit()
 		else:
 			return "n"
 
-playsound("race1.wav")	
+#playsound("race1.wav")	
 answer = input("ゲームを始めますか？ please input(y=yes,n=no) :y or n:")
 y = "y"
 n = "n"
@@ -409,11 +473,11 @@ if answer in y:
 		a2 = kimari(player)
 		j == sugoroku(a2,player)
 else:	
-	playsound("owariniitashimasu.mp3")
+	#playsound("owariniitashimasu.mp3")
 	print("Owari Ni Itashi Masu")
-	playsound("remain.wav")
-	playsound("race2.wav")
-	playsound("shuuryoushimasu.mp3")
+	#playsound("remain.wav")
+	#playsound("race2.wav")
+	#playsound("shuuryoushimasu.mp3")
 print("終了します。どうもありがとうございました。")
 robokashitsuke(player)
-playsound("2023natsuba.mp3")
+#playsound("2023natsuba.mp3")

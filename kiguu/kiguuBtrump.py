@@ -15,6 +15,7 @@ class Sprite(pygame.sprite.Sprite):
 	    self.rect = Rect(x, y, w, h)
 
 def picture(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,c1,s1,h1,d1):
+	print("画像ウインドウを一度クリックしてエンターキーを一度押してお進みください")
 	kigou=["c","s","h","d"]
 	pygame.init
 	c2 = kigou[c1]
@@ -63,7 +64,7 @@ def picture(n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,c1,s1,h1,d1):
 				pygame.quit();
 				return 0
 			elif event.type == KEYDOWN:
-				if event.key == K_ESCAPE: 
+				if event.key == K_RETURN: 
 					pygame.quit();
 					return 0
 num0= [
@@ -427,7 +428,7 @@ def kiguu(file5):
 					playsound("kisuuhazure.wav")
 					print(str(q)+"pointをinputへ気持ちの器量に!!")
 					point = q 
-					#playsound("music0.wav")
+					playsound("music0.wav")
 					with open(str(file5) +'.pickle', mode='wb') as f:
 						pickle.dump(point, f)
 					return 'p'
