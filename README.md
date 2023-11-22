@@ -1,4 +1,5 @@
 (# ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
+2023.11.22(水)17:07　kiguu１フォルダに駒追加　大幅に複数のファイルを更新いたしました。raceG1.py　追加（画像化しました。）その他otonashiファイルも多数、追加あります。
 2023.11.09(木)18:36 raceA.py race2A.py raceAotonashi.py race2Aotonashi.py　の配当の割合を訂正いたしました。
 2023.11.09(木)18:15 raceA.py race2A.py raceAotonashi.py race2Aotonashi.py　の配当の割合を訂正いたしました。(BIGVERSION)
 2023.11.09(木)17:53 raceA.py race2A.py raceAotonashi.py race2Aotonashi.py
