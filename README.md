@@ -13,7 +13,8 @@ trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモ�
 各自PCにてインストールの上、ご査収願います。
 
 ～pygameインストール方法（コマンドプロンプト上にてpythonをインストール後）～
-pip install --upgrade pip
+pip install --upgrade pip 
+注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
 
 pip install pygame
 ～以上導入方法～
