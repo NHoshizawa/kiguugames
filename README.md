@@ -17,7 +17,7 @@ pip install --upgrade pip
 注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
 
 pip install pygame 
-注意　python3.4.3以前のバージョンではpygameのインストールは出来ませんでした。
+注意　python3.6.1より前のバージョンではpygameのインストールは出来ませんでした。
 ～以上導入方法～
 
 リニューアル速報　
