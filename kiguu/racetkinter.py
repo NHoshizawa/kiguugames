@@ -2,7 +2,7 @@ import os
 import random
 import sys
 import pickle
-import pygame
+import tkinter
 import time
 from pygame.locals import *
 import sys
@@ -252,63 +252,51 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 	with open(str(filerX) +'.pickle', mode='wb') as f:
 		pickle.dump(roboenergy, f)
 
-class Sprite(pygame.sprite.Sprite):
- 
-    def __init__(self, filename, xy, vxy, angle=0):
-        x, y = xy
-        vx, vy = vxy
-        pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.image.load(filename).convert_alpha()
-        self.image = pygame.transform.scale(self.image, (G_SIZE, G2_SIZE))
-        if angle != 0: self.image = pygame.transform.rotate(self.image, angle)
-        w = self.image.get_width()
-        h = self.image.get_height()
-        self.rect = Rect(x, y, w, h)
-        self.vx = vx
-        self.vy = vy
-        self.angle = angle
-def banmen(player1,ichiABCD):
-	print("画像ウインドウを一度クリックしてエンターキーをゆっくりと一度ずつ押してください")
-	player= ("./"+"kiguu1/"+"I1"+".png")
-	playerA1= ("./"+"kiguu1/"+"R1"+".png")
-	playerB1= ("./"+"kiguu1/"+"p1"+".png")
-	playerC1= ("./"+"kiguu1/"+"p2"+".png")
-	playerD1= ("./"+"kiguu1/"+"p3"+".png")
-	playerE1= ("./"+"kiguu1/"+"p4"+".png")
-	pygame.init()
-	screen = pygame.display.set_mode(SCREEN.size)
-    # スプライトを作成(画像ファイル名, 位置(x, y), 速さ(vx, vy), 回転angle)
-	player1 = Sprite(player,((own_ichi)*20, 000), (0, 0), 0)
-	player2 = Sprite(playerA1,((Robo63_ichi)*20, 100), (0, 0), 0)
-	player3 = Sprite(playerB1,((ichiA)*20, 200), (0, 0), 0)
-	player4 = Sprite(playerC1,((ichiB)*20, 300), (0, 0), 0)
-	player5 = Sprite(playerD1,((ichiC)*20, 400), (0, 0), 0)
-	player6 = Sprite(playerE1,((ichiD)*20, 500), (0, 0), 0)
-    # スプライトグループの作成
-	group = pygame.sprite.RenderUpdates()
-    # スプライトの追加
-	group.add(player1)
-	group.add(player2)
-	group.add(player3)
-	group.add(player4)
-	group.add(player5)
-	group.add(player6)
-	clock = pygame.time.Clock()
 
-	while (1):
-		clock.tick(30)
-		screen.fill((0, 63, 0)) 
-		group.update()
-		group.draw(screen)
-		pygame.display.update()
-		for event in pygame.event.get():
-			if event.type == QUIT:
-				pygame.quit()
-				return 0
-			if event.type == KEYDOWN:
-				if event.key == K_RETURN:
-					pygame.quit()
-					return 0
+
+def banmen(player1,ichiABCD):
+		print("画像ウインドウの閉じるボタンを確認して閉じるをゆっくりと一度ずつ押してください")
+		chara = [
+			[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+			[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],
+			[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],
+			[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+			[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],
+			[6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],
+			]
+		if __name__ == "__main__":
+			def draw_chara():
+				x=own_ichi
+				x=Robo63_ichi
+				x=ichiA
+				x=ichiB
+				x=ichiC
+				x=ichiD
+				cvs.create_image(x*120+60, y*180+120, image=img_chara[chara[y][x]])
+		root = tkinter.Tk()
+		root.title("kiguuracetkinter")
+		root.resizable(False,False)
+		cvs = tkinter.Canvas(root,width=912, height=768)
+		cvs.pack()
+		bg = tkinter.PhotoImage(file="nori.png")
+		
+		cvs.pack()
+		img_chara = [
+			None,
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"I1"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"R1"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p1"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p2"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p3"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p4"+".png"),
+		]
+		cvs.create_image(456,384, image=bg)
+		draw_chara()
+		root.mainloop()
+		
+ 
+
+
 	#print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
 	#print("OYMGSet...Don!!"+"□"*(Robo63_ichi-1) + "Robo63"+"□"*(30-Robo63_ichi)+"Goal!!") #後攻の格差是正
 	#print("OYMGSet...Don!!"+"□"*(ichiA-1) + playerA1 +"□"*(30-ichiA)+"Goal!!")
