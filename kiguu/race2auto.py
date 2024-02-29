@@ -47,7 +47,7 @@ tsnum3 = str("trumpsai3")
 tsnum4 = str("trumpsai4")
 tsnum5 = str("trumpsai5")
 tsnum6 = str("trumpsai6")
-#from playsound import playsound
+from playsound import playsound
 num = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 num2 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 with open(str(tsnum1) +'.pickle', mode='wb') as f:
@@ -131,10 +131,10 @@ def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,pla
 		ABCDenergy = ABCDenergy + hoyuupcharge
 		with open(str(filePlayerABCD) +'.pickle', mode='wb') as f:
 			pickle.dump(ABCDenergy, f) 
-		#playsound("owariniitashimasu.mp3")
+		playsound("owariniitashimasu.mp3")
 		print("Owari Ni Itashi Masu")
-		#playsound("race2.wav")
-		#playsound("shuuryoushimasu.mp3")
+		playsound("race2.wav")
+		playsound("shuuryoushimasu.mp3")
 		print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 		return 0
 	komasuu=int(ichiABCD)
@@ -155,11 +155,11 @@ def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
-			#playsound(runnerSE)
+			playsound(runnerSE)
 			print(runner2)
 			with open(str(tsnumB)+ '.pickle', 'rb') as f:
 				numA1 = pickle.load(f)
@@ -182,7 +182,7 @@ def awase3(ra,tsnumA,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -213,8 +213,7 @@ def bonus(file2,nokori):
 		hoyuup2 = pickle.load(f)
 	r = nokori #robo63のみになっている
 	r = int(r)
-	r2 = int(random.randint(1, r))
-	hoyuup = hoyuup2/(r2/2)
+	hoyuup = hoyuup2/(r/4)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
@@ -225,8 +224,7 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	r2 = int(random.randint(1, r))
-	hoyuup = hoyuup2/(r2)
+	hoyuup = hoyuup2/(r*2)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -324,8 +322,8 @@ def game(player3):
 		global ichiB
 		global ichiC
 		global ichiD
-		input("Enterを押すと"+player3+"さんサイコロを振れますよ")
-		#playsound("sai1.mp3")
+		#input("Enterを押すと"+player3+"さんサイコロを振れますよ")
+		playsound("sai1.mp3")
 		global own_ichi
 		r2 = awase(num)
 		detame = awase2(r2,playerSE,player,tsnum1,num2,numA)
@@ -355,14 +353,14 @@ def game(player3):
 			nokoriD = str(15-ichiD)
 			nokoriD=int(nokoriD)
 			bonus(player3,nokoriD)
-			#playsound("owariniitashimasu.mp3")
+			playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
-			#playsound("race2.wav")
-			#playsound("shuuryoushimasu.mp3")
+			playsound("race2.wav")
+			playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
-		input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
-		#playsound("sai2.mp3")
+		#input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
+		playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase(num3)
 		detame2 = awase2(r63,robo63SE,robo63,tsnum2,num4,numB)
@@ -380,10 +378,10 @@ def game(player3):
 		if Robo63_ichi ==15:
 			print("コンピュータ,一着ボーナス獲得")
 			hunobonus(player3,nokori,filerobo63)
-			#playsound("owariniitashimasu.mp3")
+			playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
-			#playsound("race2.wav")
-			#playsound("shuuryoushimasu.mp3")
+			playsound("race2.wav")
+			playsound("shuuryoushimasu.mp3")
 			print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 			break
 		ichiA=player3456(player3,nokori,hoyuuA,hoyuupA,filePlayerA,Aenergy,playerA,num5,ichiA,ichiA0,tsnum3,numPLA,numPLA1)
@@ -400,18 +398,18 @@ def sugoroku(a3,player4):
 		print("すごろく、OYMGSet...Don!!")
 		game(player4)
 	else:
-		#playsound("owariniitashimasuka.mp3")
+		playsound("owariniitashimasuka.mp3")
 		print("Owari Ni Itashi Masuka？")
 		ans = input("Y/N:")
 		if ans == "Y" or ans == "y":
-			#playsound("race2.wav")
-			#playsound("shuuryoushimasu.mp3")
+			playsound("race2.wav")
+			playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。")
 			sys.exit()
 		else:
 			return "n"
 
-#playsound("race1.wav")	
+playsound("race1.wav")	
 answer = input("ゲームを始めますか？ please input(y=yes,n=no) :y or n:")
 y = "y"
 n = "n"
@@ -424,13 +422,13 @@ if answer in y:
 		a2 = kimari(player)
 		j == sugoroku(a2,player)
 else:	
-	#playsound("owariniitashimasu.mp3")
+	playsound("owariniitashimasu.mp3")
 	print("Owari Ni Itashi Masu")
-	#playsound("race2.wav")
-	#playsound("shuuryoushimasu.mp3")
-	#playsound("count48.wav")
+	playsound("race2.wav")
+	playsound("shuuryoushimasu.mp3")
+	playsound("count48.wav")
 print("終了します。どうもありがとうございました。www")
-#playsound("DX.wav")
+playsound("DX.wav")
 player = name()
 robokashitsuke(player)
-#playsound("2023natsuba.mp3")
+playsound("2023natsuba.mp3")

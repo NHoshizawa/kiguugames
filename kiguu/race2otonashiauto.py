@@ -155,7 +155,7 @@ def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -182,7 +182,7 @@ def awase3(ra,tsnumA,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -213,8 +213,7 @@ def bonus(file2,nokori):
 		hoyuup2 = pickle.load(f)
 	r = nokori #robo63のみになっている
 	r = int(r)
-	r2 = int(random.randint(1, r))
-	hoyuup = hoyuup2/(r2/2)
+	hoyuup = hoyuup2/(r/4)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
@@ -225,8 +224,7 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	r2 = int(random.randint(1, r))
-	hoyuup = hoyuup2/(r2)
+	hoyuup = hoyuup2/(r*2)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -361,7 +359,7 @@ def game(player3):
 			#playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
-		input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
+		#input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
 		#playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase(num3)

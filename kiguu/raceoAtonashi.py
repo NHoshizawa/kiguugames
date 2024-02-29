@@ -247,12 +247,14 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 	with open(str(filerX) +'.pickle', mode='wb') as f:
 		pickle.dump(roboenergy, f)
 def banmen(player1,ichiABCD):
+	print("_____さぁっ...‼決まるか！？_____")
 	print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
 	print("OYMGSet...Don!!"+"□"*(Robo63_ichi-1) + "Robo63"+"□"*(30-Robo63_ichi)+"Goal!!") #後攻の格差是正
 	print("OYMGSet...Don!!"+"□"*(ichiA-1) + playerA1 +"□"*(30-ichiA)+"Goal!!")
 	print("OYMGSet...Don!!"+"□"*(ichiB-1) + playerB1 +"□"*(30-ichiB)+"Goal!!")
 	print("OYMGSet...Don!!"+"□"*(ichiC-1) + playerC1 +"□"*(30-ichiC)+"Goal!!")
 	print("OYMGSet...Don!!"+"□"*(ichiD-1) + playerD1 +"□"*(30-ichiD)+"Goal!!") 
+	print("__________")
 def name():
 	string = """kiguuシリーズで作成済みの名前を入れてください。
 	初めてのご起動の場合はsetup.pyをsugoroku.pyを実行する前に

@@ -155,7 +155,7 @@ def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -182,7 +182,7 @@ def awase3(ra,tsnumA,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -361,7 +361,7 @@ def game(player3):
 			#playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
-		input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
+		#input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
 		#playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase(num3)
