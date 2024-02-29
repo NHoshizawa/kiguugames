@@ -1,5 +1,7 @@
 この星澤宜嗣による、遊びながらプログラミング習得できるゲーム紹介をします。
 (ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ個人事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
+2024.02.29.16:51 race.py race2.py race2A.py race2Aauto.py race2Aotonashi.py race2Aotonashiauto.py race2auto.py race2otonashi.py race2otonashiauto.py raceA.py raceAauto.py raceAotonashi.py raceAotonashiauto.py raceauto.py raceAotonashi.py raceotonashi.py raceotonashiauto.py すべての見やすく表示性や自動化に改善アップデート致しました。
+どうか宜しくお願い申し上げます。
 2024.02.29.12:10 racekaiotonashi.py　追加いたしました。
 2024.02.22.17:26 racekai.py　追加いたしました。よろしくお願い申し上げます。いつも調子に乗ってすみません。どうもありがとうございます。
 2024.01.15(月)15:31レースG１等のエラー訂正とレース絵柄更新いたしました。
