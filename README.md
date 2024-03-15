@@ -1,6 +1,7 @@
 この星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲーム紹介をします。
 (ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ個人事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
 注意：racekai.py racekaiotonashi.pyはraceauto.py raceotonashiauto.pyにて名前変更と改善を施しました。どうかよろしくお願い申し上げます。
+jankensugoroku.py race2.py等は振りコマ数が足りなくなるとエラー終了してしまいますが今後調整しますんでよろしくお願いします。
 2024.03.15.21:48 jankensugoroku.py, jankensugorokuotonashi.pyを追加いたしました。もしも、おもしろかったらYouTubeチャンネルX(旧Twitter)の登録の程どうかよろしくお願い申し上げます。
 2024.02.29.16:51 race.py race2.py race2A.py race2Aauto.py race2Aotonashi.py race2Aotonashiauto.py race2auto.py race2otonashi.py race2otonashiauto.py raceA.py raceAauto.py raceAotonashi.py raceAotonashiauto.py raceauto.py raceAotonashi.py raceotonashi.py raceotonashiauto.py すべての見やすく表示性や自動化に改善アップデート致しました。
 どうか宜しくお願い申し上げます。
