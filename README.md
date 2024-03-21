@@ -1,7 +1,7 @@
 この星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲーム紹介をします。
 (ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ個人事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
 2024.03.21 18:40 jankensugoroku.py jankensugorokuotonashi.py　の更新をいたしました。
-どうかよろしくお願い申し上げます。ごめんなさいどうもありがとうございます。
+どうかよろしくお願い申し上げます。ごめんなさいいつもどうもありがとうございます。
 注意：racekai.py racekaiotonashi.pyはraceauto.py raceotonashiauto.pyにて名前変更と改善を施しました。どうかよろしくお願い申し上げます。
 jankensugoroku.py race2.py等は振りコマ数が足りなくなるとエラー終了してしまいますが今後調整しますんでよろしくお願いします。2024/3/15/23:11一時的にjankensugoroku.py等を修正しました。
 2024.03.15.21:48 jankensugoroku.py, jankensugorokuotonashi.pyを追加いたしました。もしも、おもしろかったらYouTubeチャンネルX(旧Twitter)の登録の程どうかよろしくお願い申し上げます。
