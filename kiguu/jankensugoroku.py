@@ -17,6 +17,47 @@ num3 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 num4 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 with open(str(ts2) +'.pickle', mode='wb') as f:
 		pickle.dump(num4, f)
+def jankenpon(x):
+	guu=["",
+		 " ＾＾＾＾ ",
+		 " |||||||| ",
+		 " >\\\\\\\\\\\\\\ ",
+		 " <\\\\\\\\\\\\\\ ",
+		 "  \\\\\\\\\\\\ ",
+		 "   \\\\\\\\\\ ",
+		""
+		]
+	choki=["",
+		"\\     \\ ",
+		" \\   \\ ",
+		"  \\ \\ ",
+		"  \\\\^^ ",
+		" ---//\\ ",
+		"\\\\\\\\\\\\\\\\ ",
+		" \\\\\\\\\\\\\\ ",
+		"  \\\\\\\\\\ ",
+		"  \\\\\\"
+	     ]
+	paa=["",
+		"     \\",
+		"   \\ \\ \\ ",
+		" \\ \\ \\ \\ ",
+		" \\ \\ \\ \\  \\",
+		" \\\\\\\\\\\\\\\\ \\  ",
+	  	"\\\\\\\\\\\\\\\\\\\\ ",
+		" \\\\\\\\\\\\\\ ",
+		"  \\\\\\\\\\ ",
+		""
+	    ]
+	if x==0:
+		for o in guu[0:]:
+			print(o)
+	elif x==1:
+		for o in choki[0:]:
+			print(o)
+	elif x==2:
+		for o in paa[0:]:
+			print(o)
 def janken():
 	numJ=[0,1,2]
 	janken=["guu","choki","par"]
@@ -27,8 +68,10 @@ def janken():
 		player=random.choice(numJ)
 		player=int(player)
 		own=int(own)
-		print('own:'+janken[own])
-		print('robo63:'+janken[player])
+		jankenpon(own)
+		print('own:'+janken[own]+'!!')
+		jankenpon(player)
+		print('robo63:'+janken[player]+'..deshita...!!')
 		kachime=player-own
 		kachime=int(kachime)
 		if kachime==0:
@@ -47,8 +90,9 @@ def janken():
 			print('win')
 			return 'p'
 	else:
-		print('終  失笑...。残念またの機会に')
-		sys.exit()
+		print('だし手を外しましたのでwatashi、no、kachitoshimasu..dididi...。anatasamaha,lose to itashimasu...gomennnasai!!')
+		print('lose')
+		return 'e'
 def kiguusecond(noritsugu):
 	num0= [
 		1,-2,3,-4,5,
@@ -136,7 +180,7 @@ def bonus(file2,nokori):
 		hoyuup2 = pickle.load(f)
 	r = nokori
 	r = int(r)
-	hoyuup = hoyuup2/(r/4)
+	hoyuup = hoyuup2/(r)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
@@ -147,7 +191,7 @@ def hunobonus(file9,nokori9):
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	hoyuup = hoyuup2/(r*2)
+	hoyuup = hoyuup2/(r)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -179,7 +223,7 @@ def game(player3):
 		global own_ichi
 		global Robo63_ichi
 		if janken1=='p':
-			input("Enterを押すと"+player3+"さんサイコロを振れますよ")
+			input(player3+"さんEnterを押すとサイコロを振れますよ")
 			playsound("sai1.mp3")
 			r2 = awase()
 			detame = awase2(r2)
@@ -227,7 +271,7 @@ def game(player3):
 				print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 				break
 		else:
-			input("Enterを押すと"+player3+"さんサイコロを振れます。じゃんけんであいこだったから（出た目の2/3)だよ")
+			input(player3+"さんEnterを押すとサイコロを振れます。じゃんけんであいこだったから出た目の2/3だよ")
 			playsound("sai1.mp3")
 			r2 = awase()
 			detame = awase2(r2)
@@ -254,7 +298,7 @@ def game(player3):
 				print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 				break
 		if janken1=='p':
-			input("負けたのでRobo63さんのすごろくが振れません")
+			print("Robo63さんは負けたのですごろくが振れません")
 			r63 = awase3()
 			detame2 = 0
 			print("Robo63さんには、～"+ str(detame2) +"で進めません")
@@ -299,7 +343,7 @@ def game(player3):
 				break
 				
 		elif janken1=='e':
-			input("じゃんけんに勝ったのでEnterを押すとRobo63さんのすごろくが振られます")
+			print("Robo63さんはじゃんけんに勝ったのですごろくが振られます")
 			playsound("sai2.mp3")
 			r63 = awase3()
 			detame2 = awase4(r63)
@@ -344,7 +388,7 @@ def game(player3):
 				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 				break
 		else:
-			input("じゃんけんに引き分けたのでEnterを押すとRobo63さんのすごろくが振られます出た目の(2/3)進む")
+			print("Robo63さんはじゃんけんに引き分けたので、すごろくが振られます出た目の(2/3)susumimasu...dididi...")
 			playsound("sai2.mp3")
 			r63 = awase3()
 			detame2 = awase4(r63)
