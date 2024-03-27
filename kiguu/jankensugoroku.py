@@ -63,6 +63,7 @@ def janken():
 	janken=["guu","choki","par"]
 	own = input("janken :0=guu,1=choki,2=par: input: 0or1or2:")
 	own = str(own)
+	playsound("janken.mp3")
 	if own == '0' or own == '1' or own == '2':
 		print('jannkennponn!?')
 		player=random.choice(numJ)
