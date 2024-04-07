@@ -5,7 +5,7 @@
 2024.03.21 18:40 jankensugoroku.py jankensugorokuotonashi.py　の更新をいたしました。
 どうかよろしくお願い申し上げます。ごめんなさいいつもどうもありがとうございます。
 注意：racekai.py racekaiotonashi.pyはraceauto.py raceotonashiauto.pyにて名前変更と改善を施しました。どうかよろしくお願い申し上げます。
-2024.04.07.16:55 janken.mp3 ピアノ音にて更新いたしました。
+2024.04.07.17:34 janken.mp3 ピアノ音にて再度更新いたしました。
 jankensugoroku.py race2.py等は振りコマ数が足りなくなるとエラー終了してしまいますが今後調整しますんでよろしくお願いします。2024/3/15/23:11一時的にjankensugoroku.py等を修正しました。
 2024.03.15.21:48 jankensugoroku.py, jankensugorokuotonashi.pyを追加いたしました。もしも、おもしろかったらYouTubeチャンネルX(旧Twitter)の登録の程どうかよろしくお願い申し上げます。
 2024.02.29.16:51 race.py race2.py race2A.py race2Aauto.py race2Aotonashi.py race2Aotonashiauto.py race2auto.py race2otonashi.py race2otonashiauto.py raceA.py raceAauto.py raceAotonashi.py raceAotonashiauto.py raceauto.py raceAotonashi.py raceotonashi.py raceotonashiauto.py すべての見やすく表示性や自動化に改善アップデート致しました。
