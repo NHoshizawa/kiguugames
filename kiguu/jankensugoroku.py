@@ -251,7 +251,6 @@ def game(player3):
 		elif janken1=='e':
 			input(player3+"さんはじゃんけんに負けたのでサイコロを振れません")
 			detame = 0
-			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
 			own_ichi = own_ichi + int(detame)
 			nokori = str(30 - own_ichi)
 			nokori = int(nokori)
@@ -302,7 +301,6 @@ def game(player3):
 			print("Robo63さんは負けたのですごろくが振れません")
 			r63 = awase3()
 			detame2 = 0
-			print("Robo63さんには、～"+ str(detame2) +"で進めません")
 			Robo63_ichi = Robo63_ichi + int(detame2)
 			nokori2 = str(30 - Robo63_ichi)
 			nokori2 = int(nokori2)
