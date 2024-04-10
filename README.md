@@ -1,4 +1,5 @@
 この星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲーム紹介をします。
+2024.04.10.14:41 jankensugoroku.py jankensugorokuotonashi.py にてジャンケンに負けた際のすごろくの０の目が出ましたのコメントを削除しました。
 2024.3.27.16:33 jankensugoroku.pyにて、じゃんけんじに掛け声（SE）が追加になりました。janken.mp3 が追加となりました。
 2024.03.25 12:24 jankensugoroku.py jankensugorokuotonashi.pyの点数の倍率を変更いたしました。
 (ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ個人事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
