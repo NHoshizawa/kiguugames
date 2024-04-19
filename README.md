@@ -1,4 +1,6 @@
 この星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明、紹介をします。
+2024.04.19.12:24　sugoroku新バージョン発表。下記
+kiguusugoroku.py kiguusugorokuotonashi.py 追加いたしました。
 2024.04.10.14:41 jankensugoroku.py jankensugorokuotonashi.py にてジャンケンに負けた際のすごろくの０の目が出ましたのコメントを削除しました。
 2024.3.27.16:33 jankensugoroku.pyにて、じゃんけんじに掛け声（SE）が追加になりました。janken.mp3 が追加となりました。
 2024.03.25 12:24 jankensugoroku.py jankensugorokuotonashi.pyの点数の倍率を変更いたしました。
