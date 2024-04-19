@@ -2,7 +2,7 @@
 2024.04.19.12:24　sugoroku新バージョン発表。下記
 kiguusugoroku.py kiguusugorokuotonashi.py 追加いたしました。
 2024.04.10.14:41 jankensugoroku.py jankensugorokuotonashi.py にてジャンケンに負けた際のすごろくの０の目が出ましたのコメントを削除しました。
-2024.3.27.16:33 jankensugoroku.pyにて、じゃんけんじに掛け声（SE）が追加になりました。janken.mp3 が追加となりました。
+2024.3.27.16:33 jankensugoroku.pyにて、じゃんけんじに掛け声〈ピアノ音になりました、感謝謝意〉（SE）が追加になりました。janken.mp3 が追加となりました。
 2024.03.25 12:24 jankensugoroku.py jankensugorokuotonashi.pyの点数の倍率を変更いたしました。
 (ご将来のお仕事に向けた技術者を志す方々へのご支援へのスタートアップ個人事業（IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
 2024.03.21 18:40 jankensugoroku.py jankensugorokuotonashi.py　の更新をいたしました。
