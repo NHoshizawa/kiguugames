@@ -172,9 +172,7 @@ def starts(file1):
 	    with open(str(file1) + '.pickle', 'rb') as f:
 	        hoyuup2 = pickle.load(f)
 	    print("保有ポイントは"+str(hoyuup2)+"です。")
-	    if hoyuup2<=0:
-	    	print("kiguupointを1Point以上お試してからですね、ご自由にご来場なさってくださいね。")
-	    	sys.exit()
+		
 	else:
 		print("kiguuシリーズにてゲームをしてファイルを作成してください。")
 		end = input("何か押してエンターキーを押してください:")
@@ -186,9 +184,9 @@ def bonus(file1,file2,nokori):
 	hoyuup2 = int(hoyuup2)
 	r = nokori
 	r = int(r)
-	kiguurandom = [1,3,5,7,9,11,13]
-	randomnum = random.choice(kiguurandom)
-	hoyuup = hoyuup2/(r/randomnum)
+	#kiguurandom = [1]
+	#randomnum = random.choice(kiguurandom)
+	hoyuup = hoyuup2/r
 	hoyuup = int(hoyuup)
 	with open(str(file1) + '.pickle', 'rb') as f:
 		hoyuup1 = pickle.load(f)
@@ -199,15 +197,15 @@ def bonus(file1,file2,nokori):
 	with open(str(file1) +'.pickle', mode='wb') as f:
 		pickle.dump(points, f)
 	print(file1+"さんには、"+str(hoyuup)+"ボーナスポイントがkiguuのポイントの"+str(hoyuup1)+"ポイントに付加されます。")
-	print("今回における、算出上の配当の倍率＝"+str(randomnum) +"となります。")
+	#print("今回における、算出上の配当の倍率＝"+str(randomnum) +"となります。")
 def hunobonus(file9,nokori9):
 	with open(str(file9) + '.pickle', 'rb') as f:
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	kiguurandom = [2,4,6,8,10,12]
-	randomnum = random.choice(kiguurandom)
-	hoyuup = hoyuup2/(r/randomnum)
+	#kiguurandom = int(1)
+	#randomnum = random.choice(kiguurandom)
+	hoyuup = hoyuup2/r
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -215,7 +213,7 @@ def hunobonus(file9,nokori9):
 	with open(str(filerobo63) +'kanri.pickle', mode='wb') as f:
 		pickle.dump(hoyuup, f)
 	print(file9+"さんには、マイナス"+str(hoyuup)+"ポイントがkiguuのポイントの"+str(hoyuup2)+"ポイントに付加されます。")
-	print("今回における、算出上の配当倍率＝"+str(randomnum)+"となります。")
+	#print("今回における、算出上の配当倍率＝"+str(randomnum)+"となります。")
 def banmen(player1):
 	print("__________________________________________________________________________________")
 	print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
