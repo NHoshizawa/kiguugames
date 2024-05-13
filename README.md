@@ -1,4 +1,5 @@
 この星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明、紹介をいたしますっ！！
+2024.05.13.15:13 kakunin.pyの記述を訂正いたしました。大変申し訳ありません。
 2024.05.13.14:30 kiguusugoroku.py,kiguusugorokuotonashi.py,kakunin.py(マイナス値をゼロにできます！！)更新いたしました。よろしくお願い申し上げます。
 2024.04.19.12:24　sugoroku新バージョン発表。下記
 kiguusugoroku.py kiguusugorokuotonashi.py 追加いたしました。
