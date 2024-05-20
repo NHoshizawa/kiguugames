@@ -12,6 +12,7 @@ def kanri(file1):
 		answer = input("input→y/n?:")
 		answer = str(answer)
 		if answer == "y":
+			print(str(hozon1) + "ポイント保存されております。")
 			print("大変申し訳ございませんでした。pointを０pointに変換します。手続き文言：くんくんくん...、わんっ!!ChannToOmiTouShiDaWan！？")
 			hozon1 = int(0)
 			with open(str(file1) +'.pickle', mode='wb') as f:
@@ -21,10 +22,33 @@ def kanri(file1):
 			end = str(end)
 			if end == end:
 				return 0
+		else:
+			print(str(hozon1) + "ポイント保存されております。")
+			end = input("終了は何かキーを押してエンターキーを押してください:")
+			end = str(end)
+			if end == end:
+				return 0
 	else:
 		print(str(hozon1) + "ポイント保存されております。")
-		end = input("終了は何かキーを押してエンターキーを押してください:")
-		end = str(end)
-		if end == end:
-			return 0
+		print("Think can I reset this points zeropoints? sorry and please.")
+		answer = input("input→y/n?:")
+		answer = str(answer)
+		if answer == "y":
+			print(str(hozon1) + "ポイント保存されております。")
+			print("大変申し訳ございませんでした。pointを０pointに変換します。だるいときは生活習慣が悪くて運動習慣と食事制限早寝早起き足りないからではないかと思ってます。お気をつけください。")
+			hozon1 = int(0)
+			with open(str(file1) +'.pickle', mode='wb') as f:
+				pickle.dump(hozon1, f)
+			print(str(hozon1) + "ポイント保存されております。")
+			end = input("終了は何かキーを押してエンターキーを押してください:")
+			end = str(end)
+			if end == end:
+				return 0
+				print(str(hozon1) + "ポイント保存されております。")
+		else:
+			print(str(hozon1) + "ポイント保存されております。")
+			end = input("終了は何かキーを押してエンターキーを押してください:")
+			end = str(end)
+			if end == end:
+				return 0
 kanri(file)
