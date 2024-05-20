@@ -30,7 +30,7 @@ def kanri(file1):
 				return 0
 	else:
 		print(str(hozon1) + "ポイント保存されております。")
-		print("Think can I reset this points zeropoints? sorry and please.")
+		print("Think can I reset zeropoints this points ? sorry and please.")
 		answer = input("input→y/n?:")
 		answer = str(answer)
 		if answer == "y":
