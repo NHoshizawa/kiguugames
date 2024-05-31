@@ -1,4 +1,5 @@
-この星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明
+ポイントギャンブル風ゲームです。
+星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明
 2024.05.26.14:14 kiguu.py更新　コメント記述付けたしました。
 2024.05.20.15:07 kakunin.pyの記述のthink can I reset zeropoints thispoints.に訂正いたしました。すみませんでした。感謝謝意
 2024.05.20.13:21 kakunin.pyの記述を訂正いたしました。resetが選択できるよう、なりました。
