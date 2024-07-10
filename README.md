@@ -1,5 +1,6 @@
  ギャンブルは生命に危険なので、やめてkiguuフォルダで遊びながらプログラミング開発を学びませんか、どなた様でも自由に安全に豊かなエンジョイライフを送ってください。kiguu遊び集はギャンブルではありませんので安心してチャンネル登録していただけたらなおさら嬉しいです。1人新型トランプポイント制ゲームです。心愛(ココア)?
 星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明
+2024.07.10.22:14 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py の外れあたりの英語表示のコメントを不要なので削除しました。ごめんなさいどうもありがとうございます。
 2024.07.10.20:25 kiguuaaotonashi.py kiguu7kazuawaseotonashi.py のplaysoundモジュールの記述を＃にてコメント化しました。これで、スマートフォン上にて当ファイルをコンパイルできる無料アプリ上にて動きます。遅れましてごめんなさい。どうもありがとうございます。
 2024.07.10.19:41 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py を入荷しました。どうかよろしくお願い申し上げます。otonashi.py系やsetup.pyやkakunin.pyはスマートフォン無料アプリのコマンドプロンプトなどのコンパイルができる簡易的にコードを走らせるようなアプリ上にて動かせます。
 2024.07.02.17:17 kiguu7.pyの倍率の設定とSE（SoundEffect）を追加で更新いたしました。どうかよろしくお願い申し上げます。
