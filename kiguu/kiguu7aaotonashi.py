@@ -2,7 +2,7 @@
 import pickle
 import random
 import os
-from playsound import playsound
+#from playsound import playsound
 import sys
 print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
 file = input("input:")
