@@ -1,13 +1,14 @@
  ギャンブルは生命に危険なので、やめてkiguuフォルダで遊びながらプログラミング開発を学びませんか、どなた様でも自由に安全に豊かなエンジョイライフを送ってください。kiguu遊び集はギャンブルではありませんので安心してチャンネル登録していただけたらなおさら嬉しいです。1人新型トランプポイント制ゲームです。心愛(ココア)?
 星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明
-2024.07.11.21:46 全てのkiguuファイルについてエラーが発生してました(def ru()
+2024.07.11(木).22:41　README.md更新いたしました。
+2024.07.11(木).21:46 全てのkiguuファイルについてエラーが発生してました(def ru()
 ,def du()内のstr(game)のgame変数の定義がされていなかったせいで運用時にエラーで停止してしまう症状が今日確認し、変数の代入をすべてのファイルにおいていたしました、大変ご迷惑をおかけいたしまして、深く、反省と謝罪を申し上げます。修正いたしましてお詫び申し上げます。)
-2024.07.11.15:58 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py を運用時のエラーを修正しました(ru(file6)サブルーチン定義のgameの変数が未定義でした。修正いたしました、いつもご迷惑をおかけしてごめんなさいどうもありがとうございます)。入荷しました。どうかよろしくお願い申し上げます。otonashi.py系やsetup.pyやkakunin.pyはスマートフォン無料アプリのコマンドプロンプトなどのコンパイルができる簡易的にコードを走らせるようなアプリ上にて動かせます。
-2024.07.10.22:30 kiguu7.pyの当たりはずれの英語コメントの表記をわかりやすく訂正しました。ごめんなさいどうもありがとうございます。
-2024.07.10.22:14 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py の外れあたりの英語表示のコメントを不要なので削除しました。ごめんなさいどうもありがとうございます。
-2024.07.10.20:25 kiguuaaotonashi.py kiguu7kazuawaseotonashi.py のplaysoundモジュールの記述を＃にてコメント化しました。これで、スマートフォン上にて当ファイルをコンパイルできる無料アプリ上にて動きます。遅れましてごめんなさい。どうもありがとうございます。
-2024.07.10.19:41 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py を入荷しました。どうかよろしくお願い申し上げます。otonashi.py系やsetup.pyやkakunin.pyはスマートフォン無料アプリのコマンドプロンプトなどのコンパイルができる簡易的にコードを走らせるようなアプリ上にて動かせます。
-2024.07.02.17:17 kiguu7.pyの倍率の設定とSE（SoundEffect）を追加で更新いたしました。どうかよろしくお願い申し上げます。
+2024.07.11（木）.15:58 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py を運用時のエラーを修正しました(ru(file6)サブルーチン定義のgameの変数が未定義でした。修正いたしました、いつもご迷惑をおかけしてごめんなさいどうもありがとうございます)。入荷しました。どうかよろしくお願い申し上げます。otonashi.py系やsetup.pyやkakunin.pyはスマートフォン無料アプリのコマンドプロンプトなどのコンパイルができる簡易的にコードを走らせるようなアプリ上にて動かせます。
+2024.07.10（水）.22:30 kiguu7.pyの当たりはずれの英語コメントの表記をわかりやすく訂正しました。ごめんなさいどうもありがとうございます。
+2024.07.10（水）.22:14 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py の外れあたりの英語表示のコメントを不要なので削除しました。ごめんなさいどうもありがとうございます。
+2024.07.10（水）.20:25 kiguuaaotonashi.py kiguu7kazuawaseotonashi.py のplaysoundモジュールの記述を＃にてコメント化しました。これで、スマートフォン上にて当ファイルをコンパイルできる無料アプリ上にて動きます。遅れましてごめんなさい。どうもありがとうございます。
+2024.07.10（水）.19:41 kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py を入荷しました。どうかよろしくお願い申し上げます。otonashi.py系やsetup.pyやkakunin.pyはスマートフォン無料アプリのコマンドプロンプトなどのコンパイルができる簡易的にコードを走らせるようなアプリ上にて動かせます。
+2024.07.02（火）.17:17 kiguu7.pyの倍率の設定とSE（SoundEffect）を追加で更新いたしました。どうかよろしくお願い申し上げます。
 2024.06.27.22:37 kiguu7.py 追加いたしました。このゲームはスロットゲームです。どうかよろしくお願い申し上げます。
 2024.05.26.14:14 kiguu.py更新　コメント記述付けたしました。
 2024.05.20.15:07 kakunin.pyの記述のthink can I reset zeropoints thispoints.に訂正いたしました。すみませんでした。感謝謝意
