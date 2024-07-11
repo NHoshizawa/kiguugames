@@ -6,40 +6,9 @@
 2023.12.25(月)22:46　kiguuのtkinterの入ったファイル名のimport
  tkinter バージョンを公開いたしました。ご査収願います。
 
->>メリークリスマス。どうもありがとうございます。
-大感謝。すみません。どうか、すべての生き物，
-物体がお元気で幸せにいてください。
-
-2023.11.22(水)17:07　kiguu１フォルダに駒追加　
-大幅に複数のファイルを更新いたしました。
-raceG1.py　追加（画像化しました。）
-その他otonashiファイルも多数、追加あります。
-
-2023.11.09(木)18:36 raceA.py race2A.py raceAotonashi.py 
-race2Aotonashi.py　の配当の割合を訂正いたしました。
-
-2023.11.09(木)18:15 raceA.py race2A.py raceAotonashi.py 
-race2Aotonashi.py　の配当の割合を訂正いたしました。
-(BIGVERSION)
-2023.11.09(木)17:53 raceA.py race2A.py 
-raceAotonashi.py race2Aotonashi.py
-2023.11.09(木)16:54　
-race.py race2.py raceotonashi.py race2otonashi.py 
-sugoroku.py sugorokuotonashi.py 
-各々は配当の割合を更新いたしました。
-
-kiguurobo63.py kiguurobo63otonashi.py 
-point貸し付けの有無の選択を追加更新いたしました
 
 
-2023.10．30(月)11:10 更新いたしました。　
-kiguurobo63.py kiguurobo63otonashi.py の
-自動貸し付け時のpointの利子をなくしました。
-だから安心して遊べます。
-race.py raceotonashi.py にて
-名前のご入力が繰り返される状態を修正いたしました。
-ごめんなさい。 kiguutrump.py kiguu2trump.py kiguu3trump.py
- kiguuAtrump.py kiguuBtrump.py kiguuCtrump.py  
+
 （後書きにも記入がありますが注意）sugoroku.pyやrace.py等を始め
 る際は必ずキャラクター設定用のsetup.pyを必ず実行してください。
 絵柄を新たに更新いたしました。
@@ -81,12 +50,7 @@ the song.wavのファイルは依然作曲に失敗して削除しており存�
 ありませんでした。ご不便をおかけいたしまして。大変申し訳ありませんでした。
 修正いたしましたのでどうかお楽しみくださいませ。
 
-kiguu1.py kiguu2.py kiguuA.py kiguuB.py　kiguu1.py
-kiguuのotonashi
- version多数更新しました（2023.⒑２(月)に更新）
-kiguu1kai.py
- kiguu2.py kiguu3.py にSoundEfectを2bai.wavからDounUPSE.wav(本日追加のSE)
-へ変更いたしました。オリジナル作曲です。よろしくお願い申し上げます。
+
 2023．⒑2(月)15:42現在
 pythonの環境が必要です。
 
@@ -99,12 +63,7 @@ pip install playsound==1.2.2
 の
 コマンドをコピー＆ペーストにてコマンド入力なさってください。
 
-コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダ
-ないのディレクトリより2パターンのゲーム　python kiguuhana.py か　
-python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py
- kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py
-　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）
-　にて実行できます。
+
 point確認については、python hoyuu.py にて確認できます。
 setup.pyをsugoroku.pyをやる前に必ず実行してくださいませ。
 
@@ -122,21 +81,7 @@ sugoroku.py のゲームが追加になりました。
 https://www.youtube.com/@QuantumDevice
 
 随時更新しております
-2023．⒑.2(月曜日更新)．
-kiguurobo63.py kiguurobo63otonashi.py sugorokuotonashi.py 
-3項目作品(pointが反映されずだったことをお詫びいたします。
-修正しました)
-)を追加しました。sugoroku.pyとrace.py等を初めて
-遊ぶ際にはsetup.pyを起動後に遊べます。japan現在
-DX.wav
- race2.py sugoroku.py race.py　kiguunori.py sadmusic.wav
- remain.wav kiguu1.py race.py 
-音楽ファイル更新いたしましたrace.py
-とraceotonashi.py raceotonashi.py race2otonashi.py 
-sugorokuotonashi.pyを新たに追加いたしました。
-sugoroku.pyも以前に更新いたしました。
-
-更新年日時　随時バグ直し更新いたしますので　
+随時バグ直し更新いたしますので　
 これ以前のダウンロードフォルダ内はすべて消去してください、
 どうか申し訳ありませんがよろしくお願い申し上げます。
 
