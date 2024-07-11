@@ -360,6 +360,7 @@ def ru(file6):
 					if number == answer:
 						r = random.randint(0,100)
 						r = int(r)
+						game=int(point8)
 						point8 = int(point8) * r
 						#playsound("2bai.wav")
 						print("値は"+str(points)+"でした。当たり!!" + str(game) + "bet分が"+str(r)+"倍になり、bet point控除後のpointに加算されます")

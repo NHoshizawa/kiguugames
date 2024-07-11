@@ -343,6 +343,7 @@ def du(file6):
 					if number == answer:
 						point8 = int(point8) * 2
 						playsound("2bai.wav")
+						game=int(point8)
 						print("当たり!!" + str(game) + "bet分が2倍になり、bet point控除後のpointに加算されます")
 						print(str(point8) +"pointになります。現在持ちpointはbet分が差し引かれた保有point+(bet point×2)" )
 						print("外れたら運用分は0ポイントになります。")

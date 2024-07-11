@@ -321,7 +321,6 @@ def ru(file6):
 		if answer in y:
 			r2 = random.randint(1,3)
 			r2 = int(r2)
-			
 			point1 = abs(point1) 
 			points = random.randint(0,point7)
 			print("現在の" + str(point7) + "ポイントの3分の"+str(r2)+"より持ちpoint数字内から無作為に選んだの値は")
@@ -359,6 +358,7 @@ def ru(file6):
 					if number == answer:
 						r = random.randint(0,100)
 						r = int(r)
+						game=int(point8)
 						point8 = int(point8) * r
 						#playsound("2bai.wav")
 						print("値は"+str(points)+"でした。当たり!!" + str(game) + "bet分が"+str(r)+"倍になり、bet point控除後のpointに加算されます")

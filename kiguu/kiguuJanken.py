@@ -7,6 +7,7 @@ num0= [
         -6,7,-8,9,-10,
         11,-12,13
         ]
+
 kigou=["クローバー","スペード","ハート","ダイヤ"]
 dpz=0
 i=0
@@ -21,7 +22,34 @@ n = input("偶数0か奇数1か当たればpointを2倍に Let's choice : 0or1 �
 n = str(n)
 print("行動力気持ちの縺れつり合い人生数理意思決定ディール無の境地!!")
 print("kiguu87の数字の読み方愉しみ方。! \9＝’q’uantum or 苦労、8＝破、7=転じて、\６＝無になれる資質、５＝後、4＝資、３＝産、２＝受信、10=おわり\１＝送信、０＝目的や汚(けが)れ、１１＝一方通、\１２＝双方向、１３＝産みを送信,14=資を送信、\１５＝以後、１６＝色、000=おっさん01=老いる\DX=13X")
-
+def janken():
+	numJ=[0,1,2]
+	janken=["guu","choki","par"]
+	own = input("janken :0=guu,1=choki,2=par: input: 0or1or2:")
+	own = str(own)
+	if own == '0' or own == '1' or own == '2':
+		print('jannkennponn!?')
+		player=random.choice(numJ)
+		player=int(player)
+		own=int(own)
+		print('own:'+janken[own])
+		print('player:'+janken[player])
+		kachime=player-own
+		kachime=int(kachime)
+		if kachime==0:
+			print('aiko:even')
+		elif kachime==1 :
+			print('win')
+			
+		elif kachime==2 :
+			print('lose')
+		elif kachime==-1:
+			print('lose')
+		elif kachime==-2:
+			print('win')
+		return 'p'
+	else:
+		return 'e'
 def kanriup(file1):
     with open(str(file1) + 'kanri.pickle', 'rb') as f:
         hozon2 = pickle.load(f)
@@ -447,7 +475,10 @@ def ru(file6):
             with open(str(file6) +'kiguu.pickle', mode='wb') as f:
                 pickle.dump(point1, f)
             return 'p'
+
 answer = kiguu(file)
-while answer == 'p':
+answer2=janken()
+while answer == 'p'and answer2=='p':
     answer = ru(file)
+    
 end(file)
