@@ -353,6 +353,7 @@ def ru(file6):
 						r = random.randint(0,100)
 						r = int(r)
 						point8 = int(point8) * r
+						game=int(point8)
 						playsound("DownUpSE.wav")
 						print("値は"+str(points)+"でした。当たり!!" + str(game) + "bet分が"+str(r)+"倍になり、bet point控除後のpointに加算されます")
 						print(str(point8) +"pointになります。現在持ちpointはbet分が差し引かれた保有point+(bet point×2)" )
