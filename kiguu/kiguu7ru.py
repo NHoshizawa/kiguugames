@@ -121,7 +121,7 @@ def kiguu(i):
 	else:
 		c2=c2
 		return c2
-def ru(file6): #rundom upのruとなります。
+def ru(file6): #random upのruとなります。
     if os.path.exists("./"+str(file6)+"kanri.pickle"): 
         point1 = kanri(file6)
         point8 = kanriup(file6)
