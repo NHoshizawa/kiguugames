@@ -2,7 +2,7 @@
 import pickle
 import random
 import os
-#from playsound import playsound
+from playsound import playsound
 import sys
 print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
 file = input("input:")
@@ -117,7 +117,7 @@ def slottrumpG(file1):
 		print(cardE+cardF+"です")
 		print(cardC+cardD+"です")
 		print(cardA+cardB+"です")
-		#playsound("DownUpSE.wav")
+		playsound("DownUpSE.wav")
 		print("あたり！！")
 		with open(str(file1)+'.pickle', 'rb') as f:
 			hozon1 = pickle.load(f)
@@ -131,7 +131,7 @@ def slottrumpG(file1):
 	
 	elif cardF==cardD:
 		print("あたり！！")
-		#playsound("start2.wav")
+		playsound("start2.wav")
 		with open(str(file1)+'.pickle', 'rb') as f:
 			hozon1 = pickle.load(f)
 			hozon1 = int(hozon1)
@@ -143,7 +143,7 @@ def slottrumpG(file1):
 		return 'e'
 	elif cardD==cardB:
 		print("あたり！！")
-		#playsound("start2.wav")
+		playsound("start2.wav")
 		with open(str(file1)+'.pickle', 'rb') as f:
 			hozon1 = pickle.load(f)
 			hozon1 = int(hozon1)
@@ -155,7 +155,7 @@ def slottrumpG(file1):
 		return 'e'
 	elif cardF==cardB:
 		print("あたり！！")
-		#playsound("start2.wav")
+		playsound("start2.wav")
 		with open(str(file1)+'.pickle', 'rb') as f:
 			hozon1 = pickle.load(f)
 			hozon1 = int(hozon1)
@@ -167,7 +167,7 @@ def slottrumpG(file1):
 		return 'e'
 	else:
 		print("はずれ！！")
-		#playsound("zannenn.wav")
+		playsound("zannenn.wav")
 		with open(str(file1)+'.pickle','rb') as f:
 			hozon1 = pickle.load(f)
 			print("現在は"+str(hozon1)+"です")
@@ -202,7 +202,7 @@ def ru(file6):
 						r = random.randint(0,100)
 						r = int(r)
 						point8 = int(point8) * r
-						#playsound("2bai.wav")
+						playsound("2bai.wav")
 						print("値は"+str(points)+"でした。当たり!!" +str(r)+"倍の"+str(point8)+"pointになりました")
 						print(str(point8) +"pointになりました。持ちpointはbet分が差し引かれた保有point+(bet point×2)")
 						print("外れたら運用分は0ポイントになります。")
@@ -212,7 +212,7 @@ def ru(file6):
 							pickle.dump(point8, f)
 						return 'p'
 					else:
-						#playsound("zannenn.wav")
+						playsound("zannenn.wav")
 						print("値は"+str(points)+"でした。当たりにならず!!")
 						point8 = 0
 						with open(str(file6) +'.pickle', mode='wb') as f:
@@ -227,7 +227,7 @@ def ru(file6):
 						r = int(r)
 						game=int(point8)
 						point8 = int(point8) * r
-						#playsound("2bai.wav")
+						playsound("2bai.wav")
 						print("値は"+str(points)+"でした。当たり!!" + str(game) + "bet分が"+str(r)+"倍になり、bet point控除後のpointに加算されます")
 						print(str(point8) +"pointになります。現在持ちpointはbet分が差し引かれた保有point+(bet point×2)" )
 						print("外れたら運用分は0ポイントになります。")
@@ -237,7 +237,7 @@ def ru(file6):
 							pickle.dump(point8, f)
 						return 'p'
 					else:
-						#playsound("zannenn.wav")
+						playsound("zannenn.wav")
 						print("値は"+str(points)+"でした。当たりにならず!!")
 						point8 = 0
 						with open(str(file6) +'.pickle', mode='wb') as f:
@@ -247,7 +247,7 @@ def ru(file6):
 						print(str(point1)+"pointになります。")
 						return 'e'
 				else:
-					#playsound("even.wav")
+					playsound("even.wav")
 					print("値は"+str(points)+"でした。even!!")
 					point1 = int(point1)
 					with open(str(file6) +'.pickle', mode='wb') as f:
@@ -259,7 +259,7 @@ def ru(file6):
 					pickle.dump(point1, f)
 				return 'p' 
 		elif answer in n:
-			#playsound("ending.wav")
+			playsound("ending.wav")
 			with open(str(file6) + 'kanri.pickle', mode='wb') as f:
 				pickle.dump(point8, f)
 			with open(str(file6) +'.pickle', mode='wb') as f:
@@ -308,7 +308,7 @@ def ru(file6):
 								r = random.randint(0,100)
 								r = int(r)
 								point8 = int(bet) * r
-								#playsound("2bai.wav")
+								playsound("2bai.wav")
 								print("値は"+str(points)+"でした。当たり!!"+ str(bet)+"bet分が"+str(r)+"倍になり持ちポイントは" + str(point8) + "になりました")
 								print("外れたら運用分は0ポイントになります。")
 								with open(str(file6) +'.pickle', mode='wb') as f:
@@ -317,7 +317,7 @@ def ru(file6):
 									pickle.dump(point8, f)
 								return 'p'
 							else:
-								#playsound("sadmusic.wav")
+								playsound("sadmusic.wav")
 								print("値は"+str(points)+"でした。当たりにならず!!") 
 								point8 = 0
 								with open(str(file6) +'.pickle', mode='wb') as f:
@@ -333,7 +333,7 @@ def ru(file6):
 								point8 = int(bet) * r
 								point8 = int(point8)
 								point1 = point1 - int(bet)
-								#playsound("2bai.wav")
+								playsound("2bai.wav")
 								print("値は"+str(points)+"でした。当たり!!"+ str(bet)+"bet分が"+str(r)+"倍になり持ちポイントは" + str(point8) + "になりました")
 								print("外れたら運用分は0ポイントになります。")
 								with open(str(file6) +'.pickle', mode='wb') as f:
@@ -342,7 +342,7 @@ def ru(file6):
 									pickle.dump(point8, f)
 								return 'p'
 							else:
-								#playsound("zannenn.wav")
+								playsound("zannenn.wav")
 								print("値は"+str(points)+"でした。当たりにならず!!")
 								point8 = 0
 								with open(str(file6) +'.pickle', mode='wb') as f:
@@ -352,7 +352,7 @@ def ru(file6):
 								print(str(point1)+"pointになります。")
 								return 'e'
 						else:
-							#playsound("even.wav")
+							playsound("even.wav")
 							print("値は"+str(points)+"でした。even!!")
 							point1 = int(point1)
 							p2 = point1
@@ -365,7 +365,7 @@ def ru(file6):
 							pickle.dump(point1, f)
 						return 'p' 
 		elif answer in n:
-			#playsound("ending.wav")
+			playsound("ending.wav")
 			with open(str(file6) +'.pickle', mode='wb') as f:
 				pickle.dump(point1, f)
 			return 'e'

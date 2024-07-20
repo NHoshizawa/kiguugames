@@ -79,11 +79,17 @@ def hikisuu():
 	num=[0,1,2,3]
 	num2=[0,1,2,3,4,5,6,7,8,9,10,11,12]
 	cardA = random.choice(num)
+	cardA=int(cardA)
 	cardB = random.choice(num2)
+	cardB=int(cardB)
 	cardC = random.choice(num)
+	cardC=int(cardC)
 	cardD = random.choice(num2)
+	cardD=int(cardD)
 	cardE = random.choice(num)
+	cardE=int(cardE)
 	cardF = random.choice(num2)
+	cardF=int(cardF)
 	return cardA,cardB,cardC,cardD,cardE,cardF		
 def kiguu(i):
 	c2 = i
@@ -171,7 +177,7 @@ def slottrumpG(file1):
 			print("獲得なさりましたkiguuポイントにプラスして元のポイントの0.5倍の"+str(point)+"ポイントになりました")
 		with open(str(file1) +'.pickle', mode='wb') as f:
 			pickle.dump(point, f)
-		return 'p'
+		return 'e'
 def ru(file6):
 	if os.path.exists("./"+str(file6)+"kanri.pickle"): 
 		point1 = kanri(file6)
