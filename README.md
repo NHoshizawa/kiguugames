@@ -1,6 +1,7 @@
  ギャンブルは生命と財産に重く危険なので、やめましょうkiguuフォルダで遊びながらプログラミング開発を学びませんか、どなた様でも自由に安全に豊かなエンジョイライフを送ってください。kiguu遊び集はギャンブルではありませんので安心してチャンネル登録していただけたらなおさら嬉しいです。1人新型トランプポイント制ゲームです。心愛(ココア)?
 星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明 
-2024.07.20(土)17:34 kiguu7aa.py kiguu7aaotonashi.py kiguu7kazuawase.py kiguu7kazuawaseotonashi.py のエラー修正をいたしました。毎度ごめんなさいどうもありがとうございます。
+2024.07.22(月)9:45 kiguu7aa.py kiguu7aaotonashi.py kiguu7kazuawase.py kiguu7kazuawaseotonashi.py の再度見直して、エラー修正をいたしました。毎度ごめんなさいどうもありがとうございます。
+2024.07.20(土)17:34 
 2024.07.14(日)18:19 kiguu7up.py 内のコメントのrandomのruの文章にrumdomと間違えてスペルを入力しておりuをaに修正いたしました。ごめんなさいどうもありがとうございます。
 2024.07.14(日)18:08 kiguu7ru.py nyuukaitashimashita.(入荷済み)
 
