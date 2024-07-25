@@ -232,7 +232,7 @@ def kiguu(file5):
 			else:
 				print("kiguu終了")
 				point = 0
-				#playsound("music0.wav")
+				#playsound("music0kai.wav")
 				with open(str(file5) + '.pickle', 'rb') as f:
 					hozon1 = pickle.load(f)
 				point = point + hozon1

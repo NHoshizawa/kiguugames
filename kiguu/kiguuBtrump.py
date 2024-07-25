@@ -296,7 +296,7 @@ def kiguu(file5):
 					print("偶数であたり、2倍に!!")
 					print(str(p1)+"point outputへ気持ちの器量に!!")
 					point = p1
-					playsound("music0.wav")
+					playsound("music0kai.wav")
 					with open(str(file5) + '.pickle', 'rb') as f:
 						hozon1 = pickle.load(f)
 					point = point + hozon1
@@ -308,7 +308,7 @@ def kiguu(file5):
 					playsound("guuhazure.wav")
 					print(str(q)+"pointをoutputへ気持ちの器量に!!")
 					point = q
-					playsound("music0.wav")
+					playsound("music0kai.wav")
 					with open(str(file5) + '.pickle', 'rb') as f:
 						hozon1 = pickle.load(f)
 					point = point + hozon1
@@ -334,7 +334,7 @@ def kiguu(file5):
 					playsound("kisuuhazure.wav")
 					print(str(q)+"pointをinputへ気持ちの器量に!!")
 					point = q 
-					playsound("music0.wav")
+					playsound("music0kai.wav")
 					with open(str(file5) + '.pickle', 'rb') as f:
 						hozon1 = pickle.load(f)
 					point = point + hozon1
@@ -344,7 +344,7 @@ def kiguu(file5):
 			else:
 				print("kiguu終了")
 				point = 0
-				playsound("music0.wav")
+				playsound("music0kai.wav")
 				with open(str(file5) + '.pickle', 'rb') as f:
 					hozon1 = pickle.load(f)
 				point = point + hozon1
@@ -428,14 +428,14 @@ def kiguu(file5):
 					playsound("kisuuhazure.wav")
 					print(str(q)+"pointをinputへ気持ちの器量に!!")
 					point = q 
-					playsound("music0.wav")
+					playsound("music0kai.wav")
 					with open(str(file5) +'.pickle', mode='wb') as f:
 						pickle.dump(point, f)
 					return 'p'
 			else:
 				print("kiguu終了")
 				point = 0
-				playsound("music0.wav")
+				playsound("music0kai.wav")
 				with open(str(file5) + '.pickle', 'rb') as f:
 					hozon1 = pickle.load(f)
 				point = point + hozon1
