@@ -517,7 +517,7 @@ def slottrumpG():
 			with open(str(file)+'.pickle','rb') as f:
 				hozon1 = pickle.load(f)
 				print("現在は"+str(hozon1)+"です")
-				point = point + hozon1*.25
+				point = point + hozon1*0.25
 				print("獲得なさりましたkiguuポイントにプラスして元のポイントの0.25倍の"+str(point)+"ポイントになりました")
 				print("key's return to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
