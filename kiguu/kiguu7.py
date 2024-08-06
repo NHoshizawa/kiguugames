@@ -131,6 +131,74 @@ def slottrumpG():
 				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
+		elif cardE==cardC:
+			print(cardE+cardF+"です")
+			print(cardC+cardD+"です")
+			print(cardA+cardB+"です")
+			print("あたり！！")
+			playsound("start2.wav")
+			print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
+			file = input("input:")
+			with open(str(file)+'.pickle', 'rb') as f:
+				hozon1 = pickle.load(f)
+				hozon1 = int(hozon1)
+				print("現在は"+str(hozon1)+"pointsです。")
+				point = point + hozon1*5
+				print("5倍の"+str(point)+"ポイントになりました")
+				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
+			with open(str(file) +'.pickle', mode='wb') as f:
+				pickle.dump(point, f)
+		elif cardC==cardA:
+			print(cardE+cardF+"です")
+			print(cardC+cardD+"です")
+			print(cardA+cardB+"です")
+			print("あたり！！")
+			playsound("start2.wav")
+			print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
+			file = input("input:")
+			with open(str(file)+'.pickle', 'rb') as f:
+				hozon1 = pickle.load(f)
+				hozon1 = int(hozon1)
+				print("現在は"+str(hozon1)+"pointsです。")
+				point = point + hozon1*5
+				print("5倍の"+str(point)+"ポイントになりました")
+				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
+			with open(str(file) +'.pickle', mode='wb') as f:
+				pickle.dump(point, f)
+		elif cardE==cardA:
+			print(cardE+cardF+"です")
+			print(cardC+cardD+"です")
+			print(cardA+cardB+"です")
+			print("あたり！！")
+			playsound("start2.wav")
+			print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
+			file = input("input:")
+			with open(str(file)+'.pickle', 'rb') as f:
+				hozon1 = pickle.load(f)
+				hozon1 = int(hozon1)
+				print("現在は"+str(hozon1)+"pointsです。")
+				point = point + hozon1*5
+				print("5倍の"+str(point)+"ポイントになりました")
+				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
+			with open(str(file) +'.pickle', mode='wb') as f:
+				pickle.dump(point, f)
+		elif cardE==cardC==cardA:
+			print(cardE+cardF+"です")
+			print(cardC+cardD+"です")
+			print(cardA+cardB+"です")
+			print("あたり！！")
+			playsound("start2.wav")
+			print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
+			file = input("input:")
+			with open(str(file)+'.pickle', 'rb') as f:
+				hozon1 = pickle.load(f)
+				hozon1 = int(hozon1)
+				print("現在は"+str(hozon1)+"pointsです。")
+				point = point + hozon1*150
+				print("150倍の"+str(point)+"ポイントになりました")
+				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
+			with open(str(file) +'.pickle', mode='wb') as f:
+				pickle.dump(point, f)
 		else:
 			print(cardE+cardF+"です")
 			print(cardC+cardD+"です")
@@ -142,7 +210,8 @@ def slottrumpG():
 			with open(str(file)+'.pickle','rb') as f:
 				hozon1 = pickle.load(f)
 				print("現在は"+str(hozon1)+"です")
-				point = point + hozon1*0.5
+				point = point + hozon1*(1/3)
+				point=int(point)
 				print("獲得なさりましたkiguuポイントにプラスして元のポイントの0.5倍の"+str(point)+"ポイントになりました")
 				print("key's return to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:

@@ -2,7 +2,7 @@
 import pickle
 import random
 import os
-#from playsound import playsound
+#from #playsound import #playsound
 import sys
 print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
 file = input("input:")
@@ -79,7 +79,7 @@ def end(file4):
 			sys.exit()
 def hikisuu():
 	num=[0,1,2,3]
-	num2=[0,1,2,3,4,5,6,7,8,9,10,11,12]
+	num2=[0,1,2,3,4,5,6,7,8,9,10,11,12,]
 	cardA = random.choice(num)
 	cardA=int(cardA)
 	cardB = random.choice(num2)
@@ -169,17 +169,66 @@ def slottrumpG(file1):
 		with open(str(file1) +'.pickle', mode='wb') as f:
 			pickle.dump(point, f)
 		return 'p'
+	elif cardE==cardC:
+		print("あたり！！")
+		#playsound("start2.wav")
+		with open(str(file1)+'.pickle', 'rb') as f:
+			hozon1 = pickle.load(f)
+			hozon1 = int(hozon1)
+			print("現在は"+str(hozon1)+"pointsです。")
+			point = point + hozon1*5
+			print("5倍の"+str(point)+"ポイントになりました")
+		with open(str(file1) +'.pickle', mode='wb') as f:
+			pickle.dump(point, f)
+		return 'p'
+	elif cardC==cardA:
+		print("あたり！！")
+		#playsound("start2.wav")
+		with open(str(file1)+'.pickle', 'rb') as f:
+			hozon1 = pickle.load(f)
+			hozon1 = int(hozon1)
+			print("現在は"+str(hozon1)+"pointsです。")
+			point = point + hozon1*5
+			print("5倍の"+str(point)+"ポイントになりました")
+		with open(str(file1) +'.pickle', mode='wb') as f:
+			pickle.dump(point, f)
+		return 'p'
+	elif cardE==cardA:
+		print("あたり！！")
+		#playsound("start2.wav")
+		with open(str(file1)+'.pickle', 'rb') as f:
+			hozon1 = pickle.load(f)
+			hozon1 = int(hozon1)
+			print("現在は"+str(hozon1)+"pointsです。")
+			point = point + hozon1*5
+			print("5倍の"+str(point)+"ポイントになりました")
+		with open(str(file1) +'.pickle', mode='wb') as f:
+			pickle.dump(point, f)
+		return 'p'
+	elif cardE==cardC==cardA:
+		print("あたり！！")
+		#playsound("start2.wav")
+		with open(str(file1)+'.pickle', 'rb') as f:
+			hozon1 = pickle.load(f)
+			hozon1 = int(hozon1)
+			print("現在は"+str(hozon1)+"pointsです。")
+			point = point + hozon1*150
+			print("150倍の"+str(point)+"ポイントになりました")
+		with open(str(file1) +'.pickle', mode='wb') as f:
+			pickle.dump(point, f)
+		return 'p'
 	else:
 		print("はずれ！！")
 		#playsound("zannenn.wav")
 		with open(str(file1)+'.pickle','rb') as f:
 			hozon1 = pickle.load(f)
 			print("現在は"+str(hozon1)+"です")
-			point = point + hozon1*0.5
+			point = point + hozon1*(1/3)
+			point=int(point)
 			print("獲得なさりましたkiguuポイントにプラスして元のポイントの0.5倍の"+str(point)+"ポイントになりました")
 		with open(str(file1) +'.pickle', mode='wb') as f:
 			pickle.dump(point, f)
-		return 'e'
+		return 'p'
 def ru(file6):
 	if os.path.exists("./"+str(file6)+"kanri.pickle"): 
 		point1 = kanri(file6)
