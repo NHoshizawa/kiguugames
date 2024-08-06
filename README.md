@@ -1,12 +1,13 @@
  投資やギャンブルは社会生活と生命と財産にビギナーズラックで長期において重体な危険がありますので、やめましょうkiguuフォルダで涼しく遊びながらプログラミング開発を学びませんか、どなた様でも自由に安全に豊かなエンジョイライフを送ってください。kiguu遊び集はギャンブルではありませんので安心してチャンネル登録していただけたらなおさら嬉しいです。1人新型トランプポイント制ゲームです。
 星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明 
+2024.08.06(火)11:28　kiguu7aa.py,kiguu7aaotonashi.py,kiguu7kazuawase.py, kiguu7kazuawaseotonashi.py kiguu7ruA.py kiguu7ruAotonashi.py　 kiguu7ru.pyのそれぞれを最新バージョンへ更新いたしました。再度上書きの程、ご査収ください
 2024.08.01(木)11:35 kiguujanken. pyをkiguunhフォルダに追加いたしました。のちにkiguuJanken.pyからkiguujanken.pyにファイル名をｊ(小文字)になおしました。
 2024.08.01(木)10:15　kiguu7ruA.py kiguu7ruAotonashi.pyのハズレ時の消費ポイントの倍率の調整をいたしました。上書き保存お願いいたします。感謝謝意...。
 2024.07.31(水)16:46　kiguu7ruA.py kiguu7ruAotonashi.pyを追加しました。どうかご査収願います。どうもありがとうございます。ごめんなさい,感謝謝意...。
 2024.07.25(木)16:56 kiguuの全てのファイル内のサウンドエフェクト上のmusic0.wavをmusic0kai.wavにソースコードの置換をいたしました。どうもありがとうございますごめんなさいそしてmusic0kai.wavファイルを追加いたしました。
 2024.07.22(月)9:45 kiguu7aa.py kiguu7aaotonashi.py kiguu7kazuawase.py kiguu7kazuawaseotonashi.py の再度見直して、エラー修正をいたしました。毎度ごめんなさいどうもありがとうございます。
 2024.07.20(土)17:34 
-2024.07.14(日)18:19 kiguu7up.py 内のコメントのrandomのruの文章にrumdomと間違えてスペルを入力しておりuをaに修正いたしました。ごめんなさいどうもありがとうございます。
+2024.07.14(日)18:19 kiguu7ru.py 内のコメントのrandomのruの文章にrumdomと間違えてスペルを入力しておりuをaに修正いたしました。ファイル名のruはrandom upのruです。ごめんなさいどうもありがとうございます。
 2024.07.14(日)18:08 kiguu7ru.py nyuukaitashimashita.(入荷済み)
 
 2024.07.11(木).22:47　kiguunhフォルダ入荷いたしました。（otonashiすべて集めました今後も加えたり更新があります。スマートフォン用のコマンドプロンプトが起動できるアプリにてcd kiguunh 
