@@ -186,9 +186,9 @@ def jackpodP(file2,com2):
 def missingpoints(file9,own):
 	with open(str(file9) + '.pickle', 'rb') as f:
 		hoyuup2 = pickle.load(f)
-	r = own
+	r = nokori9
 	r = int(r)
-	hoyuup = hoyuup2-(hoyuup2/own)
+	hoyuup = hoyuup2/r
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
