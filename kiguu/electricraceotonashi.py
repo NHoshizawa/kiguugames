@@ -61,7 +61,7 @@ def jankenpon(x):
 def janken():
 	numJ=[0,1,2]
 	janken=["guu","choki","par"]
-	own = r = random.choice(numJ)
+	own = random.choice(numJ)
 	own = str(own)
 	if own == '0' or own == '1' or own == '2':
 		player=random.choice(numJ)
