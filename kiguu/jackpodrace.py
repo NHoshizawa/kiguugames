@@ -24,12 +24,12 @@ def jackpodG(file2):
 	own = int(own)
 	if own == com:
 	 	print("jackpod!!"+ str(com) +"deshita笑いomedetougozaimasu!!")
-	 	input("push any key:")
 	 	jackpodP(file2,com)
+	 	input("push any key:")
 	else:
 		print("missing Points" + str(com) +"deshita苦笑い")
-		input("push any key:")
 		missingpoints(file2,own)
+		input("push any key:")
 	 	
 def jankenpon(x):
 	guu=["",
@@ -188,7 +188,7 @@ def missingpoints(file9,own):
 		hoyuup2 = pickle.load(f)
 	r = own
 	r = int(r)
-	hoyuup = hoyuup2-(hoyuup2/own)
+	hoyuup = hoyuup2/r
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
