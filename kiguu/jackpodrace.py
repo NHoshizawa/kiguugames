@@ -28,7 +28,7 @@ def jackpodG(file2):
 	 	input("push any key:")
 	else:
 		print("missing Points" + str(com) +"deshita苦笑い")
-		missingpoints(file2,own)
+		missingpoints(file2,com)
 		input("push any key:")
 	 	
 def jankenpon(x):
@@ -183,10 +183,10 @@ def jackpodP(file2,com2):
 	with open(str(file2) +'.pickle', mode='wb') as f:
 		pickle.dump(points, f)
 	print(file2+"さんには、"+str(hoyuup)+"ボーナスポイントがkiguuのポイントの"+str(hoyuup2)+"ポイントに付加されます。")
-def missingpoints(file9,own):
+def missingpoints(file9,own1):
 	with open(str(file9) + '.pickle', 'rb') as f:
 		hoyuup2 = pickle.load(f)
-	r = own
+	r = own1
 	r = int(r)
 	hoyuup = hoyuup2/r
 	hoyuup = int(hoyuup)
