@@ -1,5 +1,6 @@
 aitenisarezu,ShuushokukatsudouhashiteorimasenyoroshikuonagaishimasuJyarona.kiguu開発者の僕は秩序の平和学習開発環境(哲学)を日々願っておりますだから売買目的投資や投機、ギャンブルは社会生活と生命と財産にビギナーズラックで長期において重体な危険がありますので、嘘はやめましょう。kiguuフォルダで涼しく遊びながら個人でアプリ開発など就職など、プログラミング開発を学びませんか、どなた様でも自由に安全に豊かなエンジョイライフを送ってください。kiguu遊び集はギャンブルではありませんので安心あしてチャンネル登録していただけたらなおさら嬉しいです。1人新型トランプポイント制ゲームです。
 星澤宜嗣(NoritsuguHoshizawa)による、遊びながらプログラミング習得できるゲームkiguuフォルダの説明 
+2024.10.29(火)21:07 jackpodraceotonashi.pyの盤面表示を確認しやすくなりました。ごめんなさいどうもありがとうございます。😊😤😱U^ェ^U
 2024.10.29(火)18:24 electricraceotonashi.py の盤面表示を見やすく改善させていただきました。感謝謝意どうもありがとうございますごめんなさい🙇🙏😤😱U^ェ^U
 2024.10.29(火)15:35 electricrace.py　electricraceotonashi.py のゲームバランス（レースの勝敗の逆転性）を調整いたしました。
 2024.10:17(木)15:00jackpodrace.py jackpodraceotonashi.pyをmissingP()の定義に再び不具合があったので改善いたしました。ごめんなさいどうもありがとうございます。
