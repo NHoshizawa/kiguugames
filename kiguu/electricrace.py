@@ -9,12 +9,13 @@ NoritsuguH = str("shuuekiP")
 ts1 = str("trumpsai")
 ts2 = str("trumpsai2")
 from playsound import playsound
-num = [1,2,3,4,5,6,7,8,9,10,11,12,13]
-num2 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+num2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 with open(str(ts1) +'.pickle', mode='wb') as f:
 		pickle.dump(num2, f)
-num3 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
-num4 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
+num3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+num4 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+num6 = [1,1/2,3/4]
 with open(str(ts2) +'.pickle', mode='wb') as f:
 		pickle.dump(num4, f)
 def jankenpon(x):
@@ -208,7 +209,8 @@ def game(player3):
 		if janken1=='p':
 			input(player3+"さんEnterを押すとサイコロを振れますよ")
 			r2 = awase()
-			detame = awase2(r2)
+			numq = random.choice(num6)
+			detame = awase2(r2)*int(numq)
 			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
 			own_ichi = own_ichi + int(detame)
 			nokori = str(30 - own_ichi)
@@ -324,7 +326,8 @@ def game(player3):
 		elif janken1=='e':
 			print("Robo63さんはじゃんけんに勝ったのですごろくが振られます")
 			r63 = awase3()
-			detame2 = awase4(r63)
+			numq = random.choice(num6)
+			detame2 = awase4(r63)*int(numq)
 			print("Robo63さんには、～"+ str(detame2) +"～の目が出ました")
 			Robo63_ichi = Robo63_ichi + int(detame2)
 			nokori2 = str(30 - Robo63_ichi)
