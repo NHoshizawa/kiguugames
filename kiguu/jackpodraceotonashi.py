@@ -260,6 +260,7 @@ def game(player3):
 			if own_ichi > 30:
 				own_ichi = 30
 			banmen(player3)
+			input("push anykey")
 			if own_ichi == 30:
 				print(player3+"一着ボーナス獲得！")
 				bonus(player3,nokori2)
@@ -282,6 +283,7 @@ def game(player3):
 			if own_ichi > 30:
 				own_ichi = 30
 			banmen(player3)
+			input("push anykey")
 			if own_ichi == 30:
 				print(player3+"一着ボーナス獲得！")
 				bonus(player3,nokori2)
@@ -309,6 +311,7 @@ def game(player3):
 			if own_ichi > 30:
 				own_ichi = 30
 			banmen(player3)
+			input("push anykey")
 			if own_ichi == 30:
 				print(player3+"一着ボーナス獲得！")
 				bonus(player3,nokori2)
@@ -332,6 +335,7 @@ def game(player3):
 			if Robo63_ichi > 30:
 				Robo63_ichi = 30
 			banmen(player3)
+			input("push anykey")
 			if Robo63_ichi ==30:
 				print("コンピュータ,一着ボーナス獲得")
 				hunobonus(player3,nokori)
@@ -377,6 +381,7 @@ def game(player3):
 			if Robo63_ichi > 30:
 				Robo63_ichi = 30
 			banmen(player3)
+			input("push anykey")
 			if Robo63_ichi ==30:
 				print("コンピュータ,一着ボーナス獲得")
 				hunobonus(player3,nokori)
@@ -423,6 +428,7 @@ def game(player3):
 			if Robo63_ichi > 30:
 				Robo63_ichi = 30
 			banmen(player3)
+			input("push anykey")
 			if Robo63_ichi ==30:
 				print("コンピュータ,一着ボーナス獲得")
 				hunobonus(player3,nokori)
@@ -497,6 +503,7 @@ def sugoroku(a3,player4):
 	if a3 == "Y" or a3 == "y":
 		print(player4+"さんで決まりました")
 		banmen(player4)
+		input("push anykey")
 		print("すごろく、OYMGSet...Don!!")
 		game(player4)
 	else:
