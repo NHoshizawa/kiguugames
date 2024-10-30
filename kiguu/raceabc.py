@@ -373,7 +373,7 @@ def game(player3):
 		if Robo63_ichi > 30:
 			Robo63_ichi = 30
 		banmen(player3,ichiABCD)
-		if Robo63_ichi ==30:
+		if Robo63_ichi == 30:
 			print("コンピュータ,一着ボーナス獲得")
 			hunobonus(player3,nokori,filerobo63)
 			playsound("owariniitashimasu.mp3")
@@ -387,8 +387,6 @@ def game(player3):
 		ichiC=player3456(player3,nokori,hoyuuC,hoyuupC,filePlayerC,Cenergy,playerC,num9,ichiC,ichiC0,tsnum5,numPLC,numPLC1)
 		ichiD=player3456(player3,nokori,hoyuuD,hoyuupD,filePlayerD,Denergy,playerD,num11,ichiD,ichiD0,tsnum6,numPLD,numPLD1)
 		banmen(player3,ichiABCD)
-		if ichiA==0 or ichiB==0 or ichiC==0 or ichiD==0:
-			break
 def sugoroku(a3,player4):
 	if a3 == "Y" or a3 == "y":
 		print(player4+"さんで決まりました")
