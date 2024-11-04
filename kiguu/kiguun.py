@@ -35,81 +35,81 @@ def kanri(file2):
     return hozon1
     
 def kanri2(file3):
-    print("現在の保有ポイント合計は...")
-    with open(str(file3) + '.pickle', 'rb') as f:
-        hozon1 = pickle.load(f)
-    hozon1 = int(hozon1)
-    total = int(point)
-    print("合計で" + str(total) + "ポイントです")
+	print("現在の保有ポイント合計は...")
+	with open(str(file3) + '.pickle', 'rb') as f:
+		hozon1 = pickle.load(f)
+	hozon1 = int(hozon1)
+	total = int(point)
+	print("合計で" + str(total) + "ポイントです")
 
 def end(file4):
-    if os.path.exists("./"+str(file4)+"kanri.pickle"): 
-        with open(str(file4) + 'kanri.pickle', 'rb') as f:
-            hozon2 = pickle.load(f)
-        hozon2 = int(hozon2)
-        with open(str(file4) + 'kiguu.pickle', 'rb') as f:
-            hozon1 = pickle.load(f)
-        hozon1 = int(hozon1)
-        hoyuup = hozon2 + hozon1
-        hoyuup = int(hoyuup)
-        if os.path.exists("./"+str(file4)+".pickle"):
-            with open(str(file4) + '.pickle', 'rb') as f:
-            	hoyuup2 = pickle.load(f)
-            hoyuup2 = int(hoyuup2) + hoyuup
-            with open(str(file4) +'.pickle', mode='wb') as f:
-            	pickle.dump(hoyuup2, f)
-            with open(str(file4) + '.pickle', 'rb') as f:
-            	hoyuup2 = pickle.load(f)
-            hoyuup2=int(hoyuup2)
-            print("保有ポイントは"+str(hoyuup2)+"です。")
-            os.remove("./"+str(file4)+"kanri.pickle")
-            end = input("何か押してエンターキーを押してください:")
-            if end == end:
-            	print("終了します")
-            	sys.exit()
-        else:
-            with open(str(file4) +'.pickle', mode='wb') as f:
-            	pickle.dump(hoyuup, f)
-            with open(str(file4) + '.pickle', 'rb') as f:
-            	hoyuup = pickle.load(f)
-            hoyuup = int(hoyuup)
-            print("保有ポイントは"+str(hoyuup)+"です。")
-            os.remove("./"+str(file4)+"kanri.pickle")
-            end = input("何か押してエンターキーを押してください:")
-            if end == end:
-            	print("終了します")
-            	sys.exit()
-    else:
-        with open(str(file4) + 'kiguu.pickle', 'rb') as f:
-            hozon1 = pickle.load(f)
-        hoyuup= int(hozon1)
-        if os.path.exists("./"+str(file4)+".pickle"):
-        	with open(str(file4) + '.pickle', 'rb') as f:
-        		hoyuup2 = pickle.load(f)
-        	hoyuup3 = int(hoyuup2) + hoyuup
-        	with open(str(file4) +'.pickle', mode='wb') as f:
-        		pickle.dump(hoyuup2, f)
-        	with open(str(file4) + 'kiguu.pickle', 'rb') as f:
-            	hoyuup3 = pickle.load(f)
-            hoyuup3 = int(hoyuup3)
-            hoyuup4 = hoyuup2+hoyuup3
-            print("保有ポイントは"+str(hoyuup4)+"です。")
-            end = input("何か押してエンターキーを押してください:")
-            if end == end:
-            	print("終了します")
-            	sys.exit()
+	if os.path.exists("./"+str(file4)+"kanri.pickle"): 
+		with open(str(file4) + 'kanri.pickle', 'rb') as f:
+			hozon2 = pickle.load(f)
+		hozon2 = int(hozon2)
+		with open(str(file4) + 'kiguu.pickle', 'rb') as f:
+			hozon1 = pickle.load(f)
+		hozon1 = int(hozon1)
+		hoyuup = hozon2 + hozon1
+		hoyuup = int(hoyuup)
+		if os.path.exists("./"+str(file4)+".pickle"):
+			with open(str(file4) + '.pickle', 'rb') as f:
+				hoyuup2 = pickle.load(f)
+			hoyuup2 = int(hoyuup2) + hoyuup
+			with open(str(file4) +'.pickle', mode='wb') as f:
+				pickle.dump(hoyuup2, f)
+			with open(str(file4) + '.pickle', 'rb') as f:
+				hoyuup2 = pickle.load(f)
+			hoyuup2=int(hoyuup2)
+			print("保有ポイントは"+str(hoyuup2)+"です。")
+			os.remove("./"+str(file4)+"kanri.pickle")
+			end = input("何か押してエンターキーを押してください:")
+			if end == end:
+				print("終了します")
+				sys.exit()
+		else:
+			with open(str(file4) +'.pickle', mode='wb') as f:
+				pickle.dump(hoyuup, f)
+			with open(str(file4) + '.pickle', 'rb') as f:
+				hoyuup = pickle.load(f)
+			hoyuup = int(hoyuup)
+			print("保有ポイントは"+str(hoyuup)+"です。")
+			os.remove("./"+str(file4)+"kanri.pickle")
+			end = input("何か押してエンターキーを押してください:")
+			if end == end:
+				print("終了します")
+				sys.exit()
+	else:
+		with open(str(file4) + 'kiguu.pickle', 'rb') as f:
+			hozon1 = pickle.load(f)
+		hoyuup= int(hozon1)
+		if os.path.exists("./"+str(file4)+".pickle"):
+			with open(str(file4) + '.pickle', 'rb') as f:
+				hoyuup2 = pickle.load(f)
+				hoyuup3 = int(hoyuup2) + hoyuup
+			with open(str(file4) +'.pickle', mode='wb') as f:
+				pickle.dump(hoyuup2, f)
+			with open(str(file4) + 'kiguu.pickle', 'rb') as f:
+				hoyuup3 = pickle.load(f)
+			hoyuup3 = int(hoyuup3)
+			hoyuup4 = hoyuup2+hoyuup3
+			print("保有ポイントは"+str(hoyuup4)+"です。")
+			end = input("何か押してエンターキーを押してください:")
+		if end == end:
+			print("終了します")
+			sys.exit()
 		else:
 			kanri2(file4)
-            end = input("何か押してエンターキーを押してください:")
-            if end == end:
-            	print("終了します")
-            	sys.exit()
+			end = input("何か押してエンターキーを押してください:")
+		if end == end:
+			print("終了します")
+			sys.exit()
 
 def picture(i1,q1):
-    np=["A ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 ","10","J ","Q ","K "]
-    a1=np[i1]
-    c1=kigou[q1]
-    xy=["",
+	np=["A ","2 ","3 ","4 ","5 ","6 ","7 ","8 ","9 ","10","J ","Q ","K "]
+	a1=np[i1]
+	c1=kigou[q1]
+	xy=["",
         "----------",
         "|        |",
              a1     ,
@@ -122,8 +122,8 @@ def picture(i1,q1):
         ""
         ]
         
-    for o in xy[0:]:
-        print(o)
+	for o in xy[0:]:
+		print(o)
         
 def tensuu(i):
     num= [
