@@ -103,7 +103,7 @@ def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,pla
 	ichiABCD = ichiABCD + int(detame2)
 	nokori2 = str(30 - ichiABCD)
 	nokori2 = int(nokori2)
-	if nokori2 > 0 or nokori2 == 0:
+	if nokori2 > 0:
 		print("あと残り～"+str(nokori2)+"～こまです")
 	else:
 		print(playerABCD1+",Goal!!しました")
@@ -328,7 +328,7 @@ def game(player3):
 		own_ichi = own_ichi + int(detame)
 		nokori = str(30 - own_ichi)
 		nokori = int(nokori)
-		if nokori >0 or nokori == 0:
+		if nokori >0:
 			print("あと残り～"+str(nokori)+"～こまです")
 		else:
 			print("Goal!!しました")
@@ -366,7 +366,7 @@ def game(player3):
 		Robo63_ichi = Robo63_ichi + int(detame2)
 		nokori2 = str(30 - Robo63_ichi)
 		nokori2 = int(nokori2)
-		if nokori2 >0 or nokori2==0:
+		if nokori2 >0:
 			print("あと残り～"+ str(nokori2) +"～こまです")
 		else:
 			print("Goal!!しました")
