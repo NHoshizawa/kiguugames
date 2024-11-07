@@ -146,7 +146,12 @@ def awase(numC):
 	numC.remove(r)
 	numC = numC
 	r = str(r)
-	return r
+	print("配列のあまりの体力は " + str(len(numC)) + " です。")
+	if(int(len(numC))==0):
+		print("体力は０になりましてレースを終了いたします。")
+		sys.exit()
+	else:
+		return r
 def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 	count = 0
 	with open(str(tsnumB)+ '.pickle', 'rb') as f:
@@ -314,6 +319,7 @@ def robokashitsuke(name):
 		print("貸し付けポイントは無いので終了します。")
 def game(player3):
 	while True:
+		global Robo63_ichi
 		global ichiA
 		global ichiB
 		global ichiC
@@ -337,6 +343,8 @@ def game(player3):
 		banmen(player3,ichiABCD)
 		if own_ichi == 30:
 			print(player3+"一着ボーナス獲得！")
+			nokori2 = str(30 - Robo63_ichi)
+			nokori2 = int(nokori2)
 			bonus(player3,nokori2) #robo63のみになっているから他からもポイントを受け取りたい
 			nokoriA = str(30-ichiA)
 			nokoriA=int(nokoriA)
@@ -358,7 +366,6 @@ def game(player3):
 			break
 		input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
 		#playsound("sai2.mp3")
-		global Robo63_ichi
 		r63 = awase(num3)
 		rundumq = random.choice(numz)
 		detame2 = awase2(r63,robo63SE,robo63,tsnum2,num4,numB)*rundumq
