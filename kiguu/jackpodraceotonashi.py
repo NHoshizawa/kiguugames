@@ -21,16 +21,21 @@ with open(str(ts2) +'.pickle', mode='wb') as f:
 def jackpodG(file2):
 	com = random.choice(num5)
 	own = input("1~6から数字を選んでください:")
-	own = int(own)
-	if own == com:
-	 	print("jackpod!!"+ str(com) +"deshita笑いomedetougozaimasu!!")
-	 	jackpodP(file2,com)
-	 	input("push any key:")
-	else:
-		print("missing Points" + str(com) +"deshita苦笑い")
-		missingpoints(file2,com)
-		input("push any key:")
-	 	
+	try:
+		own = int(own)
+		if own == com:
+		 	print("jackpod!!"+ str(com) +"deshita笑いomedetougozaimasu!!")
+		 	jackpodP(file2,com)
+		 	input("push any key:")
+		else:
+			print("missing Points" + str(com) +"deshita苦笑い")
+			missingpoints(file2,com)
+			input("push any key:")
+	except ValueError:
+		pass 
+		print("コースアウトいたしました。‼レースを終了いたします。数値の入力が正しくありませんので。")
+		sys.exit() 
+	
 def jankenpon(x):
 	guu=["",
 		 " ＾＾＾＾ ",
