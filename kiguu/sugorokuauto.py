@@ -8,7 +8,7 @@ filerobo63 = str("robo63")
 NoritsuguH = str("shuuekiP")
 ts1 = str("trumpsai")
 ts2 = str("trumpsai2")
-#from playsound import playsound
+from playsound import playsound
 num = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 num2 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 with open(str(ts1) +'.pickle', mode='wb') as f:
@@ -49,7 +49,7 @@ def awase2(ra):
 		num2.remove(r2)
 		num2 = num2
 		if ra == str(r2):
-			#playsound("icchi.wav")
+			playsound("icchi.wav")
 			print("ふっ、一致したぜ‼")
 			with open(str(ts1)+ '.pickle', 'rb') as f:
 				num3 = pickle.load(f)
@@ -82,7 +82,7 @@ def awase4(rb):
 		num4.remove(r4)
 		num4 = num4
 		if rb == str(r4):
-			#playsound("icchirobochan.wav")
+			playsound("icchirobochan.wav")
 			print("一致しました...。")
 			with open(str(ts2) + '.pickle', 'rb') as f:
 				num5 = pickle.load(f)
@@ -146,8 +146,8 @@ def kimari(player2):
 	return a1
 def game(player3):
 	while True:
-		input("Enterを押すと"+player3+"さんサイコロを振れますよ")
-		#playsound("sai1.mp3")
+		#input("Enterを押すと"+player3+"さんサイコロを振れますよ")
+		playsound("sai1.mp3")
 		global own_ichi
 		r2 = awase(num)
 		detame = awase2(r2)
@@ -165,14 +165,14 @@ def game(player3):
 		if own_ichi == 30:
 			print(player3+"一着ボーナス獲得！")
 			bonus(player3,nokori2)
-			#playsound("owariniitashimasu.mp3")
+			playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
-			#playsound("sugoroku2.wav")
-			#playsound("shuuryoushimasu.mp3")
+			playsound("sugoroku2.wav")
+			playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
-		input("Enterを押すとRobo63さんのすごろくが振られます")
-		#playsound("sai2.mp3")
+		#input("Enterを押すとRobo63さんのすごろくが振られます")
+		playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase3()
 		detame2 = awase4(r63)
@@ -210,10 +210,10 @@ def game(player3):
 			roboenergy = roboenergy + hoyuupcharge
 			with open(str(filerobo63) +'.pickle', mode='wb') as f:
 				pickle.dump(roboenergy, f) 
-			#playsound("owariniitashimasu.mp3")
+			playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
-			#playsound("sugoroku2.wav")
-			#playsound("shuuryoushimasu.mp3")
+			playsound("sugoroku2.wav")
+			playsound("shuuryoushimasu.mp3")
 			print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 			break
 def robokashitsuke(name):
@@ -264,17 +264,17 @@ def sugoroku(a3,player4):
 		print("すごろく、OYMGSet...Don!!")
 		game(player4)
 	else:
-		#playsound("owariniitashimasuka.mp3")
+		playsound("owariniitashimasuka.mp3")
 		print("Owari Ni Itashi Masuka？")
 		ans = input("Y/N:")
 		if ans == "Y" or ans == "y":
-			#playsound("sugoroku2.wav")
-			#playsound("shuuryoushimasu.mp3")
+			playsound("sugoroku2.wav")
+			playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。")
 			sys.exit()
 		else:
 			return "n"
-#playsound("opening.wav")
+playsound("opening.wav")
 answer = input("ゲームを始めますか？ please input(y=yes,n=no) :y or n:")
 y = "y"
 n = "n"
@@ -287,10 +287,11 @@ if answer in y:
 		a2 = kimari(player)
 		j == sugoroku(a2,player)
 else:	
-	#playsound("owariniitashimasu.mp3")
+	playsound("owariniitashimasu.mp3")
 	print("Owari Ni Itashi Masu")
-	#playsound("shuuryoushimasu.mp3")
-	#playsound("count48.wav")
+	playsound("shuuryoushimasu.mp3")
+	playsound("count48.wav")
 print("終了します。どうもありがとうございました。")
 player = name()
 robokashitsuke(player)
+playsound("2023natsuba.mp3")

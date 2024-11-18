@@ -151,7 +151,12 @@ def awase(numC):
 	numC.remove(r)
 	numC = numC
 	r = str(r)
-	return r
+	print("配列のあまりの体力は " + str(len(numC)) + " です。")
+	if(int(len(numC))==0):
+		print("体力は０になりましてレースを終了いたします。")
+		sys.exit()
+	else:
+		return r
 def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 	count = 0
 	with open(str(tsnumB)+ '.pickle', 'rb') as f:

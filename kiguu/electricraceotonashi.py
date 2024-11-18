@@ -89,13 +89,17 @@ def janken():
 		print('だし手を外しましたのでwatashi、no、kachitoshimasu..dididi...。anatasamaha,lose to itashimasu...gomennnasai!!')
 		print('lose')
 		return 'e'
-def awase():
-	global num
-	r = random.choice(num)
-	num.remove(r)
-	num = num
+def awase(numC):
+	r = random.choice(numC)
+	numC.remove(r)
+	numC = numC
 	r = str(r)
-	return r
+	print("配列のあまりの体力は " + str(len(numC)) + " です。")
+	if(int(len(numC))==0):
+		print("体力は０になりましてレースを終了いたします。")
+		sys.exit()
+	else:
+		return r
 def awase2(ra):
 	global num2
 	count = 0
@@ -208,7 +212,7 @@ def game(player3):
 		global Robo63_ichi
 		if janken1=='p':
 			input(player3+"さんEnterを押すとサイコロを振れますよ")
-			r2 = awase()
+			r2 = awase(num)
 			numq = random.choice(num6)
 			detame = awase2(r2)*int(numq)
 			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
@@ -222,7 +226,6 @@ def game(player3):
 			if own_ichi > 30:
 				own_ichi = 30
 			banmen(player3)
-			input("pushanykey:")
 			if own_ichi == 30:
 				print(player3+"一着ボーナス獲得！")
 				bonus(player3,nokori2)
@@ -245,7 +248,6 @@ def game(player3):
 			if own_ichi > 30:
 				own_ichi = 30
 			banmen(player3)
-			input("pushanykey:")
 			if own_ichi == 30:
 				print(player3+"一着ボーナス獲得！")
 				bonus(player3,nokori2)
@@ -257,7 +259,7 @@ def game(player3):
 				break
 		else:
 			input(player3+"さんEnterを押すとサイコロを振れます。じゃんけんであいこだったから出た目の2/3だよ")
-			r2 = awase()
+			r2 = awase(num)
 			detame = awase2(r2)
 			detame = int(detame)*2/3
 			detame = int(detame)
@@ -272,7 +274,6 @@ def game(player3):
 			if own_ichi > 30:
 				own_ichi = 30
 			banmen(player3)
-			input("pushanykey:")
 			if own_ichi == 30:
 				print(player3+"一着ボーナス獲得！")
 				bonus(player3,nokori2)
@@ -296,7 +297,6 @@ def game(player3):
 			if Robo63_ichi > 30:
 				Robo63_ichi = 30
 			banmen(player3)
-			input("pushanykey:")
 			if Robo63_ichi ==30:
 				print("コンピュータ,一着ボーナス獲得")
 				hunobonus(player3,nokori)
@@ -343,7 +343,6 @@ def game(player3):
 			if Robo63_ichi > 30:
 				Robo63_ichi = 30
 			banmen(player3)
-			input("pushanykey:")
 			if Robo63_ichi ==30:
 				print("コンピュータ,一着ボーナス獲得")
 				hunobonus(player3,nokori)
@@ -390,7 +389,6 @@ def game(player3):
 			if Robo63_ichi > 30:
 				Robo63_ichi = 30
 			banmen(player3)
-			input("pushanykey:")
 			if Robo63_ichi ==30:
 				print("コンピュータ,一着ボーナス獲得")
 				hunobonus(player3,nokori)
@@ -465,7 +463,6 @@ def sugoroku(a3,player4):
 	if a3 == "Y" or a3 == "y":
 		print(player4+"さんで決まりました")
 		banmen(player4)
-		input("pushanykey:")
 		print("すごろく、OYMGSet...Don!!")
 		game(player4)
 	else:

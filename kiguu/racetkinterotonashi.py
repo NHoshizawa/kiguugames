@@ -2,6 +2,9 @@ import os
 import random
 import sys
 import pickle
+import tkinter
+import time
+import sys
 playerA=str("playerA")
 playerB=str("playerB")
 playerC=str("playerC")
@@ -160,7 +163,7 @@ def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -183,7 +186,7 @@ def awase3(ra,tsnumA,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -210,8 +213,7 @@ def bonus(file2,nokori):
 		hoyuup2 = pickle.load(f)
 	r = nokori #robo63のみになっている
 	r = int(r)
-	r2 = int(random.randint(1, r))
-	hoyuup = hoyuup2/(r2/2)
+	hoyuup = hoyuup2/(r/4)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
@@ -222,8 +224,7 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	r2 = int(random.randint(1, 2*r))
-	hoyuup = hoyuup2/(r2)
+	hoyuup = hoyuup2/(r/3)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -251,15 +252,56 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 	roboenergy = roboenergy + hoyuupcharge
 	with open(str(filerX) +'.pickle', mode='wb') as f:
 		pickle.dump(roboenergy, f)
+
+
+
 def banmen(player1,ichiABCD):
-	print("_____さぁっ...‼決まるか！？_____")
-	print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(Robo63_ichi-1) + "Robo63"+"□"*(30-Robo63_ichi)+"Goal!!") #後攻の格差是正
-	print("OYMGSet...Don!!"+"□"*(ichiA-1) + playerA1 +"□"*(30-ichiA)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(ichiB-1) + playerB1 +"□"*(30-ichiB)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(ichiC-1) + playerC1 +"□"*(30-ichiC)+"Goal!!")
-	print("OYMGSet...Don!!"+"□"*(ichiD-1) + playerD1 +"□"*(30-ichiD)+"Goal!!") 
-	print("__________")
+		print("画像ウインドウの閉じるボタンを確認して閉じるをゆっくりと一度ずつ押してください")
+		chara = [
+			[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1],
+			[2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2],
+			[3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3,3],
+			[4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4],
+			[5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5,5],
+			[6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6,6],
+			]
+		if __name__ == "__main__":
+			def draw_chara():
+				for y in range(6):
+					for x in range(30):
+						x=ichiABCD
+						if chara[y][x]>0:
+							cvs.create_image(x*30+50, y*120+60, image=img_chara[chara[y][x]])
+		root = tkinter.Tk()
+		root.title("kiguuracetkinter")
+		root.resizable(False,False)
+		cvs = tkinter.Canvas(root,width=912, height=768)
+		cvs.pack()
+		bg = tkinter.PhotoImage(file="nori.png")
+		
+		cvs.pack()
+		img_chara = [
+			None,
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"I1"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"R1"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p1"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p2"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p3"+".png"),
+			tkinter.PhotoImage(file="./"+"kiguu1/"+"p4"+".png"),
+		]
+		cvs.create_image(456,384, image=bg)
+		draw_chara()
+		root.mainloop()
+		
+ 
+
+
+	#print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(Robo63_ichi-1) + "Robo63"+"□"*(30-Robo63_ichi)+"Goal!!") #後攻の格差是正
+	#print("OYMGSet...Don!!"+"□"*(ichiA-1) + playerA1 +"□"*(30-ichiA)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(ichiB-1) + playerB1 +"□"*(30-ichiB)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(ichiC-1) + playerC1 +"□"*(30-ichiC)+"Goal!!")
+	#print("OYMGSet...Don!!"+"□"*(ichiD-1) + playerD1 +"□"*(30-ichiD)+"Goal!!") 
 def name():
 	string = """kiguuシリーズで作成済みの名前を入れてください。
 	初めてのご起動の場合はsetup.pyをsugoroku.pyを実行する前に
@@ -356,7 +398,7 @@ def game(player3):
 			#playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
-		#input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
+		input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
 		#playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase(num3)

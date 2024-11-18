@@ -171,7 +171,7 @@ def game(player3):
 			#playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
-		input("Enterを押すとRobo63さんのすごろくが振られます")
+		#input("Enterを押すとRobo63さんのすごろくが振られます")
 		#playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase3()

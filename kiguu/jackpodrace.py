@@ -21,16 +21,21 @@ with open(str(ts2) +'.pickle', mode='wb') as f:
 def jackpodG(file2):
 	com = random.choice(num5)
 	own = input("1~6から数字を選んでください:")
-	own = int(own)
-	if own == com:
-	 	print("jackpod!!"+ str(com) +"deshita笑いomedetougozaimasu!!")
-	 	jackpodP(file2,com)
-	 	input("push any key:")
-	else:
-		print("missing Points" + str(com) +"deshita苦笑い")
-		missingpoints(file2,com)
-		input("push any key:")
-	 	
+	try:
+		own = int(own)
+		if own == com:
+		 	print("jackpod!!"+ str(com) +"deshita笑いomedetougozaimasu!!")
+		 	jackpodP(file2,com)
+		 	input("push any key:")
+		else:
+			print("missing Points" + str(com) +"deshita苦笑い")
+			missingpoints(file2,com)
+			input("push any key:")
+	except ValueError:
+		pass 
+		print("コースアウトいたしました。‼レースを終了いたします。数値の入力が正しくありませんので。")
+		sys.exit() 
+	
 def jankenpon(x):
 	guu=["",
 		 " ＾＾＾＾ ",
@@ -102,13 +107,17 @@ def janken():
 		print('だし手を外しましたのでwatashi、no、kachitoshimasu..dididi...。anatasamaha,lose to itashimasu...gomennnasai!!')
 		print('lose')
 		return 'e'
-def awase():
-	global num
-	r = random.choice(num)
-	num.remove(r)
-	num = num
+def awase(numC):
+	r = random.choice(numC)
+	numC.remove(r)
+	numC = numC
 	r = str(r)
-	return r
+	print("配列のあまりの体力は " + str(len(numC)) + " です。")
+	if(int(len(numC))==0):
+		print("体力は０になりましてレースを終了いたします。")
+		sys.exit()
+	else:
+		return r
 def awase2(ra):
 	global num2
 	count = 0
@@ -247,7 +256,7 @@ def game(player3):
 		if janken1=='p':
 			jackpodG(player3)
 			input(player3+"さんEnterを押すとサイコロを振れますよ")
-			r2 = awase()
+			r2 = awase(num)
 			detame = awase2(r2)
 			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
 			own_ichi = own_ichi + int(detame)
@@ -294,7 +303,7 @@ def game(player3):
 		else:
 			input(player3+"さんEnterを押すとサイコロを振れます。じゃんけんであいこだったから出た目の2/3だよ")
 			jackpodG(player3)
-			r2 = awase()
+			r2 = awase(num)
 			detame = awase2(r2)
 			detame = int(detame)*2/3
 			detame = int(detame)
