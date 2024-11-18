@@ -23,13 +23,17 @@ def kiguusecond(noritsugu):
 		-6,7,-8,9,-10,
 		11,-12,13
 		]
-def awase():
-	global num
-	r = random.choice(num)
-	num.remove(r)
-	num = num
+def awase(numC):
+	r = random.choice(numC)
+	numC.remove(r)
+	numC = numC
 	r = str(r)
-	return r
+	print("配列のあまりの体力は " + str(len(numC)) + " です。")
+	if(int(len(numC))==0):
+		print("体力は０になりましてレースを終了いたします。")
+		sys.exit()
+	else:
+		return r
 def awase2(ra):
 	global num2
 	count = 0
@@ -145,7 +149,7 @@ def game(player3):
 		input("Enterを押すと"+player3+"さんサイコロを振れますよ")
 		#playsound("sai1.mp3")
 		global own_ichi
-		r2 = awase()
+		r2 = awase(num)
 		detame = awase2(r2)
 		print(player3+"さんには、～"+str(detame) + "～の目が出ました")
 		own_ichi = own_ichi + int(detame)
