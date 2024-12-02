@@ -3,6 +3,8 @@ aitenisarezu,ShuushokukatsudouhashiteorimasenyoroshikuonagaishimasuJyarona.kiguu
 2024.11.18(月)20:56 jackpodraceotonashi.py の追加修正ができていなかったことに気づきアップロードいたしました。どうかよろしくお願い申し上げます。感謝謝意。
 2024.11.18(月)16:39 全てにおけるrace系のawase(num)関数に体力表示をつけてエラーを修正いたしました。どうかよろしくお願い申し上げます。いつもどうもありがとうございます。ごめんなさい。感謝謝意。
 2024.11.15(金)12:12 kiguu7abc.py kiguu7abcotonashi.pyのエラー修正いたしました。よろしくお願い申し上げます。いつもどうもありがとうございます。ごめんなさい。感謝謝意。
+2024.12.02(月)12:37　kiguu7abckai.pyとopeningkai.wav 追加いたしました。どうかよろしくお願い申し上げます。ごめんなさいどうもありがとうございます。
+
 2024.11.07(木)14:25 raceabc.pyraceabcotonashi.py の配列がemptyのエラー表示が出ないように修正をいたしました。
 2024.11.04(月)19:50 raceabc.pyraceabcotonashi.py の修正をいたしました。
 2024.11.04(月)14:37　kiguun.py のエラー修正した。
