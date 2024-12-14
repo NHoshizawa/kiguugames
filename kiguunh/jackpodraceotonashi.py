@@ -258,26 +258,74 @@ def game(player3):
 			input(player3+"さんEnterを押すとサイコロを振れますよ")
 			r2 = awase(num)
 			detame = awase2(r2)
-			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
 			own_ichi = own_ichi + int(detame)
-			nokori = str(30 - own_ichi)
+			nokori = str(30 - (own_ichi))
 			nokori = int(nokori)
-			if nokori > 0:
-				print("あと残り～"+str(nokori)+"～こまです")
+			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
+			if nokori == 10:
+				own_ichi = own_ichi+ 3
+				nokori = str(30 - (own_ichi))
+				nokori = int(nokori)
+				#playsound("icchi.wav")
+				print("20のマス目で才を受けました。よって、なごみを受信なので、3コマ進め～っ！！がんばってください！！")
+				input("push any key:")
+				if nokori > 0:
+					print("あと残り～"+str(nokori)+"～こまです")
+				else:
+					print("Goal!!しました")
+				if own_ichi > 30:
+					own_ichi = 30
+				banmen(player3)
+				if own_ichi == 30:
+					print(player3+"一着ボーナス獲得！")
+					bonus(player3,nokori2)
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
+					break
+			elif nokori ==20:
+				own_ichi = own_ichi - 3
+				nokori = str(30 - (own_ichi))
+				nokori = int(nokori)
+				#playsound("icchi.wav")
+				print("10のマス目で才を受けました。よって、なごみを送信なので、3コマ戻って英気を養う！！がんばってください！！")
+				input("push any key:")
+				if nokori > 0:
+					print("あと残り～"+str(nokori)+"～こまです")
+				else:
+					print("Goal!!しました")
+				if own_ichi > 30:
+					own_ichi = 30
+				banmen(player3)
+				if own_ichi == 30:
+					print(player3+"一着ボーナス獲得！")
+					bonus(player3,nokori2)
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
+					break
 			else:
-				print("Goal!!しました")
-			if own_ichi > 30:
-				own_ichi = 30
-			banmen(player3)
-			if own_ichi == 30:
-				print(player3+"一着ボーナス獲得！")
-				bonus(player3,nokori2)
-				#playsound("owariniitashimasu.mp3")
-				print("Owari Ni Itashi Masu")
-				#playsound("sugoroku2.wav")
-				#playsound("shuuryoushimasu.mp3")
-				print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
-				break
+				if nokori > 0:
+					print("あと残り～"+str(nokori)+"～こまです")
+				else:
+					print("Goal!!しました")
+				if own_ichi > 30:
+					own_ichi = 30
+				banmen(player3)
+				if own_ichi == 30:
+					print(player3+"一着ボーナス獲得！")
+					bonus(player3,nokori2)
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
+					break
+				
 		elif janken1=='e':
 			input(player3+"さんはじゃんけんに負けたのでサイコロを振れません")
 			detame = 0
@@ -300,7 +348,7 @@ def game(player3):
 				#playsound("shuuryoushimasu.mp3")
 				print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 				break
-		else:
+		elif janken1 == 'n':
 			input(player3+"さんEnterを押すとサイコロを振れます。じゃんけんであいこだったから出た目の2/3だよ")
 			jackpodG(player3)
 			r2 = awase(num)
@@ -308,6 +356,76 @@ def game(player3):
 			detame = int(detame)*2/3
 			detame = int(detame)
 			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
+			own_ichi = own_ichi + int(detame)
+			nokori = str(30 - own_ichi)
+			nokori = int(nokori)
+			if nokori == 10:
+				own_ichi = own_ichi+ 3
+				nokori = str(30 - (own_ichi))
+				nokori = int(nokori)
+				#playsound("icchi.wav")
+				print("20のマス目で才を受けました。よって、なごみを受信なので、3コマ進め～っ！！がんばってください！！")
+				input("push any key:")
+				if nokori > 0:
+					print("あと残り～"+str(nokori)+"～こまです")
+				else:
+					print("Goal!!しました")
+				if own_ichi > 30:
+					own_ichi = 30
+				banmen(player3)
+				if own_ichi == 30:
+					print(player3+"一着ボーナス獲得！")
+					bonus(player3,nokori2)
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
+					break
+			elif nokori ==20:
+				own_ichi = own_ichi + 3
+				nokori = str(30 - (own_ichi))
+				nokori = int(nokori)
+				#playsound("icchi.wav")
+				print("10のマス目で才を受けました。よって、なごみを送信なので、3コマ戻って英気を養う！！がんばってください！！")
+				input("push any key:")
+				if nokori > 0:
+					print("あと残り～"+str(nokori)+"～こまです")
+				else:
+					print("Goal!!しました")
+				if own_ichi > 30:
+					own_ichi = 30
+				banmen(player3)
+				if own_ichi == 30:
+					print(player3+"一着ボーナス獲得！")
+					bonus(player3,nokori2)
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
+					break
+			else:
+				if nokori > 0:
+					print("あと残り～"+str(nokori)+"～こまです")
+				else:
+					print("Goal!!しました")
+				if own_ichi > 30:
+					own_ichi = 30
+				banmen(player3)
+				if own_ichi == 30:
+					print(player3+"一着ボーナス獲得！")
+					bonus(player3,nokori2)
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
+					break
+				
+		elif janken1=='e':
+			input(player3+"さんはじゃんけんに負けたのでサイコロを振れません")
+			detame = 0
 			own_ichi = own_ichi + int(detame)
 			nokori = str(30 - own_ichi)
 			nokori = int(nokori)
@@ -379,43 +497,130 @@ def game(player3):
 			Robo63_ichi = Robo63_ichi + int(detame2)
 			nokori2 = str(30 - Robo63_ichi)
 			nokori2 = int(nokori2)
-			if nokori2 > 0:
-				print("あと残り～"+ str(nokori2) +"～こまです")
+			if nokori2 == 10:
+				Robo63_ichi = Robo63_ichi+ 3
+				nokori2 = str(30 - (Robo63_ichi))
+				nokori2 = int(nokori2)
+				#playsound("icchirobochan.wav")
+				print("20のマス目で才を受けました。よって、なごみを受信なので、3コマ進め～っ！！がんばってください！！")
+				input("push any key:")
+				if nokori2 > 0:
+					print("あと残り～"+ str(nokori2) +"～こまです")
+				else:
+					print("Goal!!しました")
+				if Robo63_ichi > 30:
+					Robo63_ichi = 30
+				banmen(player3)
+				if Robo63_ichi ==30:
+					print("コンピュータ,一着ボーナス獲得")
+					hunobonus(player3,nokori)
+					with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
+						hoyuup63 = pickle.load(f)
+						hoyuup63 = int(hoyuup63)
+						NoritsuguH_hoyuu = int(hoyuup63*1/5)
+					with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguH_hoyuu, f)
+					with open(str(NoritsuguH) + '.pickle', 'rb') as f:
+						ShuuekiP_NH = pickle.load(f)
+					NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
+					hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
+					with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguHoshizawa, f)
+					hoyuupcharge = int(hoyuu63)
+					with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
+						pickle.dump(hoyuupcharge, f)
+					with open(str(filerobo63) + '.pickle', 'rb') as f:
+						roboenergy = pickle.load(f)
+					roboenergy = roboenergy + hoyuupcharge
+					with open(str(filerobo63) +'.pickle', mode='wb') as f:
+						pickle.dump(roboenergy, f) 
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					break
+			elif nokori2 ==20:
+				Robo63_ichi = Robo63_ichi - 3
+				nokori2 = str(30 - (Robo63_ichi))
+				nokori2 = int(nokori2)
+				#playsound("icchirobochan.wav")
+				print("10のマス目で才を受けました。よって、なごみを送信なので、3コマ戻って英気を養う！！がんばってください！！")
+				input("push any key:")
+				if nokori2 > 0:
+					print("あと残り～"+ str(nokori2) +"～こまです")
+				else:
+					print("Goal!!しました")
+				if Robo63_ichi > 30:
+					Robo63_ichi = 30
+				banmen(player3)
+				if Robo63_ichi ==30:
+					print("コンピュータ,一着ボーナス獲得")
+					hunobonus(player3,nokori)
+					with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
+						hoyuup63 = pickle.load(f)
+						hoyuup63 = int(hoyuup63)
+						NoritsuguH_hoyuu = int(hoyuup63*1/5)
+					with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguH_hoyuu, f)
+					with open(str(NoritsuguH) + '.pickle', 'rb') as f:
+						ShuuekiP_NH = pickle.load(f)
+					NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
+					hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
+					with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguHoshizawa, f)
+					hoyuupcharge = int(hoyuu63)
+					with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
+						pickle.dump(hoyuupcharge, f)
+					with open(str(filerobo63) + '.pickle', 'rb') as f:
+						roboenergy = pickle.load(f)
+					roboenergy = roboenergy + hoyuupcharge
+					with open(str(filerobo63) +'.pickle', mode='wb') as f:
+						pickle.dump(roboenergy, f) 
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					break
 			else:
-				print("Goal!!しました")
-			if Robo63_ichi > 30:
-				Robo63_ichi = 30
-			banmen(player3)
-			if Robo63_ichi ==30:
-				print("コンピュータ,一着ボーナス獲得")
-				hunobonus(player3,nokori)
-				with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
-					hoyuup63 = pickle.load(f)
-					hoyuup63 = int(hoyuup63)
-					NoritsuguH_hoyuu = int(hoyuup63*1/5)
-				with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
-					pickle.dump(NoritsuguH_hoyuu, f)
-				with open(str(NoritsuguH) + '.pickle', 'rb') as f:
-					ShuuekiP_NH = pickle.load(f)
-				NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
-				hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
-				with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
-					pickle.dump(NoritsuguHoshizawa, f)
-				hoyuupcharge = int(hoyuu63)
-				with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
-					pickle.dump(hoyuupcharge, f)
-				with open(str(filerobo63) + '.pickle', 'rb') as f:
-					roboenergy = pickle.load(f)
-				roboenergy = roboenergy + hoyuupcharge
-				with open(str(filerobo63) +'.pickle', mode='wb') as f:
-					pickle.dump(roboenergy, f) 
-				#playsound("owariniitashimasu.mp3")
-				print("Owari Ni Itashi Masu")
-				#playsound("sugoroku2.wav")
-				#playsound("shuuryoushimasu.mp3")
-				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
-				break
-		else:
+				if nokori2 > 0:
+					print("あと残り～"+ str(nokori2) +"～こまです")
+				else:
+					print("Goal!!しました")
+				if Robo63_ichi > 30:
+					Robo63_ichi = 30
+				banmen(player3)
+				if Robo63_ichi ==30:
+					print("コンピュータ,一着ボーナス獲得")
+					hunobonus(player3,nokori)
+					with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
+						hoyuup63 = pickle.load(f)
+						hoyuup63 = int(hoyuup63)
+						NoritsuguH_hoyuu = int(hoyuup63*1/5)
+					with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguH_hoyuu, f)
+					with open(str(NoritsuguH) + '.pickle', 'rb') as f:
+						ShuuekiP_NH = pickle.load(f)
+					NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
+					hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
+					with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguHoshizawa, f)
+					hoyuupcharge = int(hoyuu63)
+					with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
+						pickle.dump(hoyuupcharge, f)
+					with open(str(filerobo63) + '.pickle', 'rb') as f:
+						roboenergy = pickle.load(f)
+					roboenergy = roboenergy + hoyuupcharge
+					with open(str(filerobo63) +'.pickle', mode='wb') as f:
+						pickle.dump(roboenergy, f) 
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					break
+		elif janken1 == 'n':
 			print("Robo63さんはじゃんけんに引き分けたので、すごろくが振られます出た目の(2/3)susumimasu...dididi...")
 			r63 = awase3()
 			detame2 = awase4(r63)
@@ -425,42 +630,129 @@ def game(player3):
 			Robo63_ichi = Robo63_ichi + int(detame2)
 			nokori2 = str(30 - Robo63_ichi)
 			nokori2 = int(nokori2)
-			if nokori2 > 0:
-				print("あと残り～"+ str(nokori2) +"～こまです")
+			if nokori2 == 10:
+				Robo63_ichi = Robo63_ichi+ 3
+				nokori2 = str(30 - (Robo63_ichi))
+				nokori2 = int(nokori2)
+				#playsound("icchirobochan.wav")
+				print("20のマス目で才を受けました。よって、なごみを受信なので、3コマ進め～っ！！がんばってください！！")
+				input("push any key:")
+				if nokori2 > 0:
+					print("あと残り～"+ str(nokori2) +"～こまです")
+				else:
+					print("Goal!!しました")
+				if Robo63_ichi > 30:
+					Robo63_ichi = 30
+				banmen(player3)
+				if Robo63_ichi ==30:
+					print("コンピュータ,一着ボーナス獲得")
+					hunobonus(player3,nokori)
+					with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
+						hoyuup63 = pickle.load(f)
+						hoyuup63 = int(hoyuup63)
+						NoritsuguH_hoyuu = int(hoyuup63*1/5)
+					with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguH_hoyuu, f)
+					with open(str(NoritsuguH) + '.pickle', 'rb') as f:
+						ShuuekiP_NH = pickle.load(f)
+					NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
+					hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
+					with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguHoshizawa, f)
+					hoyuupcharge = int(hoyuu63)
+					with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
+						pickle.dump(hoyuupcharge, f)
+					with open(str(filerobo63) + '.pickle', 'rb') as f:
+						roboenergy = pickle.load(f)
+					roboenergy = roboenergy + hoyuupcharge
+					with open(str(filerobo63) +'.pickle', mode='wb') as f:
+						pickle.dump(roboenergy, f) 
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					break
+			elif nokori2 ==20:
+				Robo63_ichi = Robo63_ichi - 3
+				nokori2 = str(30 - (Robo63_ichi))
+				nokori2 = int(nokori2)
+				#playsound("icchirobochan.wav")
+				print("10のマス目で才を受けました。よって、なごみを送信なので、3コマ戻って英気を養う！！がんばってください！！")
+				input("push any key:")
+				if nokori2 > 0:
+					print("あと残り～"+ str(nokori2) +"～こまです")
+				else:
+					print("Goal!!しました")
+				if Robo63_ichi > 30:
+					Robo63_ichi = 30
+				banmen(player3)
+				if Robo63_ichi ==30:
+					print("コンピュータ,一着ボーナス獲得")
+					hunobonus(player3,nokori)
+					with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
+						hoyuup63 = pickle.load(f)
+						hoyuup63 = int(hoyuup63)
+						NoritsuguH_hoyuu = int(hoyuup63*1/5)
+					with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguH_hoyuu, f)
+					with open(str(NoritsuguH) + '.pickle', 'rb') as f:
+						ShuuekiP_NH = pickle.load(f)
+					NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
+					hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
+					with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguHoshizawa, f)
+					hoyuupcharge = int(hoyuu63)
+					with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
+						pickle.dump(hoyuupcharge, f)
+					with open(str(filerobo63) + '.pickle', 'rb') as f:
+						roboenergy = pickle.load(f)
+					roboenergy = roboenergy + hoyuupcharge
+					with open(str(filerobo63) +'.pickle', mode='wb') as f:
+						pickle.dump(roboenergy, f) 
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					break
 			else:
-				print("Goal!!しました")
-			if Robo63_ichi > 30:
-				Robo63_ichi = 30
-			banmen(player3)
-			if Robo63_ichi ==30:
-				print("コンピュータ,一着ボーナス獲得")
-				hunobonus(player3,nokori)
-				with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
-					hoyuup63 = pickle.load(f)
-					hoyuup63 = int(hoyuup63)
-					NoritsuguH_hoyuu = int(hoyuup63*1/5)
-				with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
-					pickle.dump(NoritsuguH_hoyuu, f)
-				with open(str(NoritsuguH) + '.pickle', 'rb') as f:
-					ShuuekiP_NH = pickle.load(f)
-				NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
-				hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
-				with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
-					pickle.dump(NoritsuguHoshizawa, f)
-				hoyuupcharge = int(hoyuu63)
-				with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
-					pickle.dump(hoyuupcharge, f)
-				with open(str(filerobo63) + '.pickle', 'rb') as f:
-					roboenergy = pickle.load(f)
-				roboenergy = roboenergy + hoyuupcharge
-				with open(str(filerobo63) +'.pickle', mode='wb') as f:
-					pickle.dump(roboenergy, f) 
-				#playsound("owariniitashimasu.mp3")
-				print("Owari Ni Itashi Masu")
-				#playsound("sugoroku2.wav")
-				#playsound("shuuryoushimasu.mp3")
-				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
-				break
+				if nokori2 > 0:
+					print("あと残り～"+ str(nokori2) +"～こまです")
+				else:
+					print("Goal!!しました")
+				if Robo63_ichi > 30:
+					Robo63_ichi = 30
+				banmen(player3)
+				if Robo63_ichi ==30:
+					print("コンピュータ,一着ボーナス獲得")
+					hunobonus(player3,nokori)
+					with open(str(filerobo63) + 'kanri.pickle', 'rb') as f:
+						hoyuup63 = pickle.load(f)
+						hoyuup63 = int(hoyuup63)
+						NoritsuguH_hoyuu = int(hoyuup63*1/5)
+					with open(str(NoritsuguH) +'charge.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguH_hoyuu, f)
+					with open(str(NoritsuguH) + '.pickle', 'rb') as f:
+						ShuuekiP_NH = pickle.load(f)
+					NoritsuguHoshizawa = NoritsuguH_hoyuu + ShuuekiP_NH
+					hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
+					with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
+						pickle.dump(NoritsuguHoshizawa, f)
+					hoyuupcharge = int(hoyuu63)
+					with open(str(filerobo63) +'charge.pickle', mode='wb') as f:
+						pickle.dump(hoyuupcharge, f)
+					with open(str(filerobo63) + '.pickle', 'rb') as f:
+						roboenergy = pickle.load(f)
+					roboenergy = roboenergy + hoyuupcharge
+					with open(str(filerobo63) +'.pickle', mode='wb') as f:
+						pickle.dump(roboenergy, f) 
+					#playsound("owariniitashimasu.mp3")
+					print("Owari Ni Itashi Masu")
+					#playsound("sugoroku2.wav")
+					#playsound("shuuryoushimasu.mp3")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					break
 def robokashitsuke(name):
 	name=str(name)
 	robo63="robo63kashitsuke"
