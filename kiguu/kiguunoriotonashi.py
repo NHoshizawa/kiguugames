@@ -8,7 +8,7 @@ num0= [
 		11,-12,13
 		]
 kigou=["クローバー","スペード","ハート","ダイヤ"]
-#from playsound import playsound
+#from #playsound import #playsound
 game=0
 dpz=0
 i=0
@@ -308,13 +308,13 @@ def du(file6):
 		y = "y"
 		n = "n"
 		if answer in y:
-			print("現在の" + str(point1) + "ポイントの半分より持ちpoint数字内から無作為に選んだの値は")
+			print("現在の" + str(point8) + "ポイントの半分より持ちpoint数字内から無作為に選んだの値は")
 			print("high(1) or low(2)か?")
 			number = input("select,1 or 2:")
 			number = int(number)
-			point1 = abs(point1) 
-			points = random.randint(0,point1)
-			horl = points - point1 / 2
+			point8 = abs(point8) 
+			points = random.randint(0,point8)
+			horl = points - point8 / 2
 			if number == 1 or number == 2:
 				if horl > 0:
 					answer = 1
