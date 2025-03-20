@@ -275,11 +275,11 @@ def game(player3):
 				print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 				break
 		else:
-			input(player3+"さんEnterを押すとサイコロを振れます。じゃんけんであいこだったから出た目の2/3だよ")
+			input(player3+"さんEnterを押すとサイコロを振れます。じゃんけんであいこだったから出た目の1/2だよ")
 			playsound("sai1.mp3")
 			r2 = awase(num)
 			detame = awase2(r2)
-			detame = int(detame)*2/3
+			detame = int(detame)*1/2
 			detame = int(detame)
 			print(player3+"さんには、～"+str(detame) + "～の目が出ました")
 			own_ichi = own_ichi + int(detame)
@@ -391,11 +391,11 @@ def game(player3):
 				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 				break
 		else:
-			print("Robo63さんはじゃんけんに引き分けたので、すごろくが振られます出た目の(2/3)susumimasu...dididi...")
+			print("Robo63さんはじゃんけんに引き分けたので、すごろくが振られます出た目の(1/2)susumimasu...dididi...")
 			playsound("sai2.mp3")
 			r63 = awase3()
 			detame2 = awase4(r63)
-			detame2 = int(detame2)*2/3
+			detame2 = int(detame2)*1/2
 			detame2 = int(detame2)
 			print("Robo63さんには、～"+ str(detame2) +"～の目が出ました")
 			Robo63_ichi = Robo63_ichi + int(detame2)
