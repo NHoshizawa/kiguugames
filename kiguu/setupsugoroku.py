@@ -7,6 +7,8 @@ def swichi():
 	if answer in y:
 		filerobo63 = str("robo63")
 		roboenergy = 0
+		with open(str(filerobo63) +'kashitsuke.pickle', mode='wb') as f:
+			pickle.dump(roboenergy, f)
 		with open(str(filerobo63) +'.pickle', mode='wb') as f:
 			pickle.dump(roboenergy, f)
 		end = input("終了いたしました。続きをsugoroku.pyにてお楽しみください。何かキーを押してエンターキーを押してください:")
@@ -20,4 +22,3 @@ def swichi():
 		if end == end:
 			return 0
 swichi()
-
