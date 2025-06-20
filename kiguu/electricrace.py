@@ -129,7 +129,12 @@ def awase3():
 	num3.remove(r3)
 	num3 = num3
 	r3 =str(r3)
-	return r3
+	print("配列のあまりの体力は " + str(len(num3)) + " です。")
+	if(int(len(num3))==0):
+		print("robo63様はJ（ジュール熱）が一定の仕事量を超えなくなり体力が実質０になりましてレースを終了いたします。笑")
+		sys.exit()
+	else:
+		return r3
 def awase4(rb):
 	global num4
 	count1 = 0
