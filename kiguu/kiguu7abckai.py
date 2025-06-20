@@ -407,10 +407,10 @@ def slottrumpG(file1):
 			hozon1 = pickle.load(f)
 			hozon1 = int(hozon1)
 			print("現在は"+str(hozon1)+"pointsです。")
-			bairitsuP=100
+			bairitsuP=1000
 			bairitsu=10
 			point = point + hozon1*int(bairitsuP)
-			print("やったー！！大当たりっ‼おめでとうございますっ‼なんと100倍の"+str(point)+"ポイントになりました")
+			print("やったー！！大当たりっ‼おめでとうございますっ‼なんと1000倍の"+str(point)+"ポイントになりました")
 		with open(str(file1) +'.pickle', mode='wb') as f:
 			pickle.dump(point, f)
 		return 'p',bairitsu
@@ -450,10 +450,10 @@ def slottrumpG(file1):
 			hozon1 = pickle.load(f)
 			hozon1 = int(hozon1)
 			print("現在は"+str(hozon1)+"pointsです。")
-			bairitsuP=1.5
+			bairitsuP=2
 			bairitsu=1.5
 			point = point + hozon1*int(bairitsuP)
-			print("1.5倍の"+str(point)+"ポイントになりました")
+			print("2倍の"+str(point)+"ポイントになりました")
 		with open(str(file1) +'.pickle', mode='wb') as f:
 			pickle.dump(point, f)
 		return 'p',bairitsu
@@ -506,10 +506,10 @@ def slottrumpG(file1):
 			hozon1 = pickle.load(f)
 			hozon1 = int(hozon1)
 			print("現在は"+str(hozon1)+"pointsです。")
-			bairitsuP=50
+			bairitsuP=500
 			bairitsu=15
 			point = point + hozon1*int(bairitsuP)
-			print("50倍の"+str(point)+"ポイントになりました")
+			print("500倍の"+str(point)+"ポイントになりました")
 		with open(str(file1) +'.pickle', mode='wb') as f:
 			pickle.dump(point, f)
 		return 'p',bairitsu
@@ -519,11 +519,11 @@ def slottrumpG(file1):
 		with open(str(file1)+'.pickle','rb') as f:
 			hozon1 = pickle.load(f)
 			print("現在は"+str(hozon1)+"です")
-			bairitsuP=(1/3)
+			bairitsuP=(0.001)
 			bairitsu=0.7
 			point = point + hozon1*bairitsuP
 			point=int(point)
-			print("獲得なさりましたkiguuポイントにプラスして元のポイントの(1/3)倍の"+str(point)+"ポイントになりました")
+			print("獲得なさりましたkiguuポイントにプラスして元のポイントの(0.001)倍の"+str(point)+"ポイントになりました")
 		with open(str(file1) +'.pickle', mode='wb') as f:
 			pickle.dump(point, f)
 		return 'p',bairitsu

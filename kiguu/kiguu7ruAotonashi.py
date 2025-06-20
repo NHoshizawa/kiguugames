@@ -348,7 +348,7 @@ def slottrumpG():
 				hozon1 = pickle.load(f)
 				hozon1 = int(hozon1)
 				print("現在は"+str(hozon1)+"pointsです。")
-				point = point + hozon1*10000
+				point = point + hozon1*1000
 				print("やったー！！大当たりっ‼おめでとうございますっ‼なんと1000倍の"+str(point)+"ポイントになりました")
 				print("key's return to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
@@ -370,8 +370,8 @@ def slottrumpG():
 				hozon1 = pickle.load(f)
 				hozon1 = int(hozon1)
 				print("現在は"+str(hozon1)+"pointsです。")
-				point = point + hozon1*40
-				print("40倍の"+str(point)+"ポイントになりました")
+				point = point + hozon1*2
+				print("2倍の"+str(point)+"ポイントになりました")
 				print("key's return to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
@@ -391,8 +391,8 @@ def slottrumpG():
 				hozon1 = pickle.load(f)
 				hozon1 = int(hozon1)
 				print("現在は"+str(hozon1)+"pointsです。")
-				point = point + hozon1*30
-				print("30倍の"+str(point)+"ポイントになりました")
+				point = point + hozon1*2
+				print("2倍の"+str(point)+"ポイントになりました")
 				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
@@ -412,8 +412,8 @@ def slottrumpG():
 				hozon1 = pickle.load(f)
 				hozon1 = int(hozon1)
 				print("現在は"+str(hozon1)+"pointsです。")
-				point = point + hozon1*20
-				print("20倍の"+str(point)+"ポイントになりました")
+				point = point + hozon1*2
+				print("2倍の"+str(point)+"ポイントになりました")
 				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
@@ -433,8 +433,8 @@ def slottrumpG():
 				hozon1 = pickle.load(f)
 				hozon1 = int(hozon1)
 				print("現在は"+str(hozon1)+"pointsです。")
-				point = point + hozon1*5
-				print("5倍の"+str(point)+"ポイントになりました")
+				point = point + hozon1*2
+				print("2倍の"+str(point)+"ポイントになりました")
 				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
@@ -454,8 +454,8 @@ def slottrumpG():
 				hozon1 = pickle.load(f)
 				hozon1 = int(hozon1)
 				print("現在は"+str(hozon1)+"pointsです。")
-				point = point + hozon1*5
-				print("5倍の"+str(point)+"ポイントになりました")
+				point = point + hozon1*2
+				print("2倍の"+str(point)+"ポイントになりました")
 				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
@@ -475,8 +475,8 @@ def slottrumpG():
 				hozon1 = pickle.load(f)
 				hozon1 = int(hozon1)
 				print("現在は"+str(hozon1)+"pointsです。")
-				point = point + hozon1*5
-				print("5倍の"+str(point)+"ポイントになりました")
+				point = point + hozon1*2
+				print("2倍の"+str(point)+"ポイントになりました")
 				print("key's Enter to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
@@ -517,9 +517,9 @@ def slottrumpG():
 			with open(str(file)+'.pickle','rb') as f:
 				hozon1 = pickle.load(f)
 				print("現在は"+str(hozon1)+"です")
-				point = point + hozon1*0.25
+				point = point + hozon1*0.001
 				point=int(point)
-				print("獲得なさりましたkiguuポイントにプラスして元のポイントの0.25倍の"+str(point)+"ポイントになりました")
+				print("獲得なさりましたkiguuポイントにプラスして元のポイントの0.001倍の"+str(point)+"ポイントになりました")
 				print("key's return to picture's window click please after keyDown at stop ← twice push key's Enter at end.")
 			with open(str(file) +'.pickle', mode='wb') as f:
 				pickle.dump(point, f)
