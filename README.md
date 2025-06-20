@@ -9,6 +9,7 @@ kiguuシリーズフォルダ公開中
 2025.4.04(金)kiguuasobi.py dxrock.wav(環境音が入っていたために改訂しました。ごめんなさい) を追加いたしました。rock遊びです
 2025.3.20(木)choukyorisou.py及びchoukyorisouotonashi.pyのゲームが追加いたしました。感謝謝意どうもありがとうございますごめんなさい。jankensugoroku.py jankensugorokuotonashi.pyのそれぞれのあいこの手の倍率を2／3から1／2へ変更したしました。
 2025.1.21(火)kiguunori.py kiguunoriotonashi.py ダブルアップ不具合を修正いたしました。感謝謝意。どうかよろしくお願いいたします。
+2025.6.20(金)15:58　sugoroku2.wavを追加いたしました。
 
 2024.12.15(日)0:21 jackpodrace.py jackpodraceotonashi.py の追加修正いたしました。どうかよろしくお願い申し上げます。どうもありがとうございますすみません。
 2024.11.18(月)20:56 jackpodraceotonashi.py の追加修正ができていなかったことに気づきアップロードいたしました。どうかよろしくお願い申し上げます。感謝謝意。
