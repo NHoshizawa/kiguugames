@@ -143,7 +143,12 @@ def awase3():
 	num3.remove(r3)
 	num3 = num3
 	r3 =str(r3)
-	return r3
+	print("配列のあまりの体力は " + str(len(num3)) + " です。")
+	if(int(len(num3))==0):
+		print("体力は０になりましてレースを終了いたします。")
+		sys.exit()
+	else:
+		return r3
 def awase4(rb):
 	global num4
 	count1 = 0
