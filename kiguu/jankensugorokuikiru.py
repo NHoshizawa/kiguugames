@@ -186,13 +186,15 @@ def starts(file1):
 		if end == end:
 			sys.exit()
 def bonus(file2,nokori):
-	with open(str(file2) + '.pickle', 'rb') as f:
+	with open(str(filerobo63) + '.pickle', 'rb') as f:
 		hoyuup2 = pickle.load(f)
+	with open(str(file2) + '.pickle', 'rb') as f:
+		hoyuup3 = pickle.load(f)
 	r = nokori
 	r = int(r)
 	hoyuup = hoyuup2/(r/2)
 	hoyuup = int(hoyuup)
-	points = hoyuup2 + hoyuup
+	points = hoyuup3 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
 		pickle.dump(points, f)
 	print(file2+"さんには、"+str(hoyuup)+"ボーナスポイントがkiguuのポイントの"+str(hoyuup2)+"ポイントに付加されます。")
