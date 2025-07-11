@@ -193,7 +193,7 @@ def bonus(file2,nokori):
 	r = nokori
 	r = int(r)
 	hoyuup = hoyuup2/(r/2)
-	hoyuup2 = hoyuuup2 - hoyuup
+	hoyuup2 = hoyuup2 - hoyuup
 	hoyuup = int(hoyuup)
 	points = hoyuup3 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
@@ -204,13 +204,18 @@ def bonus(file2,nokori):
 def hunobonus(file9,nokori9):
 	with open(str(file9) + '.pickle', 'rb') as f:
 		hoyuup2 = pickle.load(f)
+	with open(str(filerobo63) + '.pickle', 'rb') as f:
+		hoyuup3 = pickle.load(f)
 	r = nokori9
 	r = int(r)
 	hoyuup = hoyuup2/(r/2)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
+	hoyuup3 = hoyuup3 + hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
 		pickle.dump(points, f)
+	with open(str(filerobo63) +'.pickle', mode='wb') as f:
+		pickle.dump(hoyuup3, f)
 	with open(str(filerobo63) +'kanri.pickle', mode='wb') as f:
 		pickle.dump(hoyuup, f)
 	print(file9+"さんには、マイナス"+str(hoyuup)+"ポイントがkiguuのポイントの"+str(hoyuup2)+"ポイントに付加されます。")
