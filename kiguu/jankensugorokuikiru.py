@@ -200,7 +200,7 @@ def bonus(file2,nokori):
 		pickle.dump(points, f)
 	with open(str(filerobo63) +'.pickle', mode='wb') as f:
 		pickle.dump(hoyuup2, f)
-	print(file2+"さんには、"+str(hoyuup)+"ボーナスポイントがkiguuのポイントの"+str(hoyuup2)+"ポイントに付加されます。")
+	print(file2+"さんには、"+str(hoyuup)+"ボーナスポイントがkiguuのポイントの"+str(hoyuup3)+"ポイントに付加されます。")
 def hunobonus(file9,nokori9):
 	with open(str(file9) + '.pickle', 'rb') as f:
 		hoyuup2 = pickle.load(f)
