@@ -2,6 +2,9 @@ import os
 import random
 import sys
 import pickle
+fileasobikaisuuzenbu = str("count")
+fileplayer3win = str("player3win")
+filerobo63win = str("robo63win")
 playerA=str("playerA")
 playerB=str("playerB")
 playerC=str("playerC")
@@ -86,6 +89,153 @@ with open(str(tsnum5) +'.pickle', mode='wb') as f:
 		pickle.dump(num10, f)
 with open(str(tsnum6) +'.pickle', mode='wb') as f:
 		pickle.dump(num12, f)
+with open(str(playerA) + 'win' + '.pickle', 'rb') as f:
+		kachitenA = pickle.load(f)
+		kachitenA = int(kachitenA)
+with open(str(playerB) + 'win' + '.pickle', 'rb') as f:
+		kachitenB = pickle.load(f)
+		kachitenB = int(kachitenB)
+with open(str(playerC) + 'win' + '.pickle', 'rb') as f:
+		kachitenC = pickle.load(f)
+		kachitenC = int(kachitenC)
+with open(str(playerD) + 'win' + '.pickle', 'rb') as f:
+		kachitenD = pickle.load(f)
+		kachitenD =int(kachitenD)
+with open(str(fileplayer3win) + '.pickle', 'rb') as f:
+		kachiten = pickle.load(f)
+		kachiten = int(kachiten)
+with open(str(filerobo63win) + '.pickle', 'rb') as f:
+		kachitenrobo63 = pickle.load(f)
+		kachitenrobo63 = int(kachitenrobo63)
+with open(str(fileasobikaisuuzenbu) + '.pickle', 'rb') as f:
+		count = pickle.load(f)
+		count = int(count)
+reinyuu = 0
+sousha = int(count/kachiten)
+sousharobo63 = int(count/kachitenrobo63)
+soushaA = int(count/kachitenA)
+soushaB = int(count/kachitenB)
+soushaC = int(count/kachitenC)
+soushaD = int(count/kachitenD)
+sentakushi=0
+bet=0
+def sentakushiz(filez):
+	global sentakushi,sousha,sousharobo63,soushaA,soushaB,soushaC,soushaD
+	print("now's rates is...")
+	print("1:" + str(filez) + "様は" + str(sousha) + "倍,2:robo63様は" + str(sousharobo63) + "倍,3:playerA様は" + str(soushaA) + "倍,4:playerB様は" + str(soushaB) + "倍,5:playerC様は" + str(soushaC) + "倍,6:playerD様は" + str(soushaD)+"倍")
+	sentakushi = input("please choice the rannerNo.:")
+	sentakushi = str(sentakushi)
+	ans = "sentakushi".isalpha()
+	ans = str(ans)
+	if ans == 'true':
+		print("数字を入力してください")
+	else:
+		sentakushi = int(sentakushi)
+		if sentakushi <= 6 and sentakushi >= 1:
+			return sentakushi
+		else:
+			print("選択は無効となります。")
+def kyousou(file3):
+	sentakushi=0
+	global bet,kachitenA,kachitenB,kachitenC,kachitenD,kachiten,kachitenrobo63,count
+	sousha=int(count/kachiten)
+	sousharobo63=int(count/kachitenrobo63)
+	soushaA=int(count/kachitenA)
+	soushaB=int(count/kachitenB)
+	soushaC=int(count/kachitenC)
+	soushaD=int(count/kachitenD)
+	with open(str(file3) + '.pickle', 'rb') as f:
+		hoyuuZ = pickle.load(f)
+	hoyuuZ = int(hoyuuZ)
+	answer = input("bet or not to the race!? please input(y=yes,n=no) :y or n:")
+	y = "y"
+	n = "n"
+	if answer in y:
+		print("kiguuポイントは" + str(hoyuuZ) + "ポイントあります")
+		bet = input("持ちpointの中からいくらbetしますか？:")
+		bet = str(bet)
+		ans = "bet".isalpha()
+		ans = str(ans)
+		if ans == 'true':
+			print("数字を入力してください")
+			with open(str(file3) +'.pickle', mode='wb') as f:
+				pickle.dump(hoyuuZ, f)
+			return bet,sentakushi
+		else:
+			bet = int(bet)
+			if bet <= int(hoyuuZ) and bet >0:
+				hoyuuZ = hoyuuZ - bet
+				with open(str(file3) +'.pickle', mode='wb') as f:
+					pickle.dump(hoyuuZ, f)
+				sentakushi = sentakushiz(file3)
+				return bet,sentakushi
+			else:
+				print("選択は無効となりpointは保存されます。")
+				with open(str(file3) +'.pickle', mode='wb') as f:
+					pickle.dump(hoyuuZ, f)
+				return bet,sentakushi
+	elif answer in n:
+		with open(str(file3) +'.pickle', mode='wb') as f:
+			pickle.dump(hoyuuZ, f)
+		return bet,sentakushi
+	else:
+		print("選択は無効となりpointは保存されます。")
+		with open(str(file3) +'.pickle', mode='wb') as f:
+			pickle.dump(hoyuuZ, f)
+		return bet,sentakushi
+def kekkaZ(filex,kekkaZ):
+	global kekka1,kekka2,reinyuu
+	if kekkaZ == kekka2:
+		if kekka == 1:
+			reinyuu=sousha*kekka1
+			with open(str(filex)+ '.pickle', 'rb') as f:
+				pointx = pickle.load(f)
+				pointx = pointx +reinyuu
+			print(str(reinyuu)+"points's gotten!!")
+			with open(str(filex)+'.pickle', mode='wb') as f:
+				pickle.dump(pointx, f)
+		elif kekkaZ == 2:
+			reinyuu=sousharobo63*kekka1
+			with open(str(filex)+ '.pickle', 'rb') as f:
+				pointx = pickle.load(f)
+				pointx = pointx +reinyuu
+			print(str(reinyuu)+"points's gotten!!")
+			with open(str(filex)+'.pickle', mode='wb') as f:
+				pickle.dump(pointx, f)
+		elif kekkaZ == 3:
+			reinyuu=soushaA*kekka1
+			with open(str(filex)+ '.pickle', 'rb') as f:
+				pointx = pickle.load(f)
+				pointx = pointx +reinyuu
+			print(str(reinyuu)+"points's gotten!!")
+			with open(str(filex)+'.pickle', mode='wb') as f:
+				pickle.dump(pointx, f)
+		elif kekkaZ == 4:
+			reinyuu=soushaB*kekka1
+			with open(str(filex)+ '.pickle', 'rb') as f:
+				pointx = pickle.load(f)
+				pointx = pointx +reinyuu
+			print(str(reinyuu)+"points's gotten!!")
+			with open(str(filex)+'.pickle', mode='wb') as f:
+				pickle.dump(pointx, f)
+		elif kekkaZ == 5:
+			reinyuu=soushaC*kekka1
+			with open(str(filex)+ '.pickle', 'rb') as f:
+				pointx = pickle.load(f)
+				pointx = pointx +reinyuu
+			print(str(reinyuu)+"points's gotten!!")
+			with open(str(filex)+'.pickle', mode='wb') as f:
+				pickle.dump(pointx, f)
+		elif kekkaZ == 6:
+			reinyuu=soushaD*kekka1
+			with open(str(filex)+ '.pickle', 'rb') as f:
+				pointx = pickle.load(f)
+				pointx = pointx +reinyuu
+			print(str(reinyuu)+"points's gotten!!")
+			with open(str(filex)+'.pickle', mode='wb') as f:
+				pickle.dump(pointx, f)		
+	else:
+		print("result's lose.sorry try next race ")
 def kiguusecond(noritsugu):
 	num0= [
 		1,-2,3,-4,5,
@@ -94,9 +244,9 @@ def kiguusecond(noritsugu):
 		15,-16,17,-18,
 		19,-20
 		]
-def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,playerABCD1,numE,ichiABCD,ichix0,tsnum,numABCD,numABCD1):
+def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,playerABCD1,numE,ichiABCD,ichix0,tsnum,numABCD,numABCD1,kachitenABCD):
 	#playerABCD
-	global ichiA,ichiB,ichiC,ichiD
+	global ichiA,ichiB,ichiC,ichiD,kachitenA,kachitenB,kachitenC,kachitenD,kekka
 	ichix0 = awase(numE)
 	detame2 = awase3(ichix0,tsnum,numABCD,numABCD1)
 	print(playerABCD1+"さんには、～"+ str(detame2) +"～の目が出ました")
@@ -112,6 +262,22 @@ def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,pla
 	banmen(player3,ichiABCD)
 	if ichiABCD ==80:
 		print(playerABCD1+",一着ボーナス獲得")
+		if playerA == playerABCD1:
+			kakka = 3
+			kekkaZ(player3,kekka)
+		elif playerB == playerABCD1:
+			kekka = 4
+			kekkaZ(player3,kekka)
+		elif playerC == playerABCD1:
+			kekka = 5
+			kekkaZ(player3,kekka)
+		elif playerD == playerABCD1:
+			kekka = 6
+			kekkaZ(player3,kekka)
+		kachitenABCD = int(kachitenABCD)
+		kachitenABCD = kachitenABCD + 1
+		with open(str(playerABCD1)+ 'win' + '.pickle', mode='wb') as f:
+			pickle.dump(kachitenABCD, f)
 		hunobonus(player3,nokori,playerABCD1)
 		with open(str(playerABCD1) + 'kanri.pickle', 'rb') as f:
 			hoyuupABCD = pickle.load(f)
@@ -319,6 +485,9 @@ def game(player3):
 		global ichiB
 		global ichiC
 		global ichiD
+		global kachiten
+		global kachitenrobo63
+		global kekka
 		input("Enterを押すと"+player3+"さんサイコロを振れますよ")
 		playsound("sai1.mp3")
 		global own_ichi
@@ -337,6 +506,12 @@ def game(player3):
 		banmen(player3,ichiABCD)
 		if own_ichi == 80:
 			print(player3+"一着ボーナス獲得！")
+			kekka=1
+			kekkaZ(player3,kekka)
+			kachiten = int(kachiten)
+			kachiten = kachiten + 1
+			with open(str(fileplayer3win)+'.pickle', mode='wb') as f:
+				pickle.dump(kachiten, f)
 			bonus(player3,nokori2) #robo63のみになっているから他からもポイントを受け取りたい
 			nokoriA = str(80-ichiA)
 			nokoriA=int(nokoriA)
@@ -374,6 +549,12 @@ def game(player3):
 		banmen(player3,ichiABCD)
 		if Robo63_ichi ==80:
 			print("コンピュータ,一着ボーナス獲得")
+			kekka=2
+			kekkaZ(player3,kekka)
+			kachitenrobo63 = int(kachitenrobo63)	
+			kachitenrobo63 = kachitenrobo63 + 1
+			with open(str(filerobo63win)+'.pickle', mode='wb') as f:
+				pickle.dump(kachitenrobo63, f)
 			hunobonus(player3,nokori,filerobo63)
 			playsound("owariniitashimasu.mp3")
 			print("Owari Ni Itashi Masu")
@@ -381,10 +562,10 @@ def game(player3):
 			playsound("shuuryoushimasu.mp3")
 			print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
 			break
-		ichiA=player3456(player3,nokori,hoyuuA,hoyuupA,filePlayerA,Aenergy,playerA,num5,ichiA,ichiA0,tsnum3,numPLA,numPLA1)
-		ichiB=player3456(player3,nokori,hoyuuB,hoyuupB,filePlayerB,Benergy,playerB,num7,ichiB,ichiB0,tsnum4,numPLB,numPLB1)
-		ichiC=player3456(player3,nokori,hoyuuC,hoyuupC,filePlayerC,Cenergy,playerC,num9,ichiC,ichiC0,tsnum5,numPLC,numPLC1)
-		ichiD=player3456(player3,nokori,hoyuuD,hoyuupD,filePlayerD,Denergy,playerD,num11,ichiD,ichiD0,tsnum6,numPLD,numPLD1)
+		ichiA=player3456(player3,nokori,hoyuuA,hoyuupA,filePlayerA,Aenergy,playerA,num5,ichiA,ichiA0,tsnum3,numPLA,numPLA1,kachitenA)
+		ichiB=player3456(player3,nokori,hoyuuB,hoyuupB,filePlayerB,Benergy,playerB,num7,ichiB,ichiB0,tsnum4,numPLB,numPLB1,kachitenB)
+		ichiC=player3456(player3,nokori,hoyuuC,hoyuupC,filePlayerC,Cenergy,playerC,num9,ichiC,ichiC0,tsnum5,numPLC,numPLC1,kachitenC)
+		ichiD=player3456(player3,nokori,hoyuuD,hoyuupD,filePlayerD,Denergy,playerD,num11,ichiD,ichiD0,tsnum6,numPLD,numPLD1,kachitenD)
 		banmen(player3,ichiABCD)
 		if ichiA==0 or ichiB==0 or ichiC==0 or ichiD==0:
 			break
@@ -411,6 +592,9 @@ answer = input("ゲームを始めますか？ please input(y=yes,n=no) :y or n:
 y = "y"
 n = "n"
 player = name()
+kekkaX = kyousou(player)
+kekka1=kekkaX[0]#bet
+kekka2=kekkaX[1]#sentakushi
 if answer in y:
 	a2 = kimari(player)
 	j = sugoroku(a2,player)

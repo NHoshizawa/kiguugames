@@ -242,7 +242,7 @@ def kiguusecond(noritsugu):
 		-6,7,-8,9,-10,
 		11,-12,13
 		]
-def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,playerABCD1,numE,ichiABCD,ichix0,tsnum,numABCD,numABCD1,kachitenABCD):
+def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,playerABCD1,numE,ichiABCD,ichix0,tsnum,numABCD,numABCD1,kachitenABC):
 	#playerABCD
 	global ichiA,ichiB,ichiC,ichiD,kachitenA,kachitenB,kachitenC,kachitenD,kekka
 	ichix0 = awase(numE)
@@ -409,14 +409,6 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 	hoyuu63 = int(hoyuup63) - int(NoritsuguH_hoyuu)
 	with open(str(NoritsuguH) +'.pickle', mode='wb') as f:
 		pickle.dump(NoritsuguHoshizawa, f)
-	hoyuupcharge = int(hoyuu63)
-	with open(str(filerX) +'charge.pickle', mode='wb') as f:
-		pickle.dump(hoyuupcharge, f)
-	with open(str(filerX) + '.pickle', 'rb') as f:
-		roboenergy = pickle.load(f)
-	roboenergy = roboenergy + hoyuupcharge
-	with open(str(filerX) +'.pickle', mode='wb') as f:
-		pickle.dump(roboenergy, f)
 def banmen(player1,ichiABCD):
 	print("_____さぁっ...‼決まるか！？_____")
 	print("OYMGSet...Don!!"+"□"*(own_ichi-1) + player1 +"□"*(30-own_ichi)+"Goal!!")
