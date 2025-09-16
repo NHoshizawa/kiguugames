@@ -13,6 +13,7 @@ playerA=str("playerA")
 playerB=str("playerB")
 playerC=str("playerC")
 playerD=str("playerD")
+kekka=0
 Aenergy=0
 Benergy=0
 Cenergy=0

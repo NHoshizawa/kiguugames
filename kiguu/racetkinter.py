@@ -9,6 +9,7 @@ import sys
 fileasobikaisuuzenbu = str("count")
 fileplayer3win = str("player3win")
 filerobo63win = str("robo63win")
+kekka=0
 G_SIZE = 75
 G2_SIZE = 90
 SCREEN = Rect(0, 0, 800, 600)   # 画面サイズ

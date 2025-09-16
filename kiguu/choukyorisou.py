@@ -25,6 +25,7 @@ ichiA0=0
 ichiB0=0
 ichiC0=0
 ichiD0=0
+kekka=0
 filePlayerA=str("playerA")
 filePlayerB=str("playerB")
 filePlayerC=str("playerC")

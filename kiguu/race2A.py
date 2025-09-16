@@ -35,6 +35,7 @@ playerC1=str("playerC")
 playerD1=str("playerD")
 numA=0
 numB=0
+kekka=0
 ichiABCD=0
 own_ichi = 0
 ichiA=0

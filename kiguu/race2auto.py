@@ -2,6 +2,7 @@ import os
 import random
 import sys
 import pickle
+kekka=0
 fileasobikaisuuzenbu = str("count")
 fileplayer3win = str("player3win")
 filerobo63win = str("robo63win")
