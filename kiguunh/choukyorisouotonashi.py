@@ -50,6 +50,7 @@ tsnum3 = str("trumpsai3")
 tsnum4 = str("trumpsai4")
 tsnum5 = str("trumpsai5")
 tsnum6 = str("trumpsai6")
+kekka=0
 #from #playsound import #playsound
 num = [1,2,3,4,5,6,7,8,9,10]
 num2 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]

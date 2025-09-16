@@ -45,6 +45,7 @@ ichiA=0
 ichiB=0
 ichiC=0
 ichiD=0
+kekka=0
 Robo63_ichi = 0
 filerobo63 = str("robo63")
 NoritsuguH = str("shuuekiP")
