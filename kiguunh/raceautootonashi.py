@@ -247,7 +247,7 @@ def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,pla
 	global ichiA,ichiB,ichiC,ichiD,kachitenA,kachitenB,kachitenC,kachitenD,kekka
 	ichix0 = awase(numE)
 	detame2 = awase3(ichix0,tsnum,numABCD,numABCD1)
-	print(playerABCD1+"さんには、～"+ str(detame2) +"～の目が出ました")
+	#print(playerABCD1+"さんには、～"+ str(detame2) +"～の目が出ました")
 	ichiABCD = ichiABCD + int(detame2)
 	nokori2 = str(30 - ichiABCD)
 	nokori2 = int(nokori2)
@@ -326,7 +326,7 @@ def awase2(ra,runnerSE,runner2,tsnumB,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -349,7 +349,7 @@ def awase3(ra,tsnumA,num0,numA1):
 		x = len(num0)
 		x = x - 1
 		count = count + 1
-		print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
+		#print("引いた数は"+str(r2)+"でした。"+str(count)+"回目の数合わせしてます．xの値は"+ str(ra)+"です")
 		num0.remove(r2)
 		num0 = num0
 		if ra == str(r2):
@@ -376,8 +376,7 @@ def bonus(file2,nokori):
 		hoyuup2 = pickle.load(f)
 	r = nokori #robo63のみになっている
 	r = int(r)
-	r2 = int(random.randint(1, r))
-	hoyuup = hoyuup2/(r2/2)
+	hoyuup = hoyuup2/(r/4)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 + hoyuup
 	with open(str(file2) +'.pickle', mode='wb') as f:
@@ -388,8 +387,7 @@ def hunobonus(file9,nokori9,filerX): #自らのポイントを相手の、のこ
 		hoyuup2 = pickle.load(f)
 	r = nokori9
 	r = int(r)
-	r2 = int(random.randint(1, 2*r))
-	hoyuup = hoyuup2/(r2)
+	hoyuup = hoyuup2/(r*2)
 	hoyuup = int(hoyuup)
 	points = hoyuup2 - hoyuup
 	with open(str(file9) +'.pickle', mode='wb') as f:
@@ -425,7 +423,7 @@ def banmen(player1,ichiABCD):
 	print("OYMGSet...Don!!"+"□"*(ichiB-1) + playerB1 +"□"*(30-ichiB)+"Goal!!")
 	print("OYMGSet...Don!!"+"□"*(ichiC-1) + playerC1 +"□"*(30-ichiC)+"Goal!!")
 	print("OYMGSet...Don!!"+"□"*(ichiD-1) + playerD1 +"□"*(30-ichiD)+"Goal!!") 
-	print("__________")
+	print("_____さぁっ...‼一着、決まるか！？_____")
 def name():
 	string = """kiguuシリーズで作成済みの名前を入れてください。
 	初めてのご起動の場合はsetup.pyをsugoroku.pyを実行する前に
@@ -479,6 +477,8 @@ def robokashitsuke(name):
 				print("数値の入力が正しくありません。")
 		else:
 			print("pointではありません。終了いたします。すみません。")
+	else:
+		print("ganbarukototoha,JiBunNoORoKaSaWoMiToMeNaGaRaSuTaNSuWoKiZuKuIPPoNoReNZoKuKaMoShiReMaSeNn...")
 def game(player3):
 	while True:
 		global ichiA
@@ -488,12 +488,12 @@ def game(player3):
 		global kachiten
 		global kachitenrobo63
 		global kekka
-		input("Enterを押すと"+player3+"さんサイコロを振れますよ")
+		#input("Enterを押すと"+player3+"さんサイコロを振れますよ")
 		#playsound("sai1.mp3")
 		global own_ichi
 		r2 = awase(num)
 		detame = awase2(r2,playerSE,player,tsnum1,num2,numA)
-		print(player3+"さんには、～"+str(detame) + "～の目が出ました")
+		#print(player3+"さんには、～"+str(detame) + "～の目が出ました")
 		own_ichi = own_ichi + int(detame)
 		nokori = str(30 - own_ichi)
 		nokori = int(nokori)
@@ -531,7 +531,7 @@ def game(player3):
 			#playsound("shuuryoushimasu.mp3")
 			print("終了します。どうもありがとうございました。もっと、どんどん資の産みを増やそう")
 			break
-		input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
+		#input("Enterを押すとRobo63さんとその他の走者のすごろくが振られます")
 		#playsound("sai2.mp3")
 		global Robo63_ichi
 		r63 = awase(num3)
