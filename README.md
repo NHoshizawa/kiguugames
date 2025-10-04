@@ -3,6 +3,10 @@ pythonの環境インストールが必要です。スマートフォンでは�
 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください
 方法は下記の
 pip install playsound==1.2.2
+pip install --upgrade pip 
+注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
+
+pip install pygame
 のコマンドをコピー＆ペーストにてコマンド入力なさってください。
 コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。setup.pyをsugoroku.pyをやる前に必ず実行してくださいませ。おはよーございますこんにちはこんばんは！！shuuekiPとポイントを競おう！！ゲームズkiguuシリーズフォルダ公開中setuprace. py をはじめといたしましたraceから始めるすべてのファイルのゲーム性に変更を施しました。内容はポイントを運用できるゲームをすべてにおいて付加いたしました始める際に一度だけsetuprace. pyの実行をどうかよろしくお願い申し上げます。どうかよろしくおねがいもうしあげます。いつもどうもありがとうございますごめんなさい。どうかYoutubeとXの応援のほど、どうかよろしくお願い申し上げます。
 trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモジュールを導入いたしました。随時更新いたします。ドット絵版トランプジョーカーなしアップロードいたしました。
