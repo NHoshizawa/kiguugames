@@ -8,7 +8,7 @@ pip install --upgrade pip
 
 pip install pygame
 のコマンドをコピー＆ペーストにてコマンド入力なさってください。
-コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。全てのsetupと書かれた.pyをsugoroku系.pyや全てのrace系.pyをやる前に必ず実行してくださいませ。おはよーございますこんにちはこんばんは！！shuuekiPとポイントを競おう！！ゲームズkiguuシリーズフォルダ公開中setuprace. py をはじめといたしましたraceから始めるすべてのファイルのゲーム性に変更を施しました。内容はポイントを運用できるゲームをすべてにおいて付加いたしました始める際に一度だけsetuprace. pyの実行をどうかよろしくお願い申し上げます。どうかよろしくおねがいもうしあげます。いつもどうもありがとうございますごめんなさい。どうかYoutubeとXの応援のほど、どうかよろしくお願い申し上げます。
+コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。全てのsetupと書かれた.pyをsugoroku系.pyや全てのrace系.pyをやる前に必ず実行してくださいませ。おはよーございますこんにちはこんばんは！！shuuekiPとポイントを競おう！！ゲームズkiguuシリーズフォルダ公開中setuprace. py をはじめといたしましたraceから始めるすべてのファイルのゲーム性に変更を施しました。内容はポイントを運用できるゲームをすべてにおいて付加いたしました始める際に一度だけsetuprace. py setupsugoroku.py setup.py kiguurobo63.pyにてrobokashitsukepickelの作成も含むの実行をどうかよろしくお願い申し上げます。どうかよろしくおねがいもうしあげます。いつもどうもありがとうございますごめんなさい。どうかYoutubeとXの応援のほど、どうかよろしくお願い申し上げます。
 trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモジュールを導入いたしました。随時更新いたします。ドット絵版トランプジョーカーなしアップロードいたしました。
 各自PCにてインストールの上、ご査収願います。
 セットアップはkiguu.pyとkiguurobo63.py〔kiguurobo63otonashi.pyでも可能)とsetupsugoroku.pyとsetup.pyを必ず実行してください。実行しないと進行していきませんのでよろしくお願い申し上げます。～pygameインストール方法（コマンドプロンプト上にてpythonをインストール後）～
