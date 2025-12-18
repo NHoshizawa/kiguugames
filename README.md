@@ -1,4 +1,4 @@
-pythonの環境インストールが必要です。スマートフォンでは、a-shellアプリを僕はコンパイラーとして利用させていただいております。（kiguunh フォルダすべて　~otonashi. pyのファイルのみとすべてのsetup系. pyのファイルの起動を確認済みです。下記のplaysoundやpygameのインストールはスマートフォンでは必要ありません。できないので）
+Just likes unsocial economics on the kiguu's game points at own electrical game's life as role playing of the code programmings. It's called kiguugames by me. Sory please try object Shikoupythonの環境インストールが必要です。スマートフォンでは、a-shellアプリを僕はコンパイラーとして利用させていただいております。（kiguunh フォルダすべて　~otonashi. pyのファイルのみとすべてのsetup系. pyのファイルの起動を確認済みです。下記のplaysoundやpygameのインストールはスマートフォンでは必要ありません。できないので）
 コマンドプロンプト上にて必ずpythonの環境をインストール後に
 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください
 方法は下記の
