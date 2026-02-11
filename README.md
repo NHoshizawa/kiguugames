@@ -1,4 +1,5 @@
-Just likes unsocial economics on the kiguu's game points at own electrical game's life as role playing of the code programmings. It's called kiguugames by me. Sory please try object Shikoupythonの環境インストールが必要です。スマートフォンでは、a-shellアプリを僕はコンパイラーとして利用させていただいております。（kiguunh フォルダすべて　~otonashi. pyのファイルのみとすべてのsetup系. pyのファイルの起動を確認済みです。下記のplaysoundやpygameのインストールはスマートフォンでは必要ありません。できないので）
+下記に参考図書表示してあります。
+pythonの環境インストールが必要です。スマートフォンでは、a-shellアプリを僕はコンパイラーとして利用させていただいております。（kiguunh フォルダすべて　~otonashi. pyのファイルのみとすべてのsetup系. pyのファイルの起動を確認済みです。下記のplaysoundやpygameのインストールはスマートフォンでは必要ありません。できないので）
 コマンドプロンプト上にて必ずpythonの環境をインストール後に
 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください
 方法は下記の
@@ -153,7 +154,7 @@ DX.wav race2.py sugoroku.py race.py　kiguunori.py sadmusic.wav remain.wav kiguu
 copyright by 星澤宜嗣ほしざわのりつぐより　ご自由に個人のゲームプログラム学習のためにダウンロードなさってください。
 、いつも大変お世話になり、いつもどうもありがとうございます。すみません。何時も感謝 (YouTubeチャンネル登録宜しくお願いします。)
 
-参考書籍
+参考図書
 
  はじめの一歩を踏み出そうPythonでつくるゲーム開発入門講座　廣瀬 豪[著]株式会社ソーテック社
 
