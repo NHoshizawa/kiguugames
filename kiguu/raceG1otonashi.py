@@ -118,12 +118,12 @@ with open(str(fileasobikaisuuzenbu) + '.pickle', 'rb') as f:
 		count = pickle.load(f)
 		count = int(count)
 reinyuu = 0
-sousha = int(count/kachiten)
-sousharobo63 = int(count/kachitenrobo63)
-soushaA = int(count/kachitenA)
-soushaB = int(count/kachitenB)
-soushaC = int(count/kachitenC)
-soushaD = int(count/kachitenD)
+sousha = int(count/kachiten)*10
+sousharobo63 = int(count/kachitenrobo63)*10
+soushaA = int(count/kachitenA)*10
+soushaB = int(count/kachitenB)*10
+soushaC = int(count/kachitenC)*10
+soushaD = int(count/kachitenD)*10
 sentakushi=0
 bet=0
 def sentakushiz(filez):
