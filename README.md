@@ -174,4 +174,4 @@ C0004
 Google検索による、
 使いたい機能の関数の使い方を調べたりなど。[
 [https://prog-8.com/docs/python-env)](https://prog-8.com/docs/python-env)imac mini python環境参照しました。pip3やpython３インストールにて必須な説明が書いてありました。imac環境では、僕は上記のURLの説明の如くpyenv install 3.10.17 (pyenv uninstall 3.10.17
-  可能installをuninstallにアンインストールできます。brewやpip3やpyenv等も同じく)、その後のモジュールインストール時のエラー対策としてpip3のアップグレード　pip3 install --upgrade pip をコマンド入力してからモジュールインストールコマンド『pip3 install モジュール名バージョン数値』を忘れないで下さい pip3 install --upgrade pipを入力して、pythonのバージョンをインストールいたしました。その後、pyenv global 3.10.17をターミナルコマンド入力にて使用しました。pip3 install playsound==1.2.2 のほかにも pip3 install pyobjc をターミナルにて実行するのが必要でした。感謝謝意です。どうも有難うございます。ごめんなさい。
+  可能installをuninstallにアンインストールできます。brewやpip3やpyenv等も同じく)、その後のモジュールインストール時のエラー対策としてpip3のアップグレード　pip3 install --upgrade pip をコマンド入力してからモジュールインストールコマンド『pip3 install モジュール名バージョン数値』を忘れないで下さい pip3 install --upgrade pipを入力して、pythonのバージョンをインストールいたしました。その後、pyenv global 3.10.17をターミナルコマンド入力にて使用しました。pip3 install playsound==1.2.2 のほかにも pip3 install pyobjc をターミナルにて実行するのが必要でした。感謝謝意です。どうも有難うございます。ごめんなさい。macの場合(ターミナル)はpip3コマンド入力、Windowsの場合はpipコマンド入力です
