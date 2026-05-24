@@ -145,7 +145,7 @@ pythonの環境が必要です。
 コマンドプロンプト上にて必ずpythonの環境をインストール後に
 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください
 方法は下記の
-pip install playsound==1.2.2
+pip install playsound==1.2.2 （注意：macでは全てpip install モジュール名がpip3 install モジュール名になります。pip3のアップデートが必要です。下記に説明があります。）
 のコマンドをコピー＆ペーストにてコマンド入力なさってください。
 コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。setup.pyをsugoroku.pyをやる前に必ず実行してくださいませ。
 また、いろいろと頑張っていきますので、私,星澤宜嗣(ほしざわのりつぐ)が使わしていただいている YouTubeチャンネル(下記のURLにて)の登録どうか申し訳ございませんが、ご登録の程よろしくお願い申し上げます。元気が出ます。
