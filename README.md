@@ -173,4 +173,4 @@ C0004
  
 Google検索による、
 使いたい機能の関数の使い方を調べたりなど。[
-[https://prog-8.com/docs/python-env)](https://prog-8.com/docs/python-env)imac mini python環境参照しました。pip3やpython３インストールにて必須な説明が書いてありました。imac環境では、僕はpyenv install 3.1.17 にて、pythonのインストールいたしました。そのご、設定しました。pip3 install playsound==1.2.2 のほかにも pip3 install pyobjc をターミナルにて実行するのが必要でした。感謝謝意です。どうも有難うございます。ごめんなさい。
+[https://prog-8.com/docs/python-env)](https://prog-8.com/docs/python-env)imac mini python環境参照しました。pip3やpython３インストールにて必須な説明が書いてありました。imac環境では、僕は上記のURLの説明の如くpyenv install 3.10.17 を入力して、pythonのバージョンをインストールいたしました。そのご、pyenv global 3.10.17をターミナルコマンド入力にて使用しました。pip3 install playsound==1.2.2 のほかにも pip3 install pyobjc をターミナルにて実行するのが必要でした。感謝謝意です。どうも有難うございます。ごめんなさい。
