@@ -145,7 +145,7 @@ pythonの環境が必要です。
 コマンドプロンプト上にて必ずpythonの環境をインストール後に
 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください
 方法は下記の
-pip install playsound==1.2.2 （注意：macでは全てpip install モジュール名がpip3 install モジュール名になります。pip3のアップデートが必要です。下記に説明があります。）
+pip install playsound==1.2.2 （注意１：macでは全てpip install モジュール名がpip3 install モジュール名になります。pip3のアップデートが必要です。下記に説明があります。）
 のコマンドをコピー＆ペーストにてコマンド入力なさってください。
 コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。setup.pyをsugoroku.pyをやる前に必ず実行してくださいませ。
 また、いろいろと頑張っていきますので、私,星澤宜嗣(ほしざわのりつぐ)が使わしていただいている YouTubeチャンネル(下記のURLにて)の登録どうか申し訳ございませんが、ご登録の程よろしくお願い申し上げます。元気が出ます。
@@ -175,4 +175,4 @@ C0004
 Google検索による、
 使いたい機能の関数の使い方を調べたりなど。[
 [https://prog-8.com/docs/python-env)](https://prog-8.com/docs/python-env)imac mini python環境参照しました。pip3やpython３インストールにて必須な説明が書いてありました。imac環境では、僕は上記のURLの説明の如くpyenv install 3.10.17 (pyenv uninstall 3.10.17
-  可能installをuninstallにアンインストールできます。brewやpip3やpyenv等も同じく)、その後のモジュールインストール時のエラー対策としてpip3のアップグレード　pip3 install --upgrade pip をコマンド入力してからモジュールインストールコマンド『pip3 install モジュール名バージョン数値』を忘れないで下さい pip3 install --upgrade pipを入力して、pythonのバージョンをインストールいたしました。その後、pyenv global 3.10.17をターミナルコマンド入力にて使用しました。pip3 install playsound==1.2.2 のほかにも pip3 install pyobjc をターミナルにて実行するのが必要でした。感謝謝意です。どうも有難うございます。ごめんなさい。macの場合(ターミナル)はpip3コマンド入力、Windowsの場合はpipコマンド入力です
+  可能installをuninstallにアンインストールできます。brewやpip3やpyenv等も同じく)、その後のモジュールインストール時のエラー対策としてpip3のアップグレード　(注意１) pip3 install --upgrade pip をコマンド入力してからモジュールインストールコマンド『pip3 install モジュール名バージョン数値』を忘れないで下さい pip3 install --upgrade pipを入力して、pythonのバージョンをインストールいたしました。その後、pyenv global 3.10.17をターミナルコマンド入力にて使用しました。pip3 install playsound==1.2.2 のほかにも pip3 install pyobjc をターミナルにて実行するのが必要でした。感謝謝意です。どうも有難うございます。ごめんなさい。macの場合(ターミナル)はpip3コマンド入力、Windowsの場合はpipコマンド入力です
