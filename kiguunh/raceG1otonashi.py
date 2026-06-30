@@ -82,7 +82,7 @@ numPLA1 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 numPLB1 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 numPLC1 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
 numPLD1 = [1,2,3,4,5,6,7,8,9,10,11,12,13]
-player="ふっ、一致したぜ‼"
+player="ふっ、一致したぜ!!"
 playerSE="icchi.wav"
 robo63="一致しました...。"
 robo63SE="icchirobochan.wav"
@@ -118,12 +118,12 @@ with open(str(fileasobikaisuuzenbu) + '.pickle', 'rb') as f:
 		count = pickle.load(f)
 		count = int(count)
 reinyuu = 0
-sousha = int(count/kachiten)
-sousharobo63 = int(count/kachitenrobo63)
-soushaA = int(count/kachitenA)
-soushaB = int(count/kachitenB)
-soushaC = int(count/kachitenC)
-soushaD = int(count/kachitenD)
+sousha = int(count/kachiten)*10
+sousharobo63 = int(count/kachitenrobo63)*10
+soushaA = int(count/kachitenA)*10
+soushaB = int(count/kachitenB)*10
+soushaC = int(count/kachitenC)*10
+soushaD = int(count/kachitenD)*10
 sentakushi=0
 bet=0
 def sentakushiz(filez):
@@ -308,7 +308,7 @@ def player3456(player3,nokori,hoyuuABCD,hoyuupABCD,filePlayerABCD,ABCDenergy,pla
 		print("Owari Ni Itashi Masu")
 		#playsound("race2.wav")
 		#playsound("shuuryoushimasu.mp3")
-		print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+		print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 		return 0
 	komasuu=int(ichiABCD)
 	return komasuu
@@ -620,7 +620,7 @@ def game(player3):
 			print("Owari Ni Itashi Masu")
 			#playsound("race2.wav")
 			#playsound("shuuryoushimasu.mp3")
-			print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+			print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 			break
 		ichiA=player3456(player3,nokori,hoyuuA,hoyuupA,filePlayerA,Aenergy,playerA,num5,ichiA,ichiA0,tsnum3,numPLA,numPLA1,kachitenA)
 		ichiB=player3456(player3,nokori,hoyuuB,hoyuupB,filePlayerB,Benergy,playerB,num7,ichiB,ichiB0,tsnum4,numPLB,numPLB1,kachitenB)
