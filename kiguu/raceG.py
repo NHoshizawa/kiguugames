@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+!! -*- coding: utf-8 -*-
 import pickle
 import pygame
 import random
@@ -6,14 +6,14 @@ from pygame.locals import *
 import sys
 G_SIZE = 50
 G2_SIZE =100
-SCREEN = Rect(0, 0, 800, 800)   # 画面サイズ
+SCREEN = Rect(0, 0, 800, 800)   !! 画面サイズ
 num = [10,20,30,40,50,60,70,80,90,100]
 card1=["c","d","h","s"]
 card2=["1","2","3","4","5","6","7","8","9","10","11","12","13"]
 
-# スプライトのクラス
+!! スプライトのクラス
 class Sprite(pygame.sprite.Sprite):
-    # スプライトを作成(画像ファイル名, 位置xy(x, y), 速さvxy(vx, vy), 回転angle)
+    !! スプライトを作成(画像ファイル名, 位置xy(x, y), 速さvxy(vx, vy), 回転angle)
     def __init__(self, filename, xy, vxy, angle=0):
         x, y = xy
         vx, vy = vxy
@@ -29,12 +29,12 @@ class Sprite(pygame.sprite.Sprite):
         self.angle = angle
     def update(self):
         self.rect.move_ip(self.vx, self.vy)
-        # 壁と衝突時の処理(跳ね返り)
+        !! 壁と衝突時の処理(跳ね返り)
         if self.rect.left < 0 or self.rect.right > SCREEN.width:
             self.vx = -self.vx
         if self.rect.top < 0 or self.rect.bottom > SCREEN.height:
             self.vy = -self.vy
-        # 壁と衝突時の処理(壁を超えないように)
+        !! 壁と衝突時の処理(壁を超えないように)
         self.rect = self.rect.clamp(SCREEN)
 def slottrumpG():
 	point = 10
@@ -75,11 +75,11 @@ def slottrumpG():
 		while (n):
 			pygame.init()
 			for event in pygame.event.get():
-			# 終了用のイベント処理
-				if event.type == QUIT:          # 閉じるボタンが押されたとき
+			!! 終了用のイベント処理
+				if event.type == QUIT:          !! 閉じるボタンが押されたとき
 					pygame.quit()
-				if event.type == KEYDOWN:       # キーを押したとき
-					if event.key == K_ESCAPE:   # Escキーが押されたとき
+				if event.type == KEYDOWN:       !! キーを押したとき
+					if event.key == K_ESCAPE:   !! Escキーが押されたとき
 					 	pygame.quit()
 			screen = pygame.display.set_mode(SCREEN.size)
 	
@@ -123,7 +123,7 @@ def doing():
 	global file1
 	pygame.init()
 	clock = pygame.time.Clock()
-	clock.tick(30)  # フレームレート(30fps)
+	clock.tick(30)  !! フレームレート(30fps)
 	while (3):
 		pygame.init()
 		for event in pygame.event.get():
@@ -148,14 +148,14 @@ def doing():
 		group.add(playerB)
 		group.add(playerC)
 		screen.fill((0, 63, 0))
-		# 画面の背景色
-		# スプライトグループを更新
+		!! 画面の背景色
+		!! スプライトグループを更新
 		group.update()
-		# スプライトを描画
+		!! スプライトを描画
 		group.draw(screen)
-		# 画面更新 
+		!! 画面更新 
 		pygame.display.update()
-		# イベント処理
+		!! イベント処理
 		slottrumpG()
 	pygame.quit()
 doing()
