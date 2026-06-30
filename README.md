@@ -1,4 +1,5 @@
-imac上でも、homeぶmac上でも、https://prog-8.com/docs/python-env　おすすめ実行方法。
+imac上でも、homeぶmac上でも、https://prog-8.com/docs/python-env
+おすすめ実行方法。
 (# ご将来のお仕事に向けた技術者を志す方々へのご支援への
 スタートアップ個人事業
 （IT技術者への道のための自立支援）
