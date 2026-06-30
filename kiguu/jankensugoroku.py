@@ -127,7 +127,7 @@ def awase2(ra):
 		num2 = num2
 		if ra == str(r2):
 			playsound("icchi.wav")
-			print("ふっ、一致したぜ‼")
+			print("ふっ、一致したぜ!!")
 			with open(str(ts1)+ '.pickle', 'rb') as f:
 				num3 = pickle.load(f)
 			num3.remove(r2)
@@ -342,7 +342,7 @@ def game(player3):
 				print("Owari Ni Itashi Masu")
 				playsound("sugoroku2.wav")
 				playsound("shuuryoushimasu.mp3")
-				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 				break
 				
 		elif janken1=='e':
@@ -388,7 +388,7 @@ def game(player3):
 				print("Owari Ni Itashi Masu")
 				playsound("sugoroku2.wav")
 				playsound("shuuryoushimasu.mp3")
-				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 				break
 		else:
 			print("Robo63さんはじゃんけんに引き分けたので、すごろくが振られます出た目の(1/2)susumimasu...dididi...")
@@ -435,7 +435,7 @@ def game(player3):
 				print("Owari Ni Itashi Masu")
 				playsound("sugoroku2.wav")
 				playsound("shuuryoushimasu.mp3")
-				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 				break
 def robokashitsuke(name):
 	name=str(name)

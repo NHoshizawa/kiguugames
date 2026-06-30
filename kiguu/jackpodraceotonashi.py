@@ -33,7 +33,7 @@ def jackpodG(file2):
 			input("push any key:")
 	except ValueError:
 		pass 
-		print("コースアウトいたしました。‼レースを終了いたします。数値の入力が正しくありませんので。")
+		print("コースアウトいたしました。!!レースを終了いたします。数値の入力が正しくありませんので。")
 		sys.exit() 
 	
 def jankenpon(x):
@@ -486,7 +486,7 @@ def game(player3):
 				print("Owari Ni Itashi Masu")
 				#playsound("sugoroku2.wav")
 				#playsound("shuuryoushimasu.mp3")
-				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+				print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 				break
 				
 		elif janken1=='e':
@@ -538,7 +538,7 @@ def game(player3):
 					print("Owari Ni Itashi Masu")
 					#playsound("sugoroku2.wav")
 					#playsound("shuuryoushimasu.mp3")
-					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 					break
 			elif nokori2 ==20:
 				Robo63_ichi = Robo63_ichi - 3
@@ -581,7 +581,7 @@ def game(player3):
 					print("Owari Ni Itashi Masu")
 					#playsound("sugoroku2.wav")
 					#playsound("shuuryoushimasu.mp3")
-					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 					break
 			else:
 				if nokori2 > 0:
@@ -618,7 +618,7 @@ def game(player3):
 					print("Owari Ni Itashi Masu")
 					#playsound("sugoroku2.wav")
 					#playsound("shuuryoushimasu.mp3")
-					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 					break
 		elif janken1 == 'n':
 			print("Robo63さんはじゃんけんに引き分けたので、すごろくが振られます出た目の(2/3)susumimasu...dididi...")
@@ -671,7 +671,7 @@ def game(player3):
 					print("Owari Ni Itashi Masu")
 					#playsound("sugoroku2.wav")
 					#playsound("shuuryoushimasu.mp3")
-					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 					break
 			elif nokori2 ==20:
 				Robo63_ichi = Robo63_ichi - 3
@@ -714,7 +714,7 @@ def game(player3):
 					print("Owari Ni Itashi Masu")
 					#playsound("sugoroku2.wav")
 					#playsound("shuuryoushimasu.mp3")
-					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 					break
 			else:
 				if nokori2 > 0:
@@ -751,7 +751,7 @@ def game(player3):
 					print("Owari Ni Itashi Masu")
 					#playsound("sugoroku2.wav")
 					#playsound("shuuryoushimasu.mp3")
-					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint‼")
+					print("終了します。毎度どうもありがとうございました。どんどん増やそうEmotionalPoint!!")
 					break
 def robokashitsuke(name):
 	name=str(name)
