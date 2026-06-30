@@ -9,7 +9,7 @@ brew https://www.rcnp.osaka-u.ac.jp/~yoshikaw/development/python.html
 （IT技術者への道のための自立支援）
  kiguuゲームシリーズのダウンロード説明書を必ずお読みください。
 sugioroku2.wav 追加いたしました。再度ダウンロード願います。
-2026.06.30(火）19:07文字コードエラー‼→！！へすべてのファイル書き換えました。
+2026.06.30(火）19:07Windows xpパソコンでrace等で終わりに発生するエラーを無くしました。文字コードエラー!!→！！へすべてのファイル書き換えました。
 2023.12.25(月)22:46　kiguuのtkinterの入ったファイル名のimport
  tkinter バージョンを公開いたしました。ご査収願います。
 pythonの環境インストールが必要です。スマートフォンでは、a-shellアプリを僕はコンパイラーとして利用させていただいております。（kiguunh フォルダすべて　~otonashi. pyのファイルのみとすべてのsetup系. pyのファイルの起動を確認済みです。下記のplaysoundやpygameのインストールはスマートフォンでは必要ありません。できないので） コマンドプロンプト上にて必ずpythonの環境をインストール後に 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください 方法は下記の pip install playsound==1.2.2 pip install --upgrade pip 注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
