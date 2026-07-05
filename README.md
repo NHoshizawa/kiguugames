@@ -6,6 +6,8 @@ https://www.google.com/search?q=tkinter+macos&rlz=1C1HKFL_jaJP1202JP1202&sca_esv
 brewにてpyenvをインストールしてpyenvにてpythonバージョンインストール方法→その後にpip3インストーラを設定する方法下記url 
 https://www.rcnp.osaka-u.ac.jp/~yoshikaw/development/python.html
 おすすめ実行方法。
+2026.0705(日)kiguu7abc.py や　kiguu7abcotonashi.py 一推しのおすすめファイル、楽しいからです。
+
 (# ご将来のお仕事に向けた技術者を志す方々へのご支援への
 スタートアップ個人事業
 （IT技術者への道のための自立支援）
