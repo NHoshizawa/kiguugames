@@ -1,7 +1,7 @@
 aaa=["S主語","V動詞","C補語","O目的語"]
 aab=["名詞的→同格や主語や目的語や補語","形容詞的→名詞を説明、主語や間接目的語=補語になる、","副詞的→動詞を修飾〜するために"]
 aac=["語","句","節"]
-aad=["SV","SVC","SV O","SVO1O2","SVOC"]
+aad=["SV","SVC","SV O","SVO1(~に)O2(〜を)","SVOC"]
 bunkeiburui=0
 hinshi=0
 kumikei=0
