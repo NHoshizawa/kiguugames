@@ -13,8 +13,7 @@ a3=0
 a4=0
 def baa():
 	bunkeiburui=int(input('文型文類？0〜4:'))
-	hinshi=int(input('語句節の品詞(用法
-)?0〜2:'))
+	hinshi=int(input('語句節の品詞(用法)?0〜2:'))
 	kumikei=int(input('語=0 句=1 節=2 いずれか？:'))
 	bunkei=int(input('文型1なら0,文型2なら1,文型3なら2,文型4なら3,文型5なら4 のうち0〜4?:'))
 	a1=str(aaa[bunkeiburui])
