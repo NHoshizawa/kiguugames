@@ -341,7 +341,7 @@ def ru(file6):
 				return 'p'
 			elif number == 1:
 				#playsound("zannenn.wav")
-				print("next your desided's games on the true's mind.No get's points.mind carefully www.")
+				print("next your desided games on the true's mind.No get's points.mind carefully www.")
 				point8 = 0
 				with open(str(file6) +'.pickle', mode='wb') as f:
 					pickle.dump(point1, f)
@@ -415,7 +415,7 @@ def ru(file6):
 						return 'p'
 					elif number==1:
 						#playsound("sadmusic.wav")
-						print("next your desided's games on the true's mind.No get's points.your minds very carefully www.") 
+						print("next your desided games on the true's mind.No get's points.your minds very carefully www.") 
 						point8 = 0
 						with open(str(file6) +'.pickle', mode='wb') as f:
 							pickle.dump(point2, f)
