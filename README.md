@@ -1,4 +1,4 @@
-0816(日)watch's game's  bet at the kiguu point.→chike. py発表いたしました。18:02 表記の数字を直しました。ごめんなさい。どうかよろしくお願い申し上げます。18:34 ゲーム内文言中のgameからgamesに複数型に直しました。ごめんなさい感謝謝意です。
+0816(日)watch's game's  bet at the kiguu point.→chike. py発表いたしました。18:02 表記の数字を直しました。ごめんなさい。どうかよろしくお願い申し上げます。18:34 ゲーム内文言中のgameからgamesに複数型に直しました。ごめんなさい感謝謝意です。19:49decided’sgamesからdecided gamesに直しました。
 
 08.11(火)戦争プロパガンダとは2部作目を更新しました。
 
