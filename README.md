@@ -1,3 +1,4 @@
+0816(日)watch's game's  bet at the kiguu point.→chike. py発表いたしました。
 08.11(火)戦争プロパガンダとは2部作目を更新しました。
 
 08.01(土) bunpou.py    starts!?14:20,14:36 15:42 17:18 訂正いたしました。
