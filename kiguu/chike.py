@@ -323,7 +323,7 @@ def ru(file6):
 			r2 = int(r2)
 			point1 = abs(point1) 
 			points = random.randint(0,point7)
-			print("How play's much in front of the other games on the true's game decided factor!?→lose:1 or Win:2 even: 3 !?:")
+			print("How play's much in front of the other games on the true's games decided factor!?→lose:1 or Win:2 even: 3 !?:")
 			number = input("select,lose→1 or win→2 even→3 1 or 2 or 3 !?:")
 			number = int(number)
 			if number == 2:
@@ -341,7 +341,7 @@ def ru(file6):
 				return 'p'
 			elif number == 1:
 				#playsound("zannenn.wav")
-				print("next your desided's gameson the true's mind.No get's points.mind carefully www.")
+				print("next your desided's games on the true's mind.No get's points.mind carefully www.")
 				point8 = 0
 				with open(str(file6) +'.pickle', mode='wb') as f:
 					pickle.dump(point1, f)
@@ -391,7 +391,7 @@ def ru(file6):
 					pickle.dump(point1, f)
 				return 'p'
 			else:
-				print("How play's much in front of the other games on the true's game decided factor!?→lose:1 or Win:2 or even :3 !?:")
+				print("How play's much in front of the other games on the true's games decided factor!?→lose:1 or Win:2 or even :3 !?:")
 				number = input("select,lose→1 or win→2 even→3 1 or 2 or 3 !?")
 				number = int(number)
 				bet = int(bet)
