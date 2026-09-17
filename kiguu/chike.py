@@ -319,15 +319,12 @@ def ru(file6):
 		y = "y"
 		n = "n"
 		if answer in y:
-			r2 = random.randint(1,3)
-			r2 = int(r2)
 			point1 = abs(point1) 
-			points = random.randint(0,point7)
 			print("How play's much in front of the other games on the true's games decided factor!?→lose:1 or Win:2 even: 3 !?:")
 			number = input("select,lose→1 or win→2 even→3 1 or 2 or 3 !?:")
 			number = int(number)
 			if number == 2:
-				r = random.randint(0,100)
+				r = 2
 				r = int(r)
 				point8 = int(point8) * r
 				#playsound("2bai.wav")
@@ -341,7 +338,7 @@ def ru(file6):
 				return 'p'
 			elif number == 1:
 				#playsound("zannenn.wav")
-				print("next your desided games on the true's mind.No get's points.mind carefully www.")
+				print("next your desided's gameson the true's mind.No get's points.mind carefully www.")
 				point8 = 0
 				with open(str(file6) +'.pickle', mode='wb') as f:
 					pickle.dump(point1, f)
@@ -397,12 +394,10 @@ def ru(file6):
 				bet = int(bet)
 				if bet <= int(point1) and bet >= 0:
 					point2 = point1 - bet
-					r2 = random.randint(1,3)
-					r2 = int(r2)
 					point1 = abs(point1) 
 					points = random.randint(0,point7)
 					if number == 2:
-						r = random.randint(0,100)
+						r = 2
 						r = int(r)
 						point8 = int(bet) * r
 						#playsound("2bai.wav")
@@ -415,7 +410,7 @@ def ru(file6):
 						return 'p'
 					elif number==1:
 						#playsound("sadmusic.wav")
-						print("next your desided games on the true's mind.No get's points.your minds very carefully www.") 
+						print("next your desided's games on the true's mind.No get's points.your minds very carefully www.") 
 						point8 = 0
 						with open(str(file6) +'.pickle', mode='wb') as f:
 							pickle.dump(point2, f)
