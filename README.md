@@ -12,7 +12,7 @@ U^ェ^U(´∀｀)
 
 
 ゲーム名はkiguugamesです。今後ともどうかよろしくお願いします。必ずコマンドライン上にてやるゲームです(最小構成にて)、下記設定後python ファイル名.py Mac→python3 ファイル名.py 必ず当フォルダ(kiguu or kiguunh)ごとカレントディレクトリに移動cd フォルダ名(フォルダの置く場所はデフォルトの実行ディレクトリの下におくと楽です。)して、遊びながら学べます。以前の説明書きを間違えて古い説明書きに上書きアップロードをしてしまい全て消えてしまいましてごめんなさい🙇、その上に必要事項を付け足して記述しております。ごめんなさい。
-imac上でも、homebrewにてmac上でも遊びながら開発できますpython3 ファイル名.py
+imac上でも AIモード検索で設定を調べてできました、homebrewにてmac上でも遊びながら開発できますpython3 ファイル名.py
 上記はMac上にて、tkinter起動に使いました。
 本ゲームにはpygameモジュールとplaysound==1.2.2モジュールが使われておりますのであらかじめコマンドライン上にてモジュールのインストールが必要ですpip install pygame 、pip install playsound==1.2.2 、mac→pip3 install　pygame　、pip3 install playsound==1.2.2　、kiguunh(otonashiファイル)ではスマホアプリのa-shell(私はいつも使わせてもらっております。)等内フォルダにて実行できます。その時はotonashiなのでplaysoundモジュールのインポートは必要ありません。
 brewにてpyenvをインストールしてpyenvに
