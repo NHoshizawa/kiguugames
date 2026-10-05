@@ -1,7 +1,13 @@
 ゲームプログラミングには、コンピュータ言語化の前に勿論ゲームプランニング(紙とぺんでゲーム内容を造る)をした後で、必要な技術を習得しながら、オリジナルのアルゴリズムなど、発展していくのが、コンピュータゲーム開発と言えるでしょう。わたしはごくたまに気が向いた時に都合を待ちながらそうやってしております。感謝謝意。いつもどうも有難うございます。ごめんなさい🙇
 U^ェ^U(´∀｀)
+2013年代か2012年代のmacminiで以下の方法にて、環境設定方法
+https://qiita.com/kujirahand/items/d030942bd3dc749e9757 Googleにて検索して従って、Tkinterをmacにて使えるようにします。（わたしのmac miniでは、versionが少し古かったので参考になれればと記述いたしました。）
+python -m pip install --upgrade pip
+pip install -U PyObjC 
+python -m pip install playsound==1.2.2
+python -m pip install pygame
 
-
+その後にpython kiguuA.py など実行にてできます。
 9月17日(木)chike. py ポイント運用による値の返しが一律2倍となりました。また別にchike. py用のpickleファイルでお楽しみくださいませ。
 0816(日)watch's game's  bet at the kiguu point.→chike. py発表いたしました。18:02 表記の数字を直しました。ごめんなさい。どうかよろしくお願い申し上げます。18:34 ゲーム内文言中のgameからgamesに複数型に直しました。ごめんなさい感謝謝意です。19:49decided’sgamesからdecided gamesに直しました。
 
