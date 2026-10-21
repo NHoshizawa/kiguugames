@@ -1,4 +1,5 @@
-ゲームプログラミングには、コンピュータ言語化の前に勿論ゲームプランニング(紙とぺんでゲーム内容を造る)をした後で、必要な技術を習得しながら、オリジナルのアルゴリズムなど、発展していくのが、コンピュータゲーム開発と言えるでしょう。わたしはごくたまに気が向いた時に都合を待ちながら錆び付いたような環境等にてそうやってしております。感謝謝意。いつもどうも有難うございます。ごめんなさい🙇 U^ェ^U(´∀｀) 2013年代か2012年代のmacminiで以下の方法にて、homebrew導入後のmacminiにて環境設定方法 https://qiita.com/kujirahand/items/d030942bd3dc749e9757 Googleにて検索して従って、Tkinterをmacにて使えるようにします。（わたしのmac miniでは、versionが少し古かったので参考になれればと記述いたしました。） python -m pip install --upgrade pip pip install -U PyObjC python -m pip install playsound==1.2.2 python -m pip install pygame
+ゲームプログラミングには、コンピュータ言語化の前に勿論ゲームプランニング(紙とぺんでゲーム内容を造る)をした後で、必要な技術を習得しながら、オリジナルのアルゴリズムなど、発展していくのが、コンピュータゲーム開発と言えるでしょう。わたしはごくたまに気が向いた時に都合を待ちながら錆び付いたような環境等にてそうやってしております。感謝謝意。いつもどうも有難うございます。ごめんなさい🙇 U^ェ^U(´∀｀)
+　１．2013年代か2012年代のmacminiで以下の方法にて、homebrew導入後のmacminiにて環境設定方法 https://qiita.com/kujirahand/items/d030942bd3dc749e9757 Googleにて検索して従って、Tkinterをmacにて使えるようにします。（わたしのmac miniでは、versionが少し古かったので参考になれればと記述いたしました。） python -m pip install --upgrade pip pip install -U PyObjC python -m pip install playsound==1.2.2 python -m pip install pygame
 
 その後にpython kiguuA.py など実行にてできます。 9月17日(木)chike. py ポイント運用による値の返しが一律2倍となりました。また別にchike. py用のpickleファイルでお楽しみくださいませ。 0816(日)watch's game's bet at the kiguu point.→chike. py発表いたしました。18:02 表記の数字を直しました。ごめんなさい。どうかよろしくお願い申し上げます。18:34 ゲーム内文言中のgameからgamesに複数型に直しました。ごめんなさい感謝謝意です。19:49decided’sgamesからdecided gamesに直しました。
 
@@ -6,15 +7,20 @@
 
 08.01(土) bunpou.py starts!?14:20,14:36 15:42 17:18 訂正いたしました。 2026.07.29(水)戦争プロパガンダとは2に誤字脱字がはっけんされました、訂正いたしました。どうか視聴者様が仮にも刑事の如くご本人で疑って調べるつもりにて、決して鵜呑みにせずに本文内容ご査収頂きたくお願い申し上げます。あくまでも、私星澤宜嗣の勝手な推測に過ぎません(遊びの論理的な文章造りですごめんなさいどうもありがとうございます。)
 
-ゲーム名はkiguugamesです。今後ともどうかよろしくお願いします。必ずコマンドライン上にてやるゲームです(最小構成にて)、下記設定後python ファイル名.py Mac→python3 ファイル名.py 必ず当フォルダ(kiguu or kiguunh)ごとカレントディレクトリに移動cd フォルダ名(フォルダの置く場所はデフォルトの実行ディレクトリの下におくと楽です。)して、遊びながら学べます。以前の説明書きを間違えて古い説明書きに上書きアップロードをしてしまい全て消えてしまいましてごめんなさい🙇、その上に必要事項を付け足して記述しております。ごめんなさい。 imac上でも AIモード検索で設定を調べてできました、homebrewにてmac上でも遊びながら開発できますpython3 ファイル名.py 上記はMac上にて、tkinter起動に使いました。 本ゲームにはpygameモジュールとplaysound==1.2.2モジュールが使われておりますのであらかじめコマンドライン上にてモジュールのインストールが必要ですpip install pygame 、pip install playsound==1.2.2 、mac→pip3 install　pygame　、pip3 install playsound==1.2.2　、kiguunh(otonashiファイル)ではスマホアプリのa-shell(私はいつも使わせてもらっております。)等内フォルダにて実行できます。その時はotonashiなのでplaysoundモジュールのインポートは必要ありません。 brewにてpyenvをインストールしてpyenvに おすすめ実行方法。 2026.0705(日)kiguu7abc.py や　kiguu7abcotonashi.py 一推しのおすすめファイル、楽しいからです。
+ゲーム名はkiguugamesです。今後ともどうかよろしくお願いします。必ずコマンドライン上にてやるゲームです(最小構成にて)、下記設定後python ファイル名.py Mac→python3 ファイル名.py 必ず当フォルダ(kiguu or kiguunh)ごとカレントディレクトリに移動cd フォルダ名(フォルダの置く場所はデフォルトの実行ディレクトリの下におくと楽です。)して、遊びながら学べます。以前の説明書きを間違えて古い説明書きに上書きアップロードをしてしまい全て消えてしまいましてごめんなさい🙇、その上に必要事項を付け足して記述しております。ごめんなさい。 imac上でも AIモード検索で設定を調べてできました、homebrewにてmac上でも遊びながら開発できますpython3 ファイル名.py 上記はMac上にて、tkinter起動に使いました。
+　２．本ゲームにはpygameモジュールとplaysound==1.2.2モジュールが使われておりますのであらかじめコマンドライン上にてモジュールのインストールが必要ですpip install pygame 、pip install playsound==1.2.2 、mac→pip3 install　pygame　、pip3 install playsound==1.2.2　、kiguunh(otonashiファイル)ではスマホアプリのa-shell(私はいつも使わせてもらっております。)等内フォルダにて実行できます。その時はotonashiなのでplaysoundモジュールのインポートは必要ありません。 brewにてpyenvをインストールしてpyenvに おすすめ実行方法。 2026.0705(日)kiguu7abc.py や　kiguu7abcotonashi.py 一推しのおすすめファイル、楽しいからです。
 
-(# ご将来のお仕事に向けた技術者を志す方々へのご支援への スタートアップ個人事業 （個人IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。 sugioroku2.wav 追加いたしました。再度ダウンロード願います。 2026.06.30(火）19:07Windows xpパソコンでrace等で終わりに発生するエラーを無くしました。文字コードエラー!!→！！へすべてのファイル書き換えました。 2023.12.25(月)22:46　kiguuのtkinterの入ったファイル名のimport tkinter バージョンを公開いたしました。ご査収願います。 pythonの環境インストールが必要です。スマートフォンでは、a-shellアプリを僕はコンパイラーとして利用させていただいております。（kiguunh フォルダすべて　~otonashi. pyのファイルのみとすべてのsetup系. pyのファイルの起動を確認済みです。下記のplaysoundやpygameのインストールはスマートフォンでは必要ありません。できないので） コマンドプロンプト上にて必ずpythonの環境をインストール後に 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください 方法は下記の pip install playsound==1.2.2 pip install --upgrade pip 注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
+(# ご将来のお仕事に向けた技術者を志す方々へのご支援への スタートアップ個人事業 （個人IT技術者への道のための自立支援） kiguuゲームシリーズのダウンロード説明書を必ずお読みください。 sugioroku2.wav 追加いたしました。再度ダウンロード願います。 2026.06.30(火）19:07Windows xpパソコンでrace等で終わりに発生するエラーを無くしました。文字コードエラー!!→！！へすべてのファイル書き換えました。 2023.12.25(月)22:46　kiguuのtkinterの入ったファイル名のimport tkinter バージョンを公開いたしました。ご査収願います。 pythonの環境インストールが必要です。
+　３．スマートフォンでは、a-shellアプリを僕はコンパイラーとして利用させていただいております。（kiguunh フォルダすべて　~otonashi. pyのファイルのみとすべてのsetup系. pyのファイルの起動を確認済みです。下記のplaysoundやpygameのインストールはスマートフォンでは必要ありません。できないので） 
+ 　４．コマンドプロンプト上にて必ずpythonの環境をインストール後に 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください 方法は下記の pip install playsound==1.2.2 pip install --upgrade pip 注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
 
-pip install pygame のコマンドをコピー＆ペーストにてコマンド入力なさってください。 コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。全てのsetupと書かれた.pyをsugoroku系.pyや全てのrace系.pyをやる前に必ず実行してくださいませ。おはよーございますこんにちはこんばんは！！shuuekiPとポイントを競おう！！ゲームズkiguuシリーズフォルダ公開中setuprace. py をはじめといたしましたraceから始めるすべてのファイルのゲーム性に変更を施しました。内容はポイントを運用できるゲームをすべてにおいて付加いたしました始める際に一度だけsetuprace. pyの実行をどうかよろしくお願い申し上げます。どうかよろしくおねがいもうしあげます。いつもどうもありがとうございますごめんなさい。どうかYoutubeとXの応援のほど、どうかよろしくお願い申し上げます。 trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモジュールを導入いたしました。随時更新いたします。ドット絵版トランプジョーカーなしアップロードいたしました。 各自PCにてインストールの上、ご査収願います。 セットアップはkiguu.pyとkiguurobo63.py〔kiguurobo63otonashi.pyでも可能)とsetupsugoroku.pyとsetup.py setup race.py kiguu rob o63.py or kiguurobo63otonashi.py() point借り入れ(イベントとなります)を必ず実行してください。実行しないと進行していきませんのでよろしくお願い申し上げます。～pygameインストール方法（コマンドプロンプト上にてpythonをインストール後）～ pip install --upgrade pip 注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
+pip install pygame のコマンドをコピー＆ペーストにてコマンド入力なさってください。 コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。全てのsetupと書かれた.pyをsugoroku系.pyや全てのrace系.pyをやる前に必ず実行してくださいませ。おはよーございますこんにちはこんばんは！！shuuekiPとポイントを競おう！！ゲームズkiguuシリーズフォルダ公開中setuprace. py をはじめといたしましたraceから始めるすべてのファイルのゲーム性に変更を施しました。内容はポイントを運用できるゲームをすべてにおいて付加いたしました始める際に一度だけsetuprace. pyの実行をどうかよろしくお願い申し上げます。どうかよろしくおねがいもうしあげます。いつもどうもありがとうございますごめんなさい。どうかYoutubeとXの応援のほど、どうかよろしくお願い申し上げます。 trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモジュールを導入いたしました。随時更新いたします。ドット絵版トランプジョーカーなしアップロードいたしました。 各自PCにてインストールの上、ご査収願います。
+　０．セットアップはkiguu.pyとkiguurobo63.py〔kiguurobo63otonashi.pyでも可能)とsetupsugoroku.pyとsetup.py setup race.py kiguu rob o63.py or kiguurobo63otonashi.py() point借り入れ(イベントとなります)を必ず実行してください。
+＊実行しないと進行していきませんのでよろしくお願い申し上げます。＊　～pygameインストール方法（コマンドプロンプト上にてpythonをインストール後）～ pip install --upgrade pip 注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
 
 pip install pygame 注意　python3.6.1より前のバージョンではpygameのインストールは出来ませんでした。 ～以上導入方法以下mac導入方法～ Macコンピューター上では（注意メモ書き） Macでは、ターミナルにてHomebrewをインストール後にbrew install python@3.10 をコマンド(brew listにてpythonバージョン確認できます。brew uninstall python@3.?にてアンインストール可能です。)実行後にpython3.10インストールしてください。その後にpython３ get-pip.pyを実行してpythonモジュールインストールに必要なpipをインストール後、コマンドに順に、pip install playsound==1.2.2 にて、pip install pygame にてpygameとplaysoundモジュールがそれぞれですね私も使えるようになりまして。〜otonashi.pyでpython3 ファイル名.py で動きますが、モジュールのplaysoundやpygameは動かすこと可能だと実際に確認済みです。実行はcd フォルダ名　実行の後　コマンド欄にpython3 ファイル名.py で実行できます。確認済みです。インターネットでいろいろと調べてHomebrewを入れましてpython@3.10を入れてpipを入れ、モジュールをインストールしましたら、あっさりと上記の如くゲームプレイができました。社会や開発環境に感謝謝意どうもありがとうございますごめんなさい。　Windows8.1(モジュールが動きます)にて開発させて頂きました感謝謝意どうもありがとうございます。 ギャンブル依存症に人権大切に真剣にギャンブル行為を断ち切れる様皆様方が開発側に立って、マウントをいち早く取られられる様いち早く取り組んでおります。どうかバカになさらず応援をいただきたく思います。どうか、よろしくお願い申し上げます。いつもダウンロードやプログラミング にご興味を持たれる事に感謝謝意です。どうもありがとうございますごめんなさい🙇🙏 どうか、下記の環境設定方法を拾い読みなさって従ってください。 　もやしっ子ゲーム好き新作トランプゲームプログラミングkiguu開発者の僕(Noritsugu Hoshizawa)は秩序の平和学習開発環境(哲学)を日々願っておりますだから売買目的投資や投機、ギャンブルは社会生活と生命と財産にビギナーズラックで長期において重体な危険（キックバックとかなんとかが？）がありますので、実際にはギャンブルを絶対にやりたくないはずです、やりたいとか本音がないはずですので趣味とかいう嘘は危険なのでほんの少しでも依存しないように絶対にやめましょう。kiguuフォルダで涼しく遊びながら個人でアプリ開発など就職など、プログラミング開発を学びませんか、どなた様でも自由に安全に豊かなエンジョイライフを送ってください。kiguu遊び集はギャンブルではありませんので安心してチャンネル登録していただけたらなおさら嬉しいです。1人新型トランプポイント制ゲームです。
 
-（後書きにも記入がありますが注意）sugoroku.pyやrace.py等を始め る際は必ずキャラクター.pickelファイル作成用のsetup.py、setupsugoroku.py setuprace.py kiguurobo63.py or kiguurobo63otonashi.pyをすべて実行してください (robo63からポイント借り入れをする（このイベントはkariire.pickelファイル作成しないとエラーが出るからです必ず実行に注意。）)を必ず実行してください。 絵柄を新たに更新いたしました。
+　０．（後書きにも記入がありますが注意）sugoroku.pyやrace.py等を始め る際は必ずキャラクター.pickelファイル作成用のsetup.py、setupsugoroku.py setuprace.py kiguurobo63.py or kiguurobo63otonashi.pyをすべて実行してください (robo63からポイント借り入れをする（このイベントはkariire.pickelファイル作成しないとエラーが出るからです必ず実行に注意。）)を必ず実行してください。 絵柄を新たに更新いたしました。
 
 2023．⒑27(金)(18:03)更新 trumpの絵柄がアスキーアートではない kiguutrump.pyにはpygameモジュールを導入いたしました。 随時更新いたします。ドット絵版トランプジョーカーなし アップロードいたしました。 各自PCにてインストールの上、 ご査収願います。
 
@@ -23,6 +29,7 @@ pip install pygame 注意　python3.6.1より前のバージョンではpygame�
 pip install pygame 注意　python3.6.1より前のバージョンでは pygameのインストールは出来ませんでした。
 
 ～以上導入方法～
+０．～　５．まで
 
 リニューアル速報　
 
@@ -47,13 +54,17 @@ pythonの環境インストールが必要です。スマートフォンでは�
 コマンドプロンプト上にて必ずpythonの環境をインストール後に
 必ず、playsoundモジュール(注意playsound（ver1.2．2）)をインストールなさってください
 方法は下記の
+
+５．
 pip install playsound==1.2.2
 pip install --upgrade pip 
 注意　pythonが過去の3.4.3以前？のバージョンだと上記のpip install --upgrade pipを実行すると pipが機能しなくなります。
-
 pip install pygame
 のコマンドをコピー＆ペーストにてコマンド入力なさってください。
 コンパイラ⁽コマンドプロンプト⁾から音声ファイルと同じフォルダないのディレクトリより2パターンのゲーム　python kiguuhana.py か　python kiguuC.py そのほかにもモードが違うkiguu.py kiguu1.py kiguu2.py kiguu3.py kiguunori.py kiguuA.py kiguub.py kiguu3.py kiguuhana1.0.py　sugoroku.py　（などお探探しになられれば色々kiguuご用意しております）　にて実行できます。point確認については、python hoyuu.py にて確認できます。全てのsetupと書かれた.pyをsugoroku系.pyや全てのrace系.pyをやる前に必ず実行してくださいませ。おはよーございますこんにちはこんばんは！！shuuekiPとポイントを競おう！！ゲームズkiguuシリーズフォルダ公開中setuprace. py をはじめといたしましたraceから始めるすべてのファイルのゲーム性に変更を施しました。内容はポイントを運用できるゲームをすべてにおいて付加いたしました始める際に一度だけsetuprace. py setupsugoroku.py setup.py kiguurobo63.pyにてrobokashitsukepickelの作成（robo63さんより貸付を申し付けてください後ですぐに返せばエラーを今後回避できますので。0pでも貸付は実行できます御免なさい。）も含むの実行をどうかよろしくお願い申し上げます。どうかよろしくおねがいもうしあげます。いつもどうもありがとうございますごめんなさい。どうかYoutubeとXの応援のほど、どうかよろしくお願い申し上げます。
+
+
+
 trumpの絵柄がアスキーアートではないkiguutrump.pyにはpygameモジュールを導入いたしました。随時更新いたします。ドット絵版トランプジョーカーなしアップロードいたしました。
 各自PCにてインストールの上、ご査収願います。
 セットアップはkiguu.pyとkiguurobo63.py〔kiguurobo63otonashi.pyでも可能)とsetupsugoroku.pyとsetup.pyを必ず実行してください。実行しないと進行していきませんのでよろしくお願い申し上げます。～pygameインストール方法（コマンドプロンプト上にてpythonをインストール後）～
@@ -202,7 +213,7 @@ DX.wav race2.py sugoroku.py race.py　kiguunori.py sadmusic.wav remain.wav kiguu
 copyright by 星澤宜嗣ほしざわのりつぐより　ご自由に個人のゲームプログラム学習のためにダウンロードなさってください。
 、いつも大変お世話になり、いつもどうもありがとうございます。すみません。何時も感謝 (YouTubeチャンネル登録宜しくお願いします。)
 
-技術参考図書(趣味で学習のため引用)
+技術参考図書(趣味やPC活用や教養での学習のため参考引用図書)
 
 はじめの一歩を踏み出そうPythonでつくるゲーム開発入門講座　廣瀬 豪[著]株式会社ソーテック社
 ISBN 978-4-8007-1239-4 
@@ -213,6 +224,11 @@ Python言語の基本から仕事のやり方まで　独学プログラマー�
 ISBN 978-4-8222-9227-0
 C0004
 ¥2200E
+
+野田クリスタルとあそぶ！PythonプログラミングBOOK
+ISBN978-4-299-02543-2
+C0804 
+￥1800E
  
-Google検索による、
+Google検索等による、
 使いたい機能の関数の使い方を調べたりなど。
