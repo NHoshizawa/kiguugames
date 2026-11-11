@@ -9,17 +9,17 @@ num0= [
 		]
 kigou=["クローバー","スペード","ハート","ダイヤ"]
 #from playsound import playsound
-game=0
+game=0 #変数gameに０を代入
 dpz=0
 i=0
-print("トランプゲームkiguu copyrighted(produced) by NoritsuguHoshizawa")
+print("トランプゲームkiguu copyrighted(produced) by NoritsuguHoshizawa")#括弧の中は関数の引数です。
 print("point保存する新規Point名(新規ファイル名)または、既存のPoint名(前回のファイル名)をアルファベットから始まる半角英数字を入力してください")
 file = input("input:")
-poi =[1,2,3,4,5,6,7,8,9,10,11,12,13]
+poi =[1,2,3,4,5,6,7,8,9,10,11,12,13] #変数poiに配列を代入。
 poi2 =[1,2,3,4,5,6,7,8,9,10,11,12,13]
-pw = random.choice(poi)
+pw = random.choice(poi) #randomクラスのchoice(引数)メソッドを呼び出し返す値をpwに代入。
 pw1 = random.choice(poi2)
-#playsound("opening.wav")
+#playsound("opening.wav")#呼び出した関数を今は使わないのでコメント化
 n = input("偶数0か奇数1か当たればpointを2倍に please select 0or1注0,1以外は終了:")
 n = str(n)
 print("行動力気持ちの縺れつり合い人生数理意思決定ディール無の境地!!")
@@ -27,9 +27,9 @@ print("kiguu87の数字の読み方愉しみ方。\9＝’q’uantum or 苦労�
 
 def kanriup(file1):
 	with open(str(file1) + 'kanri.pickle', 'rb') as f:
-		hozon2 = pickle.load(f)
-	hozon2 = int(hozon2)
-	return hozon2
+		hozon2 = pickle.load(f) #引数fは上記のopen(引数１，引数２)as fからのf	
+	hozon2 = int(hozon2) #引数を整数型へ変える関数を呼び出してhozon2に代入。
+	return hozon2 #ユーザー定義関数kanriup(引数)の戻り値あるいは返す値をreturnにて定義
 	
 def kanri(file2):
 	with open(str(file2) + '.pickle', 'rb') as f:
@@ -45,7 +45,7 @@ def kanri2(file3):
 	total = int(point)
 	print("合計で" + str(total) + "ポイントです")
 
-def end(file4):
+def end(file4): #関数の定義や呼び出した後の実行処理の記述にはインデント｛tabキーを押す｝を置く。
 	if os.path.exists("./"+str(file4)+"kanri.pickle"): 
 		with open(str(file4) + 'kanri.pickle', 'rb') as f:
 			hozon2 = pickle.load(f)
@@ -61,7 +61,7 @@ def end(file4):
 		os.remove("./"+str(file4)+"kanri.pickle")
 		end = input("何か押してエンターキーを押してください:")
 		if end == end:
-			sys.exit()
+			sys.exit()#file4は仮引数で定義の順にアルゴリズムにより流れていきまして、呼び出し時は型にあった好きな変数で実引数を入れて返す値を変数等に代入する。
 	else:
 		with open(str(file4) + '.pickle', 'rb') as f:
 			hozon1 = pickle.load(f)
@@ -508,8 +508,8 @@ def ru(file6):
 			print("選択は無効となりpointは保存されます。")
 			with open(str(file6) +'.pickle', mode='wb') as f:
 				pickle.dump(point1, f)
-			return 'p'
-answer = kiguu(file)
+			return 'p' #ここまでは関数の定義。
+answer = kiguu(file)#ここからメイン関数。
 while answer == 'p':
 	answer = ru(file)
 end(file)
